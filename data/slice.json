@@ -1,0 +1,12 @@
+{
+  "note": "UNVERIFIED SEED. Paths are GOV.UK base paths I believe exist. Run `npm run slice:check` from your own machine and fix anything it reports. Choose the final slice in stage 1.",
+  "paths": [
+    "/renew-driving-licence",
+    "/change-address-driving-licence",
+    "/apply-first-provisional-driving-licence",
+    "/vehicle-tax",
+    "/getting-an-mot",
+    "/penalty-points-endorsements",
+    "/driving-lessons-learning-to-drive"
+  ]
+}

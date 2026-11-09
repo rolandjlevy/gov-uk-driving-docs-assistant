@@ -1,0 +1,20 @@
+{
+  "note": "Stage 1 pre-check. Questions only: no expected facts yet. You mark each answer by hand against the live GOV.UK page. Replace or add questions to suit the slice, and aim for ones about rules that change.",
+  "questions": [
+    { "id": "pc01", "question": "How do I change the address on my driving licence?" },
+    { "id": "pc02", "question": "How much does it cost to renew a driving licence at 70?" },
+    { "id": "pc03", "question": "How long do 3 penalty points stay on my driving licence record?" },
+    { "id": "pc04", "question": "When does a new car need its first MOT?" },
+    { "id": "pc05", "question": "Can I tax a vehicle if I don't have a V5C logbook?" },
+    { "id": "pc06", "question": "What is the earliest I can renew my MOT without losing the renewal date?" },
+    { "id": "pc07", "question": "At what age can I apply for a provisional driving licence?" },
+    { "id": "pc08", "question": "What happens if I don't tax my vehicle on time?" },
+    { "id": "pc09", "question": "Do I need to tell the DVLA about a medical condition?" },
+    { "id": "pc10", "question": "How do I check how many points are on my licence?" },
+    { "id": "pc11", "question": "What is the fee for the driving theory test?" },
+    { "id": "pc12", "question": "Can I use my licence photocard if it has expired?" },
+    { "id": "pc13", "question": "How do I tell DVLA that I've sold my vehicle?" },
+    { "id": "pc14", "question": "What counts as a 'special' MOT exemption for older vehicles?" },
+    { "id": "pc15", "question": "How do I get a replacement driving licence if mine was stolen?" }
+  ]
+}
