@@ -5,3 +5,4 @@ node_modules
 dist
 data/cache
 evals/precheck.answers.json
+evals/golden.sources.md

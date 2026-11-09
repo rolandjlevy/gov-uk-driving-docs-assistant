@@ -11,8 +11,8 @@ The app is the demo; the Evals page is the point. The full plan is in the projec
 | Stage | What | State |
 | --- | --- | --- |
 | 1 | Pre-check: does the model already know this slice? | Scripts ready, needs your API key and hand-marking |
-| 2 | Ingest: fetch, chunk, embed, store in pgvector | Code written and unit-tested; not yet run against GOV.UK, Voyage or Neon |
-| 3 | Golden set (40 questions) | Not started |
+| 2 | Ingest: fetch, chunk, embed, store in pgvector | Done: 70 pages, 797 chunks in Neon |
+| 3 | Golden set (40 questions) | 35 questions drafted; facts and 5 recently-changed questions still to write |
 | 4 | Baselines and eval harness | Not started |
 | 5 | Agent loop (`search_docs`, `read_page`) | Not started |
 | 6 | Tracing and cost | Not started |
@@ -50,6 +50,18 @@ npm run search -- "how do I change the address on my driving licence"
 
 Done when plain questions return the right page in the top 3 results. The vector size is taken from the first embedding, so changing the embedding model means dropping the `chunks` table and re-ingesting.
 
+## Stage 3: golden set
+
+`evals/golden.json` holds the questions: type, question, key facts a correct answer must contain, the page(s) it should cite, and the date you checked it.
+
+```bash
+npm run golden:pages            # writes evals/golden.sources.md: live text of every cited page
+npm run golden:pages -- --recent # slice pages by last-updated date, to pick "recently changed" questions
+npm run golden:check            # validate the file: schema, pages in the slice, counts by type
+```
+
+Write each `key_facts` entry from the live page, not from memory, then set `checked_on`. Re-check the set when you re-ingest, because GOV.UK changes.
+
 ## Layout
 
 ```
@@ -62,6 +74,8 @@ src/search/search.ts        vector search over the chunks
 scripts/slice-check.ts      verify the slice paths
 scripts/ingest.ts           stage 2 ingest
 scripts/search.ts           try a question against the index
+scripts/golden-*.ts         check the golden set and dump the pages it cites
+src/eval/golden.ts          golden set schema and validation
 scripts/precheck.ts         stage 1 pre-check
 data/slice.json             the pages in scope
 evals/                      pre-check questions now; the golden set from stage 3

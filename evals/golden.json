@@ -1,0 +1,363 @@
+{
+  "note": "DRAFT. Questions and expected pages only: key_facts are empty on purpose and must be written from the live pages (npm run golden:pages). Still to add: 5 recently_changed questions (pick pages with npm run golden:pages -- --recent). Set checked_on once every fact is verified.",
+  "questions": [
+    {
+      "id": "g01",
+      "type": "single_page",
+      "question": "How do I change the address on my driving licence?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/change-address-driving-licence"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g02",
+      "type": "single_page",
+      "question": "How much does it cost to renew my driving licence when I turn 70?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/renew-driving-licence-at-70"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g03",
+      "type": "single_page",
+      "question": "How old do I have to be to apply for a provisional driving licence?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/apply-first-provisional-driving-licence"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g04",
+      "type": "single_page",
+      "question": "How much does it cost to replace a stolen driving licence?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/replace-a-driving-licence"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g05",
+      "type": "single_page",
+      "question": "How long do penalty points stay on my licence?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/penalty-points-endorsements"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g06",
+      "type": "single_page",
+      "question": "How much does the car theory test cost?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/book-theory-test",
+        "https://www.gov.uk/driving-test-cost"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g07",
+      "type": "single_page",
+      "question": "How do I tell DVLA my car is off the road?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/make-a-sorn"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g08",
+      "type": "single_page",
+      "question": "Can I get a refund on my vehicle tax if I sell my car?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/vehicle-tax-refund"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g09",
+      "type": "single_page",
+      "question": "Which vehicles are exempt from vehicle tax?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/vehicle-exempt-from-vehicle-tax"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g10",
+      "type": "single_page",
+      "question": "How do I check the MOT history of a car?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/check-mot-history"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g11",
+      "type": "single_page",
+      "question": "How early can I get my MOT without losing my renewal date?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/getting-an-mot"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g12",
+      "type": "single_page",
+      "question": "What do I need to do when I sell my car?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/sold-bought-vehicle"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g13",
+      "type": "single_page",
+      "question": "How do I change the address on my V5C log book?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/change-address-v5c"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g14",
+      "type": "single_page",
+      "question": "What should I do if my car has been stolen?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g15",
+      "type": "single_page",
+      "question": "What are the penalties for speeding?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/speeding-penalties"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g16",
+      "type": "single_page",
+      "question": "How do I get my licence back after a driving ban?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/reapply-licence-revoked"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g17",
+      "type": "single_page",
+      "question": "Can I drive if I have diabetes?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/diabetes-driving"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g18",
+      "type": "single_page",
+      "question": "What are the eyesight rules for driving?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/driving-eyesight-rules"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g19",
+      "type": "single_page",
+      "question": "How do I change the photo on my driving licence?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/renew-photo-driving-licence"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g20",
+      "type": "single_page",
+      "question": "What do the codes on my driving licence mean?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/driving-licence-codes"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g21",
+      "type": "single_page",
+      "question": "How do I swap my paper driving licence for a photocard?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/exchange-paper-driving-licence"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g22",
+      "type": "single_page",
+      "question": "How much does the driving test cost?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/driving-test-cost"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g23",
+      "type": "single_page",
+      "question": "How do I change my driving test appointment?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/change-driving-test"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g24",
+      "type": "single_page",
+      "question": "How do I tax a car if I haven't received a tax reminder?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/tax-vehicle-without-v11-reminder"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g25",
+      "type": "multi_page",
+      "question": "I've just bought a used car. What do I need to do to tax it and get it registered in my name?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/sold-bought-vehicle",
+        "https://www.gov.uk/vehicle-tax",
+        "https://www.gov.uk/vehicle-log-book"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g26",
+      "type": "multi_page",
+      "question": "I'm moving house. Which of my licence and vehicle records do I need to update?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/change-address-driving-licence",
+        "https://www.gov.uk/change-address-v5c"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g27",
+      "type": "multi_page",
+      "question": "My car is over 40 years old. Does it need an MOT, and does it need vehicle tax?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/historic-vehicles",
+        "https://www.gov.uk/vehicle-exempt-from-vehicle-tax"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g28",
+      "type": "multi_page",
+      "question": "I'm 17 and want to learn to drive. What licence and tests do I need, and what do they cost?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/apply-first-provisional-driving-licence",
+        "https://www.gov.uk/book-theory-test",
+        "https://www.gov.uk/driving-test-cost"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g29",
+      "type": "multi_page",
+      "question": "My car has been written off. What do I tell DVLA and what happens to my vehicle tax?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/written-off-vehicle",
+        "https://www.gov.uk/vehicle-tax-refund"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g30",
+      "type": "multi_page",
+      "question": "I'm over 70 and have a medical condition. How do I renew my driving licence?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/renew-driving-licence-at-70",
+        "https://www.gov.uk/health-conditions-and-driving"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g31",
+      "type": "not_covered",
+      "question": "Which car insurance company is cheapest for a new driver?",
+      "key_facts": [],
+      "expected_urls": [],
+      "checked_on": null,
+      "closest_urls": [
+        "https://www.gov.uk/vehicle-insurance"
+      ]
+    },
+    {
+      "id": "g32",
+      "type": "not_covered",
+      "question": "How do I renew my driving licence in Northern Ireland?",
+      "key_facts": [],
+      "expected_urls": [],
+      "checked_on": null
+    },
+    {
+      "id": "g33",
+      "type": "not_covered",
+      "question": "Will my appeal against a speeding fine succeed?",
+      "key_facts": [],
+      "expected_urls": [],
+      "checked_on": null,
+      "closest_urls": [
+        "https://www.gov.uk/speeding-penalties"
+      ]
+    },
+    {
+      "id": "g34",
+      "type": "not_covered",
+      "question": "How much income tax will I pay on a company car?",
+      "key_facts": [],
+      "expected_urls": [],
+      "checked_on": null
+    },
+    {
+      "id": "g35",
+      "type": "not_covered",
+      "question": "Can you recommend a good driving instructor near me?",
+      "key_facts": [],
+      "expected_urls": [],
+      "checked_on": null,
+      "closest_urls": [
+        "https://www.gov.uk/driving-lessons-learning-to-drive"
+      ]
+    }
+  ]
+}
