@@ -15,17 +15,24 @@ const { questions } = JSON.parse(readFileSync('evals/precheck.questions.json', '
 };
 
 const client = new Anthropic(); // reads ANTHROPIC_API_KEY
-const results: { id: string; question: string; answer: string; correct: boolean | null; notes: string }[] = [];
+function ask(question: string) {
+  return client.messages.create({
+    model,
+    max_tokens: 4000,
+    system: 'You answer UK driving and vehicle questions. Answer concisely from your own knowledge. If you are unsure, say so.',
+    messages: [{ role: 'user', content: question }],
+  });
+}
+const textOf = (m: Awaited<ReturnType<typeof ask>>) => m.content.map((b) => (b.type === 'text' ? b.text : '')).join('').trim();
+
+const results: { id: string; question: string; answer: string; stopReason: string | null; blockTypes: string[]; correct: boolean | null; notes: string }[] = [];
 
 for (const q of questions) {
-  const msg = await client.messages.create({
-    model,
-    max_tokens: 400,
-    system: 'You answer UK driving and vehicle questions. Answer concisely from your own knowledge. If you are unsure, say so.',
-    messages: [{ role: 'user', content: q.question }],
-  });
-  const answer = msg.content.map((b) => (b.type === 'text' ? b.text : '')).join('').trim();
-  results.push({ id: q.id, question: q.question, answer, correct: null, notes: '' });
+  let msg = await ask(q.question);
+  let answer = textOf(msg);
+  if (!answer) msg = await ask(q.question), (answer = textOf(msg)); // one retry on an empty answer
+  if (!answer) console.warn(`  ! empty answer (stop_reason=${msg.stop_reason}, blocks=${msg.content.map((b) => b.type).join(',')})`);
+  results.push({ id: q.id, question: q.question, answer, stopReason: msg.stop_reason, blockTypes: msg.content.map((b) => b.type), correct: null, notes: '' });
   console.log(`\n[${q.id}] ${q.question}\n${answer}`);
 }
 
