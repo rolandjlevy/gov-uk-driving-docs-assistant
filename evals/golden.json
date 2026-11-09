@@ -1,5 +1,5 @@
 {
-  "note": "DRAFT. Questions and expected pages only: key_facts are empty on purpose and must be written from the live pages (npm run golden:pages). Still to add: 5 recently_changed questions (pick pages with npm run golden:pages -- --recent). Set checked_on once every fact is verified.",
+  "note": "DRAFT. Questions and expected pages only: key_facts are empty on purpose and must be written from the live pages (npm run golden:pages). recently_changed questions g36-g40 were picked from pages updated in 2025-2026 (npm run golden:pages -- --recent). Set checked_on once every fact is verified.",
   "questions": [
     {
       "id": "g01",
@@ -358,6 +358,56 @@
       "closest_urls": [
         "https://www.gov.uk/driving-lessons-learning-to-drive"
       ]
+    },
+    {
+      "id": "g36",
+      "type": "recently_changed",
+      "question": "How many times can I change my car driving test booking now?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g37",
+      "type": "recently_changed",
+      "question": "Can my driving instructor book or cancel my driving test for me?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g38",
+      "type": "recently_changed",
+      "question": "If I want to move my driving test to a different test centre, where can I move it to?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g39",
+      "type": "recently_changed",
+      "question": "The mileage on my MOT record is wrong. How do I get it corrected?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/report-a-mistake-on-your-mot-record"
+      ],
+      "checked_on": null
+    },
+    {
+      "id": "g40",
+      "type": "recently_changed",
+      "question": "How do I set up a Direct Debit to pay my vehicle tax?",
+      "key_facts": [],
+      "expected_urls": [
+        "https://www.gov.uk/vehicle-tax-direct-debit"
+      ],
+      "checked_on": null
     }
   ]
 }
