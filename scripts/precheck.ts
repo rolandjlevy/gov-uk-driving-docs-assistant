@@ -1,7 +1,13 @@
 // Stage 1 pre-check: ask the model each question with NO search and save its answers for hand-marking.
 // If it gets more than about 90% right, the slice is too well known for retrieval to show a gain.
+import 'dotenv/config';
 import Anthropic from '@anthropic-ai/sdk';
 import { readFileSync, writeFileSync } from 'node:fs';
+
+if (!process.env.ANTHROPIC_API_KEY) {
+  console.error('ANTHROPIC_API_KEY is not set. Copy .env.example to .env, add your key, and run again.');
+  process.exit(1);
+}
 
 const model = process.env.MODEL ?? 'claude-haiku-5-5';
 const { questions } = JSON.parse(readFileSync('evals/precheck.questions.json', 'utf8')) as {
