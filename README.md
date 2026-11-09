@@ -11,7 +11,7 @@ The app is the demo; the Evals page is the point. The full plan is in the projec
 | Stage | What | State |
 | --- | --- | --- |
 | 1 | Pre-check: does the model already know this slice? | Scripts ready, needs your API key and hand-marking |
-| 2 | Ingest: fetch, chunk, embed, store in pgvector | Fetch and chunking done and tested; embedding and storage not started |
+| 2 | Ingest: fetch, chunk, embed, store in pgvector | Code written and unit-tested; not yet run against GOV.UK, Voyage or Neon |
 | 3 | Golden set (40 questions) | Not started |
 | 4 | Baselines and eval harness | Not started |
 | 5 | Agent loop (`search_docs`, `read_page`) | Not started |
@@ -38,12 +38,30 @@ npm test
 
 Note: the GOV.UK Content API needs normal internet access, so run `slice:check` on your own machine.
 
+## Stage 2: ingest
+
+Needs `GOV_UK_DB_URL` (Neon, with the pgvector extension enabled) and `VOYAGE_API_KEY` in `.env`.
+
+```bash
+npm run ingest -- --dry-run   # fetch and chunk only: check page and chunk counts first
+npm run ingest                # embed with Voyage and store in Neon (safe to re-run: each page is replaced)
+npm run search -- "how do I change the address on my driving licence"
+```
+
+Done when plain questions return the right page in the top 3 results. The vector size is taken from the first embedding, so changing the embedding model means dropping the `chunks` table and re-ingesting.
+
 ## Layout
 
 ```
 src/gov-uk/content-api.ts   fetch a page from the Content API, normalise to sections
-src/ingest/chunk.ts         split by heading, keep a heading trail (tested)
+src/ingest/chunk.ts         split by heading, keep a heading trail
+src/ingest/ingest.ts        fetch, chunk, embed, store (one transaction per page)
+src/embed/voyage.ts         Voyage embeddings with batching and retry
+src/db/db.ts                Neon connection and schema
+src/search/search.ts        vector search over the chunks
 scripts/slice-check.ts      verify the slice paths
+scripts/ingest.ts           stage 2 ingest
+scripts/search.ts           try a question against the index
 scripts/precheck.ts         stage 1 pre-check
 data/slice.json             the pages in scope
 evals/                      pre-check questions now; the golden set from stage 3
