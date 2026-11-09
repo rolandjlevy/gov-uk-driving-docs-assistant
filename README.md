@@ -62,6 +62,20 @@ npm run golden:check            # validate the file: schema, pages in the slice,
 
 Write each `key_facts` entry from the live page, not from memory, then set `checked_on`. Re-check the set when you re-ingest, because GOV.UK changes.
 
+## Stage 4: baselines and eval harness
+
+Two baselines run over the golden set and are scored the same way:
+
+```bash
+npm run eval -- --system=model-alone    # no search
+npm run eval -- --system=one-search     # embed the question once, top 5 chunks, answer from them
+# options: --ids=g01,g02  --type=single_page  --judge-model=<model>
+```
+
+Each run saves `evals/runs/<system>-<time>.json` with per-question answers, scores, tokens and time, plus a summary overall and by question type.
+
+Scores: retrieval (expected pages among the retrieved), citation validity (cited URLs were really retrieved), fact score (an LLM judge checks each `key_facts` entry), refusal (declines the not-covered questions, does not decline the rest), tokens and time. Cost is left as tokens; multiply by the current price list when writing up. Run it only after the facts are hand-checked, or the fact score is meaningless.
+
 ## Layout
 
 ```

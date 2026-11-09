@@ -13,7 +13,8 @@
     "search": "tsx scripts/search.ts",
     "slice:discover": "tsx scripts/slice-discover.ts",
     "golden:check": "tsx scripts/golden-check.ts",
-    "golden:pages": "tsx scripts/golden-pages.ts"
+    "golden:pages": "tsx scripts/golden-pages.ts",
+    "eval": "tsx scripts/eval.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.60.0",
