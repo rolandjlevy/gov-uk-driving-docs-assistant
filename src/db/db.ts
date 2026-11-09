@@ -45,3 +45,10 @@ export async function ensureSchema(pool: Pool, dim: number): Promise<void> {
     throw new Error(`chunks.embedding is vector(${existing}) but the model returned ${dim} values. Drop the table or use the same model.`);
   }
 }
+
+/** All chunks of one page in reading order, for the agent's read_page tool. */
+export async function getPageChunks(pool: Pick<Pool, 'query'>, url: string) {
+  const { rows } = await pool.query('SELECT page_title, heading, text FROM chunks WHERE url = $1 ORDER BY ord', [url]);
+  if (!rows.length) return null;
+  return { title: String(rows[0].page_title), chunks: rows.map((r: any) => ({ heading: String(r.heading), text: String(r.text) })) };
+}

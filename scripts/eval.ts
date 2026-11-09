@@ -1,9 +1,9 @@
 // Stage 4: run a baseline over the golden set and save a scored run.
-//   npm run eval -- --system=model-alone|one-search [--ids=g01,g02] [--type=single_page] [--judge-model=...]
+//   npm run eval -- --system=model-alone|one-search|agent [--ids=g01,g02] [--type=single_page] [--judge-model=...]
 import 'dotenv/config';
 import Anthropic from '@anthropic-ai/sdk';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { getPool } from '../src/db/db.js';
+import { getPageChunks, getPool } from '../src/db/db.js';
 import { searchDocs } from '../src/search/search.js';
 import { SYSTEMS, type SystemName } from '../src/eval/systems.js';
 import { judgeFacts, scoreCode, summarise, type Scores } from '../src/eval/score.js';
@@ -23,13 +23,14 @@ if (ids) questions = questions.filter((q) => ids.includes(q.id));
 if (type) questions = questions.filter((q) => q.type === type);
 
 const client = new Anthropic();
-const pool = system === 'one-search' ? getPool() : null;
+const pool = system === 'model-alone' ? null : getPool();
 const search = pool ? (q: string, k: number) => searchDocs(pool, q, k) : undefined;
+const readPage = pool ? (url: string) => getPageChunks(pool, url) : undefined;
 
 const rows = [];
 for (const q of questions) {
   let answer;
-  try { answer = await SYSTEMS[system]({ client, model, search }, q.question); }
+  try { answer = await SYSTEMS[system]({ client, model, search, readPage }, q.question); }
   catch (e) { console.warn(`  ! ${q.id} failed: ${(e as Error).message}`); continue; }
   const judged = await judgeFacts(client, judgeModel, q, answer.answer);
   const code = scoreCode(q, answer);

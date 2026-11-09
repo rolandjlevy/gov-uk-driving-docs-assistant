@@ -3,9 +3,10 @@
 import type Anthropic from '@anthropic-ai/sdk';
 import type { SearchHit } from '../search/search.js';
 import { parseReply, type SystemAnswer } from './answer.js';
+import { runAgent, type AgentDeps } from '../agent/agent.js';
 
 type Client = Pick<Anthropic, 'messages'>;
-export interface SystemDeps { client: Client; model: string; search?: (query: string, k: number) => Promise<SearchHit[]> }
+export interface SystemDeps { client: Client; model: string; search?: (query: string, k: number) => Promise<SearchHit[]>; readPage?: AgentDeps['readPage'] }
 
 const FORMAT = `Reply with only a JSON object: {"status":"answered"|"not_covered","answer":"...","sources":["https://www.gov.uk/..."]}.
 Keep the answer short and specific (figures, deadlines, conditions). `;
@@ -42,5 +43,10 @@ export async function oneSearchRag(deps: SystemDeps, question: string, k = 5): P
   return { status: p.status, answer: p.answer, citedUrls: p.sources, retrievedUrls: [...new Set(hits.map((h) => h.url))], usage: r.usage, ms: Date.now() - t0 };
 }
 
-export const SYSTEMS = { 'model-alone': modelAlone, 'one-search': oneSearchRag } as const;
+export async function agentSystem(deps: SystemDeps, question: string): Promise<SystemAnswer> {
+  if (!deps.search || !deps.readPage) throw new Error('agent needs search and readPage');
+  return runAgent({ client: deps.client, model: deps.model, search: deps.search, readPage: deps.readPage }, question);
+}
+
+export const SYSTEMS = { 'model-alone': modelAlone, 'one-search': oneSearchRag, agent: agentSystem } as const;
 export type SystemName = keyof typeof SYSTEMS;

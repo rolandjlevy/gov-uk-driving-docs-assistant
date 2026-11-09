@@ -69,12 +69,17 @@ Two baselines run over the golden set and are scored the same way:
 ```bash
 npm run eval -- --system=model-alone    # no search
 npm run eval -- --system=one-search     # embed the question once, top 5 chunks, answer from them
+npm run eval -- --system=agent         # stage 5: Claude searches and reads pages itself (max 4 searches)
 # options: --ids=g01,g02  --type=single_page  --judge-model=<model>
 ```
 
 Each run saves `evals/runs/<system>-<time>.json` with per-question answers, scores, tokens and time, plus a summary overall and by question type.
 
 Scores: retrieval (expected pages among the retrieved), citation validity (cited URLs were really retrieved), fact score (an LLM judge checks each `key_facts` entry), refusal (declines the not-covered questions, does not decline the rest), tokens and time. Cost is left as tokens; multiply by the current price list when writing up. Run it only after the facts are hand-checked, or the fact score is meaningless.
+
+## Stage 5: the agent
+
+`src/agent/agent.ts`. Claude gets three tools: `search_docs`, `read_page` (the full page from the database) and `finish` (answered or not_covered, with source URLs). Code enforces what the model can't be trusted with: at most 4 searches, every tool call answered in one message, cited URLs must have been retrieved (invented ones are dropped and reported), and an answer with no valid citation is turned into a refusal. Each run's trace (tools called, pages seen) is saved with the answer in `evals/runs/`.
 
 ## Layout
 
