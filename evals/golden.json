@@ -1,5 +1,5 @@
 {
-  "note": "DRAFT. key_facts were drafted by Claude from the page text fetched on 2026-11-09 (evals/golden.sources.md) and must each be checked against the live page. Set checked_on per question once verified. Not-covered questions have no facts by design.",
+  "note": "DRAFT. key_facts were drafted by Claude from the page text fetched on 2026-11-09 (evals/golden.sources.md) and must each be checked against the live page. Set checked_on per question once verified. Not-covered questions have no facts by design. Rule for key_facts: only what a correct answer to the question must say, one claim each, 1-3 per question; extra page detail does not belong.",
   "questions": [
     {
       "id": "g01",
@@ -7,10 +7,7 @@
       "question": "How do I change the address on my driving licence?",
       "key_facts": [
         "It does not cost anything to change your address with DVLA",
-        "You can apply online (or by post)",
-        "You can still drive while you're waiting for your new licence",
-        "You must also change the address on your vehicle log book (V5C) and update your vehicle tax Direct Debit",
-        "You can be fined up to £1,000 if you do not tell DVLA when your address changes"
+        "You can apply online (or by post)"
       ],
       "expected_urls": [
         "https://www.gov.uk/change-address-driving-licence"
@@ -22,8 +19,8 @@
       "type": "single_page",
       "question": "How much does it cost to renew my driving licence when I turn 70?",
       "key_facts": [
-        "Renewing online with DVLA is free if you're 70 or over, or will be 70 in the next 90 days",
-        "Once you reach 70, you must renew every 3 years"
+        "Renewing a licence at 70 or over is free",
+        "You must renew every 3 years after reaching 70"
       ],
       "expected_urls": [
         "https://www.gov.uk/renew-driving-licence-at-70"
@@ -36,7 +33,7 @@
       "question": "How old do I have to be to apply for a provisional driving licence?",
       "key_facts": [
         "You must be at least 15 years and 9 months old",
-        "It costs £34 when you apply online (£43 by post using form D1)"
+        "It costs £34 to apply online"
       ],
       "expected_urls": [
         "https://www.gov.uk/apply-first-provisional-driving-licence"
@@ -48,9 +45,8 @@
       "type": "single_page",
       "question": "How much does it cost to replace a stolen driving licence?",
       "key_facts": [
-        "A new licence costs £20 online",
-        "You should contact the police if your driving licence is stolen",
-        "Your licence should arrive within a week if you apply online"
+        "A replacement licence costs £20 online",
+        "You should contact the police if it was stolen"
       ],
       "expected_urls": [
         "https://www.gov.uk/replace-a-driving-licence"
@@ -62,8 +58,7 @@
       "type": "single_page",
       "question": "How long do penalty points stay on my licence?",
       "key_facts": [
-        "Endorsements must stay on your driving record for 4 or 11 years, depending on the offence",
-        "You can be disqualified if you build up 12 or more penalty points within 3 years"
+        "Penalty points/endorsements stay on your driving record for 4 or 11 years, depending on the offence"
       ],
       "expected_urls": [
         "https://www.gov.uk/penalty-points-endorsements"
@@ -75,7 +70,7 @@
       "type": "single_page",
       "question": "How much does the car theory test cost?",
       "key_facts": [
-        "Car theory test costs £23 (motorcycle also £23)"
+        "The car theory test costs £23"
       ],
       "expected_urls": [
         "https://www.gov.uk/book-theory-test",
@@ -88,10 +83,8 @@
       "type": "single_page",
       "question": "How do I tell DVLA my car is off the road?",
       "key_facts": [
-        "Tell DVLA you're taking your vehicle off the road (a SORN)",
-        "You get a refund for any full months of remaining tax",
-        "You cannot use the vehicle on the road until you tax it again",
-        "You can apply online using the 11-digit V5C number or the 16-digit number on the tax reminder"
+        "Tell DVLA online (or by phone/post) that the vehicle is off the road: a SORN",
+        "You get a refund for any full months of remaining tax"
       ],
       "expected_urls": [
         "https://www.gov.uk/make-a-sorn"
@@ -103,10 +96,8 @@
       "type": "single_page",
       "question": "Can I get a refund on my vehicle tax if I sell my car?",
       "key_facts": [
-        "Cancel vehicle tax by telling DVLA the vehicle was sold or transferred (or SORN, scrapped, written off etc.); there's no other way to cancel",
-        "You get a refund for any full months of remaining tax",
-        "A Direct Debit is cancelled automatically",
-        "No refund for credit card fees or the 5% / 10% surcharges"
+        "You cancel vehicle tax by telling DVLA you sold or transferred the vehicle; there is no other way to cancel",
+        "You get a refund for any full months of remaining tax"
       ],
       "expected_urls": [
         "https://www.gov.uk/vehicle-tax-refund"
@@ -118,9 +109,8 @@
       "type": "single_page",
       "question": "Which vehicles are exempt from vehicle tax?",
       "key_facts": [
-        "Exempt vehicles include vehicles used by a disabled person, historic vehicles made before 1 January 1986, mobility vehicles and powered wheelchairs, mowing machines, steam vehicles, and agricultural/horticultural/forestry vehicles",
-        "From 1 April 2025 electric cars, vans, motorcycles and tricycles must pay vehicle tax; only HGVs over 3,500kg stay exempt",
-        "You must tax your vehicle even if you do not have to pay"
+        "Exempt vehicles include historic vehicles made before 1 January 1986 and vehicles used by a disabled person (other examples: mobility vehicles, mowing machines, steam vehicles, agricultural vehicles)",
+        "Electric cars are no longer exempt: from 1 April 2025 they must pay vehicle tax"
       ],
       "expected_urls": [
         "https://www.gov.uk/vehicle-exempt-from-vehicle-tax"
@@ -133,8 +123,7 @@
       "question": "How do I check the MOT history of a car?",
       "key_facts": [
         "You need the vehicle's number plate (registration number)",
-        "For cars, motorcycles and vans you can get results for tests done since 2005",
-        "The history shows pass/fail, recorded mileage and when the next MOT is due"
+        "The history shows past pass/fail results, recorded mileage and when the next MOT is due"
       ],
       "expected_urls": [
         "https://www.gov.uk/check-mot-history"
@@ -146,9 +135,7 @@
       "type": "single_page",
       "question": "How early can I get my MOT without losing my renewal date?",
       "key_facts": [
-        "You can get an MOT up to a month (minus a day) before it runs out and keep the same renewal date",
-        "Example: if the MOT runs out on 15 May, the earliest to keep the same date is 16 April",
-        "Earlier than that, the next renewal date becomes one year (minus a day) from the pass date"
+        "You can get an MOT up to a month (minus a day) before it runs out and keep the same renewal date"
       ],
       "expected_urls": [
         "https://www.gov.uk/getting-an-mot"
@@ -160,9 +147,8 @@
       "type": "single_page",
       "question": "What do I need to do when I sell my car?",
       "key_facts": [
-        "Tell DVLA you no longer own the vehicle (online, or by post if there's no log book)",
-        "Your vehicle tax will be cancelled",
-        "You'll get a refund for any full months of remaining vehicle tax"
+        "Tell DVLA you've sold or transferred the vehicle (online, or by post if there is no log book)",
+        "Your vehicle tax is cancelled and you get a refund for any full months left"
       ],
       "expected_urls": [
         "https://www.gov.uk/sold-bought-vehicle"
@@ -174,10 +160,8 @@
       "type": "single_page",
       "question": "How do I change the address on my V5C log book?",
       "key_facts": [
-        "It's usually free to update your V5C",
-        "You can change it online as the registered keeper to a new UK address, or by post (section 3 on new style log book, section 6 on old style)",
-        "If your vehicle needs taxing in the next 4 weeks, tax it online before changing the address",
-        "You can be fined up to £1,000 if you do not tell DVLA when your address changes"
+        "You can change the address online as the registered keeper, or by post",
+        "It is usually free to update your V5C"
       ],
       "expected_urls": [
         "https://www.gov.uk/change-address-v5c"
@@ -190,9 +174,7 @@
       "question": "What should I do if my car has been stolen?",
       "key_facts": [
         "Tell the police (dial 101) and your insurance company straight away",
-        "Have the registration number, make and model, and colour ready",
-        "You'll get a crime reference number to give your insurer",
-        "If the insurer pays out, you must tell DVLA the vehicle was sold to the insurance company"
+        "If the insurer pays out, you must tell DVLA the vehicle has been sold to the insurer"
       ],
       "expected_urls": [
         "https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
@@ -205,9 +187,7 @@
       "question": "What are the penalties for speeding?",
       "key_facts": [
         "The minimum penalty is a £100 fine and 3 penalty points",
-        "You could be disqualified with 12 or more points within 3 years",
-        "In court the fine is usually a percentage of weekly income, up to £1,000 (£2,500 on a motorway)",
-        "New drivers within 2 years of passing lose their licence at 6 or more points"
+        "You could be disqualified if you reach 12 or more points within 3 years"
       ],
       "expected_urls": [
         "https://www.gov.uk/speeding-penalties"
@@ -219,10 +199,8 @@
       "type": "single_page",
       "question": "How do I get my licence back after a driving ban?",
       "key_facts": [
-        "You must apply for a new licence to drive again after disqualification or revocation",
-        "For drink or drug driving you can reapply before the disqualification ends; DVLA sends a D27 form 56 days before (90 days for high risk offenders)",
-        "You cannot drive until the disqualification period is over",
-        "New drivers whose licence is cancelled within 2 years of passing must apply for a new provisional licence and retake both parts of the driving test"
+        "You must apply for a new licence to drive again",
+        "For drink or drug driving you can reapply before the disqualification ends, using the D27 form DVLA sends"
       ],
       "expected_urls": [
         "https://www.gov.uk/reapply-licence-revoked"
@@ -234,10 +212,8 @@
       "type": "single_page",
       "question": "Can I drive if I have diabetes?",
       "key_facts": [
-        "You must tell DVLA if insulin treatment lasts (or will last) over 3 months, or you get disabling hypoglycaemia",
-        "Report online or fill in form DIAB1 (car or motorbike licence)",
-        "You do not need to tell DVLA if the diabetes is treated by diet changes only",
-        "You can be fined up to £1,000 if you do not tell DVLA about a condition affecting your driving"
+        "You must tell DVLA if your insulin treatment lasts (or will last) over 3 months",
+        "You do not need to tell DVLA if the diabetes is treated by diet alone"
       ],
       "expected_urls": [
         "https://www.gov.uk/diabetes-driving"
@@ -249,9 +225,8 @@
       "type": "single_page",
       "question": "What are the eyesight rules for driving?",
       "key_facts": [
-        "You must be able to read a number plate from 20 metres away (with glasses or contact lenses if you use them)",
-        "Minimum visual acuity of at least decimal 0.5 (6/12) on the Snellen scale, plus an adequate field of vision",
-        "You must wear glasses or contact lenses every time you drive if you need them"
+        "You must be able to read a number plate from 20 metres away",
+        "Minimum visual acuity of decimal 0.5 (6/12) on the Snellen scale, with glasses or contact lenses if needed"
       ],
       "expected_urls": [
         "https://www.gov.uk/driving-eyesight-rules"
@@ -263,10 +238,8 @@
       "type": "single_page",
       "question": "How do I change the photo on my driving licence?",
       "key_facts": [
-        "It costs £14 when you apply online (£17 by post; no fee if over 70)",
-        "You can use your passport photo or upload a new one",
-        "A photocard licence must be renewed every 10 years",
-        "You cannot renew online if your name or title has changed or you have a 5-year bus or lorry licence"
+        "It costs £14 to change the photo online",
+        "You do this by renewing your licence (online, or by post for £17)"
       ],
       "expected_urls": [
         "https://www.gov.uk/renew-photo-driving-licence"
@@ -278,8 +251,8 @@
       "type": "single_page",
       "question": "What do the codes on my driving licence mean?",
       "key_facts": [
-        "Codes printed on the back of the licence say what conditions you must meet to drive",
-        "Examples: 01 eyesight correction; 78 restricted to automatic transmission; 70 exchange of licence; 71 duplicate of licence; 115 organ donor"
+        "The codes on the back of the licence set conditions you must meet to drive",
+        "Examples: 01 eyesight correction (glasses or contact lenses); 78 automatic transmission only"
       ],
       "expected_urls": [
         "https://www.gov.uk/driving-licence-codes"
@@ -291,10 +264,8 @@
       "type": "single_page",
       "question": "How do I swap my paper driving licence for a photocard?",
       "key_facts": [
-        "You only must get a new licence if you change address or name, want to do Driver CPC training, or the licence is defaced, lost, stolen or destroyed",
-        "It is free if you changed your name or address and still have your paper licence",
-        "It costs £20 if lost, stolen, destroyed, defaced or for any other reason",
-        "You cannot apply online if you changed your name; apply by post with D1 (car/bike) or D2 (lorry/bus)"
+        "You only have to exchange a paper licence if you change your address or name, want to do Driver CPC training, or it is defaced, lost, stolen or destroyed",
+        "It is free if you changed name or address and still have the paper licence; otherwise £20"
       ],
       "expected_urls": [
         "https://www.gov.uk/exchange-paper-driving-licence"
@@ -306,9 +277,8 @@
       "type": "single_page",
       "question": "How much does the driving test cost?",
       "key_facts": [
-        "Car driving test costs £62 on weekdays and £75 evenings, weekends and bank holidays",
-        "Car theory test costs £23",
-        "You have to pay the full amount again to rebook after failing"
+        "The car driving test costs £62 on weekdays",
+        "It costs £75 on evenings, weekends and bank holidays"
       ],
       "expected_urls": [
         "https://www.gov.uk/driving-test-cost"
@@ -320,11 +290,8 @@
       "type": "single_page",
       "question": "How do I change my driving test appointment?",
       "key_facts": [
-        "You can change a car driving test 2 times (6 times for other types of test)",
-        "You must change your car driving test yourself; your instructor is not allowed to",
-        "Changing more than one thing at once counts as one change",
-        "To change for free give 10 full working days' notice for car tests",
-        "If you need more changes you must cancel and book a new test"
+        "You can change a car driving test only 2 times",
+        "You must change it yourself; your instructor is not allowed to"
       ],
       "expected_urls": [
         "https://www.gov.uk/change-driving-test"
@@ -336,9 +303,8 @@
       "type": "single_page",
       "question": "How do I tax a car if I haven't received a tax reminder?",
       "key_facts": [
-        "You can use the 11-digit reference from your V5C if you are the current keeper, or the 12-digit reference on the green new keeper slip",
-        "You can also tax by phone (0300 123 4321) or at a Post Office",
-        "If you have neither V5C nor new keeper slip, a new V5C costs £25 (current keeper can tax at the same time)"
+        "You can tax online with the 11-digit reference number from your V5C (or the 12-digit number on the green new keeper slip)",
+        "You can also tax by phone or at a Post Office"
       ],
       "expected_urls": [
         "https://www.gov.uk/tax-vehicle-without-v11-reminder"
@@ -350,10 +316,9 @@
       "type": "multi_page",
       "question": "I've just bought a used car. What do I need to do to tax it and get it registered in my name?",
       "key_facts": [
-        "Tax the vehicle before you drive it, or declare it off the road (SORN); tax is not transferred when you buy a vehicle",
-        "Tax using the V5C reference or the 12-digit green new keeper slip number",
-        "If no V5C for the new vehicle, apply with form V62 plus the new keeper slip",
-        "If bought without a log book, apply for a registration certificate (V62)"
+        "You must tax the vehicle before you drive it; tax is not transferred when you buy a vehicle",
+        "Use the V5C or the green new keeper slip reference to tax it",
+        "If there is no V5C for the new vehicle, apply for one using form V62 with the new keeper slip"
       ],
       "expected_urls": [
         "https://www.gov.uk/sold-bought-vehicle",
@@ -367,10 +332,8 @@
       "type": "multi_page",
       "question": "I'm moving house. Which of my licence and vehicle records do I need to update?",
       "key_facts": [
-        "Change the address on your driving licence (free; fine up to £1,000 if you do not tell DVLA)",
-        "Update the vehicle log book V5C (usually free)",
-        "Update your vehicle tax Direct Debit if you pay that way",
-        "Update your personalised registration number document (V750 or V778) if you have one"
+        "Change the address on your driving licence",
+        "Change the address on your vehicle log book (V5C) and your vehicle tax Direct Debit, if you pay that way"
       ],
       "expected_urls": [
         "https://www.gov.uk/change-address-driving-licence",
@@ -383,10 +346,8 @@
       "type": "multi_page",
       "question": "My car is over 40 years old. Does it need an MOT, and does it need vehicle tax?",
       "key_facts": [
-        "No MOT needed if the vehicle was built or first registered more than 40 years ago and has had no substantial changes",
-        "Vehicle tax exemption applies to vehicles built before 1 January 1986 (from 1 April 2026); if build date unknown, registered before 8 January 1986",
-        "You must apply for the exemption and still tax the vehicle even if you do not pay",
-        "Exempt vehicle must be kept roadworthy; up to £2,500 fine and 3 points for dangerous condition"
+        "No MOT is needed if the vehicle was built or first registered more than 40 years ago and has had no substantial changes",
+        "Vehicles built before 1 January 1986 are exempt from vehicle tax, but you must still tax the vehicle (apply for the exemption)"
       ],
       "expected_urls": [
         "https://www.gov.uk/historic-vehicles",
@@ -399,11 +360,9 @@
       "type": "multi_page",
       "question": "I'm 17 and want to learn to drive. What licence and tests do I need, and what do they cost?",
       "key_facts": [
-        "Apply for a provisional licence from 15 years and 9 months; £34 online",
-        "You can usually start driving a car when you're 17",
-        "You must have a provisional licence and be supervised with L plates",
-        "Theory test £23 for cars; driving test £62 weekdays / £75 evenings and weekends",
-        "No minimum number of lessons"
+        "You can apply for a provisional licence from 15 years and 9 months (£34 online)",
+        "You must pass a theory test (£23) and a driving test (£62 weekdays)",
+        "You can usually start driving a car at 17"
       ],
       "expected_urls": [
         "https://www.gov.uk/apply-first-provisional-driving-licence",
@@ -417,10 +376,8 @@
       "type": "multi_page",
       "question": "My car has been written off. What do I tell DVLA and what happens to my vehicle tax?",
       "key_facts": [
-        "You must tell DVLA if the vehicle was written off and scrapped by your insurer; you can be fined £1,000 if you do not",
-        "Use the 11-digit reference in the yellow 'sell, transfer or part-exchange to the motor trade' section of the V5C",
-        "Take any personalised registration number off the vehicle",
-        "You get a tax refund for any full months left; a Direct Debit is cancelled automatically"
+        "You must tell DVLA the vehicle was written off and scrapped by your insurer (you can be fined £1,000 if not)",
+        "You get a vehicle tax refund for any full months left"
       ],
       "expected_urls": [
         "https://www.gov.uk/written-off-vehicle",
@@ -433,10 +390,8 @@
       "type": "multi_page",
       "question": "I'm over 70 and have a medical condition. How do I renew my driving licence?",
       "key_facts": [
-        "Renew online free from 70 (or within 90 days of turning 70) if you meet the eyesight requirement and are not prevented from driving",
-        "Renew every 3 years after 70",
-        "You must tell DVLA about medical conditions that affect driving, or be fined up to £1,000",
-        "You can drive while the renewal is processed only if your doctor supports you continuing to drive and other conditions are met"
+        "You can renew free online from 70 if you meet the eyesight requirement and nothing prevents you from driving",
+        "You must tell DVLA about medical conditions that affect your driving (fine of up to £1,000 if not)"
       ],
       "expected_urls": [
         "https://www.gov.uk/renew-driving-licence-at-70",
@@ -498,10 +453,7 @@
       "type": "recently_changed",
       "question": "How many times can I change my car driving test booking now?",
       "key_facts": [
-        "Since 31 March 2026 you can only make 2 changes to a car driving test booking (previously 6)",
-        "Changing the date, time or test centre counts as a change, as does swapping with another learner; changing several things at once counts as one",
-        "Address or contact detail updates, adding or removing the instructor reference, and changes DVSA makes (e.g. bad weather) do not count",
-        "After 2 changes you must cancel and book a new test (full refund if at least 10 full working days before)"
+        "You can only make 2 changes to a car driving test booking (it was 6 before 31 March 2026)"
       ],
       "expected_urls": [
         "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
@@ -514,10 +466,7 @@
       "type": "recently_changed",
       "question": "Can my driving instructor book or cancel my driving test for me?",
       "key_facts": [
-        "Since 12 May 2026 only the learner can book, change, swap or cancel their own car driving test",
-        "It is against the law for a driving instructor or anyone else to book a test for someone",
-        "Instructors can still set their availability using the instructor reference number",
-        "Tests already booked by instructors remain valid"
+        "Since 12 May 2026 only the learner can book, change or cancel their own car driving test; instructors are not allowed to"
       ],
       "expected_urls": [
         "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
@@ -530,9 +479,7 @@
       "type": "recently_changed",
       "question": "If I want to move my driving test to a different test centre, where can I move it to?",
       "key_facts": [
-        "Since 9 June 2026 you can only move your test to one of the 3 nearest test centres to where it is booked, or the centre you first booked at",
-        "For bookings made before 9 June 2026 the rule applies to where the test was booked on 9 June 2026",
-        "Moving counts as one of your 2 allowed changes"
+        "You can only move your test to one of the 3 nearest test centres to where it is booked (since 9 June 2026), or back to the centre you first booked"
       ],
       "expected_urls": [
         "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
@@ -544,11 +491,8 @@
       "type": "recently_changed",
       "question": "The mileage on my MOT record is wrong. How do I get it corrected?",
       "key_facts": [
-        "Use the online form if the MOT was more than 28 days ago; within 28 days ask the MOT centre / see how to report it",
-        "You must upload evidence of the correct mileage: invoice, emissions printout, service receipt, service history, or job card/inspection sheet",
-        "The document must show the registration number or VIN, the mileage, and a date within one day of the MOT test",
-        "An MOT certificate or a photo of the dashboard cannot be used as evidence",
-        "You'll usually get a reply within 8 weeks"
+        "Report it online (if the MOT was more than 28 days ago); within 28 days ask the MOT centre",
+        "You must upload evidence of the correct mileage, e.g. an invoice, emissions printout, service receipt or job card, dated within one day of the MOT"
       ],
       "expected_urls": [
         "https://www.gov.uk/report-a-mistake-on-your-mot-record"
@@ -560,11 +504,9 @@
       "type": "recently_changed",
       "question": "How do I set up a Direct Debit to pay my vehicle tax?",
       "key_facts": [
-        "Set up a Direct Debit when you tax your vehicle online or at a Post Office",
-        "You need your address and date of birth and your bank or building society name, account number and sort code",
-        "5% surcharge for paying monthly or every 6 months; no surcharge yearly",
-        "You cannot use an account that needs 2 signatures",
-        "First payment is not taken until the tax has started; later payments on the first working day of the month"
+        "Set it up when you tax your vehicle online or at a Post Office",
+        "You need your address, date of birth and bank or building society name, account number and sort code",
+        "There is a 5% surcharge for paying monthly or every 6 months, none for yearly"
       ],
       "expected_urls": [
         "https://www.gov.uk/vehicle-tax-direct-debit"
