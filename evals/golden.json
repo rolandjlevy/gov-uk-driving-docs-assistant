@@ -323,7 +323,8 @@
       "expected_urls": [
         "https://www.gov.uk/sold-bought-vehicle",
         "https://www.gov.uk/vehicle-tax",
-        "https://www.gov.uk/vehicle-log-book"
+        "https://www.gov.uk/vehicle-log-book",
+        "https://www.gov.uk/vehicle-registration"
       ],
       "checked_on": null
     },

@@ -34,9 +34,11 @@ for (const q of questions) {
   catch (e) { console.warn(`  ! ${q.id} failed: ${(e as Error).message}`); continue; }
   const judged = await judgeFacts(client, judgeModel, q, answer.answer);
   const code = scoreCode(q, answer);
-  const facts = judged.results.length ? judged.results.filter(Boolean).length / judged.results.length : null;
-  const scores: Scores = { ...code, facts, factResults: judged.results };
-  rows.push({ id: q.id, type: q.type, question: q.question, answer, scores, judgeUsage: judged.usage });
+  const facts = judged.results?.length ? judged.results.filter(Boolean).length / judged.results.length : null;
+  const judgeFailed = judged.results === null;
+  if (judgeFailed) console.warn(`  ! ${q.id}: judge reply unreadable, row not scored`);
+  const scores: Scores = { ...code, facts, factResults: judged.results ?? [], judgeFailed };
+  rows.push({ id: q.id, type: q.type, question: q.question, answer, scores, judgeUsage: judged.usage, judgeRaw: judged.raw });
   console.log(`${q.id} ${q.type.padEnd(16)} facts=${facts === null ? '-' : facts.toFixed(2)} retr=${code.retrieval ?? '-'} refusal=${code.refusalCorrect ? 'ok' : 'WRONG'} ${answer.ms}ms`);
 }
 await pool?.end();

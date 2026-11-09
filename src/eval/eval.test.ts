@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { parseReply } from './answer.js';
-import { parseJudge, scoreCode, summarise } from './score.js';
+import { judgeFacts, parseJudge, scoreCode, summarise } from './score.js';
 import { formatExtracts, modelAlone, oneSearchRag } from './systems.js';
 import type { GoldenQuestion } from './golden.js';
 
@@ -29,8 +29,8 @@ describe('scoreCode', () => {
 
 describe('parseJudge', () => {
   it('parses a matching array', () => expect(parseJudge('[true,false]', 2)).toEqual([true, false]));
-  it('marks all false on a bad reply', () => expect(parseJudge('nope', 2)).toEqual([false, false]));
-  it('marks all false on a wrong length', () => expect(parseJudge('[true]', 2)).toEqual([false, false]));
+  it('returns null on a bad reply, not all-false', () => expect(parseJudge('nope', 2)).toBeNull());
+  it('returns null on a wrong length', () => expect(parseJudge('[true]', 2)).toBeNull());
 });
 
 describe('systems', () => {
@@ -54,5 +54,20 @@ describe('summarise', () => {
     const s = summarise([row(1), row(0)]);
     expect(s.facts).toBe(0.5);
     expect(s.inputTokens).toBe(2);
+  });
+});
+
+describe('judgeFacts', () => {
+  const two = q({ key_facts: ['a', 'b'] });
+  it('retries once on an unreadable reply', async () => {
+    const replies = ['sorry', '[true,false]'];
+    const client = { messages: { create: async () => ({ content: [{ type: 'text', text: replies.shift() }], usage: { input_tokens: 1, output_tokens: 1 } }) } } as any;
+    const j = await judgeFacts(client, 'm', two, 'ans');
+    expect(j.results).toEqual([true, false]);
+    expect(j.usage.inputTokens).toBe(2);
+  });
+  it('reports failure (null) when both replies are unreadable', async () => {
+    const client = { messages: { create: async () => ({ content: [{ type: 'text', text: 'no' }], usage: { input_tokens: 1, output_tokens: 1 } }) } } as any;
+    expect((await judgeFacts(client, 'm', two, 'ans')).results).toBeNull();
   });
 });

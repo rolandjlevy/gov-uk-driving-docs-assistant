@@ -15,6 +15,8 @@ export interface Scores {
   /** Share of key facts the judge found stated correctly. null for not_covered. */
   facts: number | null;
   factResults: boolean[];
+  /** True when the judge's reply could not be read twice; facts is then null and the row is not scored. */
+  judgeFailed?: boolean;
 }
 
 const share = (num: number, den: number) => (den === 0 ? null : num / den);
@@ -36,7 +38,8 @@ const JUDGE_SYSTEM = `You mark answers to UK driving questions. You get a number
 For each fact say true only if the answer states it correctly (same figure, deadline or condition; wording may differ). Missing, vague or contradicted = false.
 Reply with only a JSON array of booleans, one per fact, in order.`;
 
-export function parseJudge(text: string, n: number): boolean[] {
+/** null means the reply could not be read: the caller must retry or record a judge failure, never score it as a miss. */
+export function parseJudge(text: string, n: number): boolean[] | null {
   const m = text.match(/\[[\s\S]*\]/);
   if (m) {
     try {
@@ -44,25 +47,35 @@ export function parseJudge(text: string, n: number): boolean[] {
       if (Array.isArray(arr) && arr.length === n) return arr.map((x) => x === true);
     } catch { /* fall through */ }
   }
-  return Array(n).fill(false);
+  return null;
 }
+
+export interface Judged { results: boolean[] | null; usage: Usage; raw: string }
 
 export async function judgeFacts(
   client: Pick<Anthropic, 'messages'>,
   model: string,
   q: GoldenQuestion,
   answer: string,
-): Promise<{ results: boolean[]; usage: Usage }> {
-  if (!q.key_facts.length) return { results: [], usage: { inputTokens: 0, outputTokens: 0 } };
+): Promise<Judged> {
+  const usage: Usage = { inputTokens: 0, outputTokens: 0 };
+  if (!q.key_facts.length) return { results: [], usage, raw: '' };
   const facts = q.key_facts.map((f, i) => `${i + 1}. ${f}`).join('\n');
-  const msg = await client.messages.create({
-    model,
-    max_tokens: 500,
-    system: JUDGE_SYSTEM,
-    messages: [{ role: 'user', content: `Question: ${q.question}\n\nRequired facts:\n${facts}\n\nAnswer:\n${answer || '(empty)'}` }],
-  });
-  const text = msg.content.map((b) => (b.type === 'text' ? b.text : '')).join('');
-  return { results: parseJudge(text, q.key_facts.length), usage: { inputTokens: msg.usage.input_tokens, outputTokens: msg.usage.output_tokens } };
+  let raw = '';
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const msg = await client.messages.create({
+      model,
+      max_tokens: 1000,
+      system: JUDGE_SYSTEM,
+      messages: [{ role: 'user', content: `Question: ${q.question}\n\nRequired facts:\n${facts}\n\nAnswer:\n${answer || '(empty)'}` }],
+    });
+    usage.inputTokens += msg.usage.input_tokens;
+    usage.outputTokens += msg.usage.output_tokens;
+    raw = msg.content.map((b) => (b.type === 'text' ? b.text : '')).join('');
+    const results = parseJudge(raw, q.key_facts.length);
+    if (results) return { results, usage, raw };
+  }
+  return { results: null, usage, raw };
 }
 
 export interface Summary {
