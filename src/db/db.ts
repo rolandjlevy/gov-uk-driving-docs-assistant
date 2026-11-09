@@ -2,10 +2,15 @@ import pg from 'pg';
 
 export type Pool = pg.Pool;
 
+/** `sslmode=require` is about to change meaning in `pg`. Neon has a normal public certificate, so ask for what it does today. */
+export function normaliseConnectionString(url: string): string {
+  return url.replace(/([?&])sslmode=require(?=&|$)/, '$1sslmode=verify-full');
+}
+
 export function getPool(): Pool {
   const url = process.env.GOV_UK_DB_URL;
   if (!url) throw new Error('GOV_UK_DB_URL is not set. Add the Neon connection string to .env.');
-  return new pg.Pool({ connectionString: url, max: 3 });
+  return new pg.Pool({ connectionString: normaliseConnectionString(url), max: 3 });
 }
 
 export const toVectorLiteral = (v: number[]) => `[${v.join(',')}]`;
