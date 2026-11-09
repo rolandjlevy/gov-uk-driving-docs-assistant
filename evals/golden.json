@@ -316,9 +316,9 @@
       "type": "multi_page",
       "question": "I've just bought a used car. What do I need to do to tax it and get it registered in my name?",
       "key_facts": [
-        "You must tax the vehicle before you drive it; tax is not transferred when you buy a vehicle",
-        "Use the V5C or the green new keeper slip reference to tax it",
-        "If there is no V5C for the new vehicle, apply for one using form V62 with the new keeper slip"
+        "You must tax the vehicle before you can use it on the road; the previous owner's tax is not transferred to you",
+        "The seller usually registers a used vehicle for you (online or by post) and gives you the green 'new keeper' slip",
+        "You can tax it using the reference number from the green new keeper slip (or the V5C if it is already in your name)"
       ],
       "expected_urls": [
         "https://www.gov.uk/sold-bought-vehicle",
