@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "ingest": "tsx scripts/ingest.ts",
-    "search": "tsx scripts/search.ts"
+    "search": "tsx scripts/search.ts",
+    "slice:discover": "tsx scripts/slice-discover.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.60.0",
