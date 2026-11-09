@@ -1,0 +1,1556 @@
+[
+  {
+    "path": "/driver-vehicles-account",
+    "title": "Driver and vehicles account: sign in or set up",
+    "format": "answer",
+    "description": "You can use this account to view your driving record, check details of vehicles and set up vehicle tax reminders with DVLA.",
+    "queries": [
+      "renew driving licence",
+      "change driving licence details",
+      "vehicle tax",
+      "tax a vehicle",
+      "SORN declare vehicle off road",
+      "MOT",
+      "penalty points endorsements",
+      "DVLA medical conditions driving",
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/change-address-driving-licence",
+    "title": "Change the address on your driving licence",
+    "format": "guide",
+    "description": "Change the address on your full or provisional driving licence for free - do it online or by post.",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "change driving licence details",
+      "provisional driving licence",
+      "vehicle tax",
+      "tax a vehicle",
+      "V5C registration certificate",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/get-vehicle-information-from-dvla",
+    "title": "Get vehicle information from DVLA",
+    "format": "transaction",
+    "description": "Check a vehicle's details, tax and SORN status and expiry dates on the Driver Vehicle and Licensing Agency (DVLA) database - online and telephone enquiries",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "vehicle tax",
+      "tax a vehicle",
+      "SORN declare vehicle off road",
+      "MOT",
+      "V5C registration certificate",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/book-driving-test",
+    "title": "Book your driving test",
+    "format": "transaction",
+    "description": "Book your official DVSA practical driving test for cars from £62, or other types of practical driving tests, including motorcycle and driving instructor tests.",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "change driving licence details",
+      "provisional driving licence",
+      "driving test",
+      "theory test",
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/change-address-v5c",
+    "title": "Change your address on your vehicle log book (V5C)",
+    "format": "guide",
+    "description": "Update your vehicle log book (V5C) and send it to DVLA to change your address.",
+    "queries": [
+      "change driving licence details",
+      "vehicle tax",
+      "tax a vehicle",
+      "MOT",
+      "MOT test exemption",
+      "sell or transfer a vehicle",
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/vehicle-tax",
+    "title": "Tax your vehicle",
+    "format": "transaction",
+    "description": "Renew or tax your vehicle for the first time using a reminder letter, your log book or the green 'new keeper' slip - and how to tax if you do not have any documents",
+    "queries": [
+      "renew driving licence",
+      "vehicle tax",
+      "tax a vehicle",
+      "SORN declare vehicle off road",
+      "sell or transfer a vehicle",
+      "DVLA medical conditions driving",
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/apply-first-provisional-driving-licence",
+    "title": "Apply for your first provisional driving licence",
+    "format": "answer",
+    "description": "Apply for your first provisional driving licence from DVLA online to drive a car, motorbike or moped.",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "change driving licence details",
+      "provisional driving licence",
+      "learn to drive",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/check-mot-history",
+    "title": "Check the MOT history of a vehicle",
+    "format": "transaction",
+    "description": "Check the MOT history of a vehicle from 2005 onwards, including if it passed or failed, its mileage and why it failed, download MOT test certificate",
+    "queries": [
+      "SORN declare vehicle off road",
+      "MOT",
+      "MOT test exemption",
+      "sell or transfer a vehicle",
+      "V5C registration certificate",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/check-vehicle-tax",
+    "title": "Check if a vehicle is taxed",
+    "format": "transaction",
+    "description": "Check and report if a vehicle has up-to-date vehicle tax or is 'off road' (SORN)",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "SORN declare vehicle off road",
+      "sell or transfer a vehicle",
+      "V5C registration certificate",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/penalty-points-endorsements",
+    "title": "Penalty points (endorsements)",
+    "format": "guide",
+    "description": "You could get penalty points (endorsements) on your driving record if you're convicted of a motoring offence ",
+    "queries": [
+      "renew driving licence",
+      "provisional driving licence",
+      "penalty points endorsements",
+      "DVLA medical conditions driving",
+      "speeding fines driving offences",
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/view-driving-licence",
+    "title": "View or share your driving licence information",
+    "format": "transaction",
+    "description": "Find out what information DVLA holds about your driving licence or create a check code to share your driving record, for example to hire a car ",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "provisional driving licence",
+      "penalty points endorsements",
+      "speeding fines driving offences",
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/change-driving-test",
+    "title": "Change your driving test appointment",
+    "format": "transaction",
+    "description": "Find an earlier practical driving test, move it to a later date or change your test centre: how changes work, refunds and how much notice you need to give. ",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "provisional driving licence",
+      "driving test",
+      "theory test"
+    ]
+  },
+  {
+    "path": "/check-mot-status",
+    "title": "Check the MOT status of a vehicle",
+    "format": "transaction",
+    "description": "Find out the MOT test status of a vehicle - check the date of the MOT test and the expiry date of an MOT test pass. \r\n",
+    "queries": [
+      "SORN declare vehicle off road",
+      "MOT",
+      "MOT test exemption",
+      "V5C registration certificate",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/contact-the-dvla",
+    "title": "Contact DVLA",
+    "format": "simple_smart_answer",
+    "description": "Find the right phone number, email or postal address to contact DVLA about driving licences, vehicle tax, medical enquiries and vehicle registration\r\n",
+    "queries": [
+      "driving licence",
+      "vehicle tax",
+      "tax a vehicle",
+      "SORN declare vehicle off road",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/pay-dartford-crossing-charge",
+    "title": "Pay the Dartford Crossing charge (Dart Charge)",
+    "format": "guide",
+    "description": "Paying the Dart Charge: costs, creating an account, paying a fine or Penalty Charge Notice (PCN), applying for a local resident discount.",
+    "queries": [
+      "change driving licence details",
+      "vehicle tax",
+      "tax a vehicle",
+      "V5C registration certificate",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/personalised-vehicle-registration-numbers",
+    "title": "Private (personalised) number plates",
+    "format": "guide",
+    "description": "Buy a private (personalised) number plate, assign it or transfer it to a vehicle - renew or update your entitlement certificate.",
+    "queries": [
+      "MOT test exemption",
+      "sell or transfer a vehicle",
+      "V5C registration certificate",
+      "DVLA medical conditions driving",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/renew-driving-licence",
+    "title": "Renew your driving licence",
+    "format": "answer",
+    "description": "Apply online to renew your 10-year driving licence, full or provisional - cost, payment methods, documents and information you need",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "change driving licence details",
+      "provisional driving licence",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/sold-bought-vehicle",
+    "title": "Tell DVLA you've sold, transferred or bought a vehicle",
+    "format": "simple_smart_answer",
+    "description": "Tell DVLA you've sold your vehicle or transferred it to a new registered keeper (owner), or that you've bought a vehicle",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "SORN declare vehicle off road",
+      "sell or transfer a vehicle",
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/book-theory-test",
+    "title": "Book your theory test",
+    "format": "transaction",
+    "description": "Book your official DVSA car or motorcycle theory test for £23, or other lorry, bus and Driver CPC theory tests.",
+    "queries": [
+      "driving licence",
+      "provisional driving licence",
+      "driving test",
+      "theory test"
+    ]
+  },
+  {
+    "path": "/change-vehicle-tax-class",
+    "title": "Change your vehicle's tax class",
+    "format": "guide",
+    "description": "Change the amount of vehicle tax you pay when you change your vehicle's engine size, fuel type, or if it becomes exempt from vehicle tax.",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "MOT test exemption",
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/renew-driving-licence-at-70",
+    "title": "Renew your driving licence if you're 70 or over",
+    "format": "transaction",
+    "description": "Renew your driving licence online if you're 70 or over. Use form D46P to apply by post.",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "change driving licence details",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/renew-medical-driving-licence",
+    "title": "Renew your short-term medical driving licence",
+    "format": "transaction",
+    "description": "Reapply for a short-term medical driving licence issued for 1, 2, 3 or 5 years because of a medical condition",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "provisional driving licence",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/replace-a-driving-licence",
+    "title": "Replace a lost, stolen, damaged or destroyed driving licence",
+    "format": "guide",
+    "description": "Replace your full or provisional driving licence with DVLA if it's been lost, stolen, damaged or destroyed.",
+    "queries": [
+      "driving licence",
+      "renew driving licence",
+      "change driving licence details",
+      "provisional driving licence"
+    ]
+  },
+  {
+    "path": "/vehicle-tax-direct-debit",
+    "title": "Vehicle tax Direct Debit payments",
+    "format": "guide",
+    "description": "Set up, change or cancel your car tax Direct Debit, swap to another payment method, and what to do if you miss a Direct Debit payment",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "SORN declare vehicle off road",
+      "MOT"
+    ]
+  },
+  {
+    "path": "/buy-a-personalised-registration-number",
+    "title": "Buy a personalised registration number",
+    "format": "transaction",
+    "description": "Search for a personalised number plate registration and buy it from DVLA online or at auction",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/check-driving-information",
+    "title": "Check someone's driving licence information",
+    "format": "transaction",
+    "description": "Check someone's driving record - vehicles they can drive, penalty points and disqualifications",
+    "queries": [
+      "driving licence",
+      "penalty points endorsements",
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/driving-disqualifications",
+    "title": "Driving disqualifications",
+    "format": "guide",
+    "description": "When you can be banned from driving, check when your driving ban ends, reduce your disqualification period, disqualified until you've passed your test, drink-driving offences",
+    "queries": [
+      "penalty points endorsements",
+      "learn to drive",
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/driving-licence-fees",
+    "title": "Driving licence fees",
+    "format": "answer",
+    "description": "Fees to renew, exchange or amend your full or provisional driving licence - or to get a duplicate if yours has been lost, stolen or damaged",
+    "queries": [
+      "renew driving licence",
+      "provisional driving licence",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/driving-test",
+    "title": "Driving test: cars",
+    "format": "guide",
+    "description": "When to book your car driving test, what to take with you, what happens during the test, major and minor faults, and what happens if your test is cancelled.",
+    "queries": [
+      "provisional driving licence",
+      "driving test",
+      "learn to drive"
+    ]
+  },
+  {
+    "path": "/historic-vehicles",
+    "title": "Historic (classic) vehicles: MOT and vehicle tax",
+    "format": "guide",
+    "description": "Vehicle tax exemptions and MOT exemptions for vehicles built or first registered before 1986.\r\n",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "MOT"
+    ]
+  },
+  {
+    "path": "/make-a-sorn",
+    "title": "Register your vehicle as off the road (SORN)",
+    "format": "transaction",
+    "description": "Register your vehicle as off the road - you will not need to pay vehicle tax until you put it on the road again",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "SORN declare vehicle off road"
+    ]
+  },
+  {
+    "path": "/personal-tax-account",
+    "title": "Personal tax account: sign in or set up",
+    "format": "answer",
+    "description": "Sign into or set up a personal tax account to check and manage HMRC records, including Income Tax, change of address, Self Assessment and company car tax.",
+    "queries": [
+      "change driving licence details",
+      "vehicle tax",
+      "tax a vehicle"
+    ]
+  },
+  {
+    "path": "/tax-vehicle-without-v11-reminder",
+    "title": "Tax your vehicle without a vehicle tax reminder",
+    "format": "answer",
+    "description": "Renew or get vehicle tax if you do not have your reminder letter (V11), email or text message - renew online or at the Post Office with your V5C.",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/theory-test",
+    "title": "Theory test: cars",
+    "format": "guide",
+    "description": "When to book your car theory test, what to take with you, what happens at the test centre, how the multiple-choice questions and hazard perception test work, and the pass mark.",
+    "queries": [
+      "provisional driving licence",
+      "theory test",
+      "learn to drive"
+    ]
+  },
+  {
+    "path": "/universal-credit",
+    "title": "Universal Credit",
+    "format": "guide",
+    "description": "Universal Credit is replacing 6 other benefits with a single monthly payment if you're out of work or on a low income - eligibility, how to prepare.",
+    "queries": [
+      "change driving licence details",
+      "learn to drive",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/vehicle-tax-rate-tables",
+    "title": "Vehicle tax rates",
+    "format": "guide",
+    "description": "Tables showing the rates for vehicle tax for different types of vehicle.",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/vehicle-tax-refund",
+    "title": "Cancel your vehicle tax and get a refund",
+    "format": "answer",
+    "description": "Your vehicle tax is cancelled and you get a refund for any full months of remaining tax when you tell DVLA you no longer have the vehicle or it's off the road",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle",
+      "SORN declare vehicle off road"
+    ]
+  },
+  {
+    "path": "/change-name-driving-licence",
+    "title": "Change the name or gender on your driving licence",
+    "format": "answer",
+    "description": "Change the name, title or gender on your driving licence by completing form D1 and sending it with your licence and supporting documents to DVLA.",
+    "queries": [
+      "driving licence",
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/change-theory-test",
+    "title": "Change your theory test appointment",
+    "format": "transaction",
+    "description": "Find an earlier driving theory test, move it to a later date, or change the test centre you take it at.",
+    "queries": [
+      "driving test",
+      "theory test"
+    ]
+  },
+  {
+    "path": "/check-state-pension",
+    "title": "Check your State Pension forecast",
+    "format": "transaction",
+    "description": "Find out how much State Pension you could get (your forecast), when you could get it and how you could increase it",
+    "queries": [
+      "driving licence",
+      "change driving licence details"
+    ]
+  },
+  {
+    "path": "/check-tax-rates-new-unregistered-cars",
+    "title": "Check tax rates for new unregistered cars",
+    "format": "transaction",
+    "description": "Use the online tool to find the tax rate for new unregistered cars",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle"
+    ]
+  },
+  {
+    "path": "/driving-test-cost",
+    "title": "Driving test costs",
+    "format": "answer",
+    "description": "The cost of theory tests and driving tests for cars, lorries, buses, motorcycles and other vehicles",
+    "queries": [
+      "driving test",
+      "theory test"
+    ]
+  },
+  {
+    "path": "/exchange-paper-driving-licence",
+    "title": "Exchange your paper driving licence for a photocard licence",
+    "format": "transaction",
+    "description": "Exchange your paper driving licence for a new photocard licence online.",
+    "queries": [
+      "driving licence",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/get-stop-view-mot-reminder",
+    "title": "Get, view or stop MOT reminders",
+    "format": "answer",
+    "description": "Sign up to get free text or email reminders before your MOT is due. View or cancel existing MOT reminders.",
+    "queries": [
+      "MOT",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/getting-an-mot",
+    "title": "Getting an MOT",
+    "format": "guide",
+    "description": "When you need an MOT for your vehicle, what it costs and what happens if your vehicle fails.",
+    "queries": [
+      "MOT",
+      "MOT test exemption"
+    ]
+  },
+  {
+    "path": "/guidance/driving-a-van",
+    "title": "Driving a van",
+    "format": "detailed_guide",
+    "description": "Who can drive a van, the speed limits and weight limits that apply, and rules on loading, drivers' hours and maintenance.",
+    "queries": [
+      "MOT test exemption",
+      "speeding fines driving offences"
+    ]
+  },
+  {
+    "path": "/guidance/verify-your-identity-for-companies-house",
+    "title": "Verify your identity for Companies House",
+    "format": "detailed_guide",
+    "description": "Use this service to verify your identity for Companies House.",
+    "queries": [
+      "change driving licence details",
+      "provisional driving licence"
+    ]
+  },
+  {
+    "path": "/health-conditions-and-driving",
+    "title": "Check if a health condition affects your driving",
+    "format": "guide",
+    "description": "Check if you need to tell DVLA about a health or medical condition, how to report medical conditions to DVLA\r\n",
+    "queries": [
+      "learn to drive",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/id-for-driving-licence",
+    "title": "Identity documents needed for a driving licence application",
+    "format": "answer",
+    "description": "If you do not have a UK passport there are other identity documents you can use for your driving licence application",
+    "queries": [
+      "driving licence",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/mot-testing-service",
+    "title": "Record MOT test results",
+    "format": "transaction",
+    "description": "Use the MOT testing service to record MOT test results, update your examiner details, and check and buy MOT slots.",
+    "queries": [
+      "MOT",
+      "MOT test exemption"
+    ]
+  },
+  {
+    "path": "/reapply-licence-revoked",
+    "title": "Reapply for your driving licence if you've been disqualified",
+    "format": "answer",
+    "description": "How to reapply for your driving licence, full or provisional, if you've been disqualified for drink driving or other offences.",
+    "queries": [
+      "provisional driving licence",
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/renew-lorry-bus-coach-licence",
+    "title": "Renew or change a lorry or bus licence",
+    "format": "guide",
+    "description": "Driving licence renewals - find out when and how to renew your lorry, bus, minibus or coach licence.",
+    "queries": [
+      "renew driving licence",
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/replacing-lost-damaged-mot-certificate",
+    "title": "Replace a lost or damaged MOT certificate",
+    "format": "transaction",
+    "description": "Get a replacement MOT certificate online if yours is lost or damaged - what you’ll need, other ways to apply, what it costs.",
+    "queries": [
+      "MOT",
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/report-no-mot",
+    "title": "Report a vehicle with no MOT",
+    "format": "answer",
+    "description": "Contact the police to report a vehicle with no MOT - you need the vehicle's number plate, make, model and colour.",
+    "queries": [
+      "MOT",
+      "number plates"
+    ]
+  },
+  {
+    "path": "/scrapped-and-written-off-vehicles",
+    "title": "Scrapping your vehicle and insurance write-offs",
+    "format": "guide",
+    "description": "Scrap your vehicle at an authorised treatment facility if it’s reached the end of its life and you want to dispose of it",
+    "queries": [
+      "sell or transfer a vehicle",
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/tell-employer-or-college-about-criminal-record",
+    "title": "Check if you need to tell someone about your criminal record",
+    "format": "guide",
+    "description": "When to tell a potential employer, university, college or insurance company about a criminal record, when it becomes 'spent' and what shows up on a DBS check.",
+    "queries": [
+      "penalty points endorsements",
+      "speeding fines driving offences"
+    ]
+  },
+  {
+    "path": "/track-your-driving-licence-application",
+    "title": "Track your driving licence application",
+    "format": "answer",
+    "description": "Track your driving licence application if you've already made an online application",
+    "queries": [
+      "driving licence",
+      "renew driving licence"
+    ]
+  },
+  {
+    "path": "/vehicle-exempt-from-vehicle-tax",
+    "title": "Vehicles exempt from vehicle tax",
+    "format": "answer",
+    "description": "Types of vehicle that are free to tax (exempt), including vehicles used by disabled people, mobility scooters, and historic vehicles",
+    "queries": [
+      "vehicle tax",
+      "tax a vehicle"
+    ]
+  },
+  {
+    "path": "/vehicle-registration",
+    "title": "Vehicle registration",
+    "format": "guide",
+    "description": "How to register your vehicle and the cost: including new registrations, kit-built vehicles, repairs and restorations, and structural modifications.",
+    "queries": [
+      "MOT test exemption",
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/access-to-work",
+    "title": "Access to Work: get support if you have a disability or health condition",
+    "format": "guide",
+    "description": "Get help at work, including an Access to Work grant, if you have a disability or health condition - eligibility, how to apply.",
+    "queries": [
+      "learn to drive"
+    ]
+  },
+  {
+    "path": "/adi-part-1-test",
+    "title": "Approved driving instructor (ADI) part 1 test",
+    "format": "guide",
+    "description": "Taking the approved driving instructor (ADI) part 1 test - what you need to bring and what happens during the test",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/adi-part-2-test",
+    "title": "Approved driving instructor (ADI) part 2 test",
+    "format": "guide",
+    "description": "Taking the approved driving instructor (ADI) part 2 test - what you need to bring and what happens during the test.",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/adi-part-3-test",
+    "title": "Approved driving instructor (ADI) part 3 test",
+    "format": "guide",
+    "description": "Taking the approved driving instructor (ADI) part 3 test - what you need to bring and what happens during the test.",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/apply-blue-badge",
+    "title": "Apply for or renew a Blue Badge",
+    "format": "transaction",
+    "description": "Check if you're eligible for a Blue Badge and apply or renew",
+    "queries": [
+      "renew driving licence"
+    ]
+  },
+  {
+    "path": "/apply-for-your-full-driving-licence",
+    "title": "Getting your full driving licence",
+    "format": "answer",
+    "description": "How to get your full driving licence once you've passed your driving test - driving test certificate, photocard, provisional, paper licences",
+    "queries": [
+      "provisional driving licence"
+    ]
+  },
+  {
+    "path": "/become-an-lgv-driving-instructor",
+    "title": "Become an LGV driving instructor",
+    "format": "answer",
+    "description": "How to become a large goods vehicle (LGV) instructor to provide training to people learning to drive lorries",
+    "queries": [
+      "learn to drive"
+    ]
+  },
+  {
+    "path": "/become-lorry-bus-driver",
+    "title": "Become a qualified heavy goods vehicle (HGV) or bus driver",
+    "format": "guide",
+    "description": "Qualify as an HGV or bus driver, requalify if you used to drive an HGV or bus, get a provisional licence, take the Driver Certificate of Professional Competence (CPC) tests. ",
+    "queries": [
+      "provisional driving licence"
+    ]
+  },
+  {
+    "path": "/book-pupil-driving-test",
+    "title": "Book and manage driving and riding tests for your pupils",
+    "format": "transaction",
+    "description": "Book driving and motorcycle tests for your pupils, check details, change, swap or cancel tests, and manage your availability for car driving tests.",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/book-pupil-theory-test",
+    "title": "Book and manage theory tests for your pupils",
+    "format": "transaction",
+    "description": "Book theory tests for your pupils, check or change appointment details, or cancel tests.",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/book-your-instructor-theory-test",
+    "title": "Book your instructor theory test",
+    "format": "transaction",
+    "description": "Book your approved driving instructor (ADI) or become a DVSA enhanced rider scheme trainer.",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/cancel-driving-test",
+    "title": "Cancel your driving test",
+    "format": "transaction",
+    "description": "Cancel your practical driving or riding test if you no longer need it: how much notice to give, getting a refund and what to do if you have to cancel at short notice. ",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/cancel-theory-test",
+    "title": "Cancel your theory test",
+    "format": "transaction",
+    "description": "Cancel your driving theory test if you no longer need your appointment - give 3 working days' notice to get a refund.",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/capital-gains-tax",
+    "title": "Capital Gains Tax: what you pay it on, rates and allowances",
+    "format": "guide",
+    "description": "What Capital Gains Tax (CGT) is, how to work it out, current CGT rates and how to pay.",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  },
+  {
+    "path": "/change-vehicle-details-registration-certificate",
+    "title": "Change vehicle details on a V5C registration certificate (log book)",
+    "format": "guide",
+    "description": "Updating your V5C registration certificate (log book) if you make changes to your vehicle.",
+    "queries": [
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/charge-reclaim-record-vat",
+    "title": "Charge, reclaim and record VAT",
+    "format": "guide",
+    "description": "How to charge VAT, calculate VAT, VAT rates, reclaim VAT on business expenses, keep digital records.",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  },
+  {
+    "path": "/check-change-cancel-your-instructor-theory-test",
+    "title": "Check, change or cancel your instructor theory test",
+    "format": "transaction",
+    "description": "Check, change or cancel your approved driving instructor (ADI) or enhanced rider scheme trainer theory test.",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/check-driving-test",
+    "title": "Check your driving test appointment details",
+    "format": "transaction",
+    "description": "Check the date and time of your driving test appointment if you've lost or deleted your driving test confirmation email.",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/check-income-tax-current-year",
+    "title": "Check your Income Tax for the current year",
+    "format": "answer",
+    "description": "Check your Income Tax, Personal Allowance and tax code for the current tax year. Update details of your income from jobs and pensions. ",
+    "queries": [
+      "change driving licence details"
+    ]
+  },
+  {
+    "path": "/check-national-insurance-record",
+    "title": "Check your National Insurance record",
+    "format": "transaction",
+    "description": "Find out if you've paid enough National Insurance to qualify for the full State Pension - check gaps, contributions and credits, get a National Insurance statement, call the helpline.",
+    "queries": [
+      "change driving licence details"
+    ]
+  },
+  {
+    "path": "/check-theory-test",
+    "title": "Check your theory test appointment details",
+    "format": "transaction",
+    "description": "Check the date and time of your theory test appointment if you've lost or deleted your theory test confirmation email",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/checks-when-buying-a-used-car",
+    "title": "Check a used vehicle you’re buying",
+    "format": "answer",
+    "description": "Check registration, MOT, tax, vehicle identification number and other details to help make sure a used car is not stolen or unsafe",
+    "queries": [
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/clean-air-zones",
+    "title": "Drive in a clean air zone",
+    "format": "transaction",
+    "description": "Find out if you need to pay to drive in a clean air zone and check your vehicle meets emission standards.",
+    "queries": [
+      "number plates"
+    ]
+  },
+  {
+    "path": "/diabetes-driving",
+    "title": "Diabetes and driving",
+    "format": "answer",
+    "description": "You may need to tell DVLA if you have diabetes, depending on the treatment you're getting",
+    "queries": [
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/displaying-number-plates",
+    "title": "Displaying number plates",
+    "format": "guide",
+    "description": "How to display number or licence plates, get plates made up, replace lost, damaged or stolen plates, and the national letters, flags and symbols you can display.",
+    "queries": [
+      "number plates"
+    ]
+  },
+  {
+    "path": "/driving-eyesight-rules",
+    "title": "Driving eyesight rules",
+    "format": "answer",
+    "description": "The eyesight rules to pass your driving test and for whenever you're driving.",
+    "queries": [
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/driving-lessons-learning-to-drive",
+    "title": "Driving lessons and learning to drive",
+    "format": "guide",
+    "description": "Who can teach you to drive, practising with friends and family, driving lessons, insurance, using L and P plates.",
+    "queries": [
+      "learn to drive"
+    ]
+  },
+  {
+    "path": "/driving-licence-categories",
+    "title": "Driving licence categories",
+    "format": "answer",
+    "description": "Driving licence categories - entitlements on your licence and what vehicles you can drive - cars, motorcycles, mopeds, medium and large lorries, minibuses and buses.",
+    "queries": [
+      "driving licence"
+    ]
+  },
+  {
+    "path": "/driving-licence-codes",
+    "title": "Driving licence codes",
+    "format": "answer",
+    "description": "Codes that DVLA places on your driving licence, and their explanations",
+    "queries": [
+      "driving licence"
+    ]
+  },
+  {
+    "path": "/driving-medical-conditions",
+    "title": "Medical conditions, disabilities and driving",
+    "format": "guide",
+    "description": "When to tell DVLA about a medical condition or disability - what will happen to your licence, renewing or reapplying for your licence.",
+    "queries": [
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/employing-people-to-drive",
+    "title": "Employing people to drive",
+    "format": "answer",
+    "description": "You must make sure that anyone you employ to drive a vehicle has the right licence and qualifications - tachographs, lorry, bus, coach, minibus",
+    "queries": [
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/eta",
+    "title": "Get an electronic travel authorisation (ETA) to visit the UK",
+    "format": "guide",
+    "description": "Apply for an ETA to come to the UK if you’re a tourist, visiting family or for certain other reasons for up to 6 months. It costs £20. Find out if you need an ETA or a visa instead.",
+    "queries": [
+      "change driving licence details"
+    ]
+  },
+  {
+    "path": "/financial-help-disabled",
+    "title": "Financial help if you're disabled",
+    "format": "guide",
+    "description": "Financial help if you're disabled - benefits, housing costs, council tax, vehicle tax exemption, TV Licence, motability schemes, VAT relief",
+    "queries": [
+      "MOT test exemption"
+    ]
+  },
+  {
+    "path": "/find-mot-test-centre-hgv-bus-trailer",
+    "title": "Find an MOT test centre for a heavy goods vehicle (HGV), bus or trailer ",
+    "format": "transaction",
+    "description": "Find a test centre and book an MOT (annual test) for a heavy goods vehicle (HGV), public service vehicle (PSV) or trailer in England, Scotland and Wales",
+    "queries": [
+      "MOT"
+    ]
+  },
+  {
+    "path": "/find-theory-test-pass-number",
+    "title": "Find your lost theory test pass certificate number",
+    "format": "answer",
+    "description": "Find your lost theory test pass certificate number if you need it to book your driving test",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/get-a-passport-urgently",
+    "title": "Get a passport urgently",
+    "format": "answer",
+    "description": "Renew or replace a passport urgently with the 1 day Premium service or the 1 week Fast Track service.",
+    "queries": [
+      "renew driving licence"
+    ]
+  },
+  {
+    "path": "/giving-up-your-driving-licence",
+    "title": "Voluntarily surrendering your driving licence ",
+    "format": "answer",
+    "description": "How to give up your driving licence - age, medical condition, standards of fitness, declaration of voluntary surrender",
+    "queries": [
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/guidance/appeal-your-driving-test",
+    "title": "Appeal your driving test",
+    "format": "detailed_guide",
+    "description": "You can appeal to a court about your driving test if your examiner did not follow the law, but your test result cannot be changed.",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/guidance/become-a-fleet-driver-trainer",
+    "title": "Become a fleet driver trainer",
+    "format": "detailed_guide",
+    "description": "How to join the voluntary register of fleet driver trainers, including eligibility, how to apply, renewing your registration, fees and standards checks.",
+    "queries": [
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/guidance/bingo-duty-excise-notice-457",
+    "title": "Bingo Duty (Excise Notice 457)",
+    "format": "detailed_guide",
+    "description": "Find out about Bingo Duty, how the duty is charged and who has to pay.",
+    "queries": [
+      "penalty points endorsements"
+    ]
+  },
+  {
+    "path": "/guidance/bringing-a-ukrainian-vehicle-into-the-uk-tax-and-registration",
+    "title": "Bringing a Ukrainian vehicle into the UK – tax and registration",
+    "format": "detailed_guide",
+    "description": "Vehicle tax and registration rules for people with a Ukrainian plated vehicle who have been issued a visa on the Family, Sponsor or Extension Ukraine visa schemes, or the Ukraine Permission Extension visa scheme.",
+    "queries": [
+      "MOT test exemption"
+    ]
+  },
+  {
+    "path": "/guidance/changes-to-driving-test-booking-rules-in-2026",
+    "title": "Changes to driving test booking rules in 2026",
+    "format": "detailed_guide",
+    "description": "The rules for booking and managing car driving tests have now changed. Find out what the new rules are and how they affect you.",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/guidance/claim-expenses-if-dvsa-cancelled-your-theory-test",
+    "title": "Claim expenses if DVSA cancelled your theory test",
+    "format": "detailed_guide",
+    "description": "Claim expenses if your theory test was cancelled with less than 3 full working days' notice, including travel costs or lost pay from unpaid leave.",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/guidance/create-a-goods-movement-reference",
+    "title": "Create a goods movement reference",
+    "format": "detailed_guide",
+    "description": "Get a goods movement reference to move goods through locations which use the Goods Vehicle Movement Service.",
+    "queries": [
+      "penalty points endorsements"
+    ]
+  },
+  {
+    "path": "/guidance/dangerous-goods-vehicles-get-an-mot-and-adr-test",
+    "title": "Dangerous goods vehicles: get an MOT and ADR test",
+    "format": "detailed_guide",
+    "description": "How to find an MOT centre to test your dangerous goods vehicle, declare it’s safe to be tested, and what to bring to the test.",
+    "queries": [
+      "MOT test exemption"
+    ]
+  },
+  {
+    "path": "/guidance/driving-test-appointments-release-dates-and-finding-earlier-tests",
+    "title": "Driving test appointments: release dates and finding earlier tests",
+    "format": "detailed_guide",
+    "description": "Find out when driving test appointments are released, when to search for earlier tests, and how long people wait to take the test.",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/guidance/drug-or-alcohol-misuse-or-dependence-assessing-fitness-to-drive",
+    "title": "Drug or alcohol misuse or dependence: assessing fitness to drive",
+    "format": "detailed_guide",
+    "description": "Advice for medical professionals to follow when assessing drivers with drug or alcohol misuse or dependence.",
+    "queries": [
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/guidance/e-scooter-trials-guidance-for-users",
+    "title": "Using a rental e-scooter",
+    "format": "detailed_guide",
+    "description": "How to safely use an electric scooter rented as part of a government trial.",
+    "queries": [
+      "speeding fines driving offences"
+    ]
+  },
+  {
+    "path": "/guidance/gaming-duty-excise-notice-453",
+    "title": "Gaming Duty (Excise Notice 453)",
+    "format": "detailed_guide",
+    "description": "How Gaming Duty is charged, and who has to pay.",
+    "queries": [
+      "penalty points endorsements"
+    ]
+  },
+  {
+    "path": "/guidance/hmrc-tools-and-calculators",
+    "title": "HMRC tools and calculators",
+    "format": "detailed_guide",
+    "description": "Find and use tools and calculators that will help you work out your tax. ",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  },
+  {
+    "path": "/guidance/how-to-bid-for-government-contracts-as-an-sme-effectively",
+    "title": "How to bid for government contracts as an SME effectively",
+    "format": "detailed_guide",
+    "description": "Steps SMEs can take when bidding for government contracts so they can compete with larger companies.",
+    "queries": [
+      "penalty points endorsements"
+    ]
+  },
+  {
+    "path": "/guidance/lottery-duty-excise-notice-458",
+    "title": "Lottery Duty (Excise Notice 458)",
+    "format": "detailed_guide",
+    "description": "Find out about Lottery Duty, how the duty is charged and who has to pay.",
+    "queries": [
+      "penalty points endorsements"
+    ]
+  },
+  {
+    "path": "/guidance/make-and-sell-driving-theory-test-revision-products",
+    "title": "Make and sell driving theory test revision products",
+    "format": "detailed_guide",
+    "description": "How to get a licence to make apps, websites, software or books to help people prepare for  theory tests, how much it costs, and the rules you must follow.",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/guidance/other-products-and-circumstances-affecting-the-second-hand-vehicles-vat-margin-scheme",
+    "title": "Other products and circumstances affecting the second-hand vehicles VAT margin scheme",
+    "format": "detailed_guide",
+    "description": "If you buy or sell second-hand vehicles, find out how other products and circumstances affect the scheme and how you account for VAT. (VAT Notice 718)",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  },
+  {
+    "path": "/guidance/provide-official-dvsa-driving-e-learning-for-learners-or-drivers",
+    "title": "Provide official DVSA driving e-learning for learners or drivers",
+    "format": "detailed_guide",
+    "description": "Buy multiple licences for Driver and Vehicle Standards Agency (DVSA) driving theory e-learning for all of the learner drivers you teach or drivers you employ.",
+    "queries": [
+      "learn to drive"
+    ]
+  },
+  {
+    "path": "/guidance/proving-your-identity-with-the-govuk-one-login-app",
+    "title": "Proving your identity with the GOV.UK One Login app",
+    "format": "detailed_guide",
+    "description": "How to use the GOV.UK One Login app to prove your identity, including how to download the app and how to scan your face and photo ID.",
+    "queries": [
+      "change driving licence details"
+    ]
+  },
+  {
+    "path": "/guidance/rehabilitation-periods",
+    "title": "Rehabilitation Periods",
+    "format": "detailed_guide",
+    "description": "A table of rehabilitation periods for the most common sentences and disposals, and example scenarios.",
+    "queries": [
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/guidance/rehabilitation-periods-until-27-october-2023",
+    "title": "Rehabilitation periods until 27 October 2023",
+    "format": "detailed_guide",
+    "description": "A table of rehabilitation periods for the most common sentences and disposals applied to checks processed until 27 October 2023, and example scenarios.",
+    "queries": [
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/guidance/storing-processing-or-producing-excise-goods-in-a-freeport-customs-site",
+    "title": "Storing, processing or producing excise goods in a UK Freeport customs site",
+    "format": "detailed_guide",
+    "description": "Find out who can be authorised to store, process or produce excise goods in a UK Freeport customs site and how to apply to do so.",
+    "queries": [
+      "penalty points endorsements"
+    ]
+  },
+  {
+    "path": "/guidance/supervise-a-learner-driver",
+    "title": "Supervise a learner driver",
+    "format": "detailed_guide",
+    "description": "Check if you can supervise friends or family learning to drive a car, what the rules are, how to prepare the car, and how to plan your practice sessions.",
+    "queries": [
+      "learn to drive"
+    ]
+  },
+  {
+    "path": "/guidance/swapping-your-driving-test-with-another-learner-driver",
+    "title": "Swapping your driving test with another learner driver",
+    "format": "detailed_guide",
+    "description": "You may be able to swap your car driving test with another learner driver by phone if you both already have a test booked and want each other's test slot.",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/guidance/the-hardship-fund-a-guide",
+    "title": "The Hardship Fund — a guide",
+    "format": "detailed_guide",
+    "description": "A guide to applying for a payment from the Hardship Fund. The fund helps low paid workers who are victims of crime.",
+    "queries": [
+      "penalty points endorsements"
+    ]
+  },
+  {
+    "path": "/guidance/the-information-and-consultation-regulations",
+    "title": "The Information and Consultation Regulations",
+    "format": "detailed_guide",
+    "description": "A Guide for Employers and Employees to the role of the Central Arbitration Committee (CAC) for these regulations",
+    "queries": [
+      "penalty points endorsements"
+    ]
+  },
+  {
+    "path": "/guidance/using-rebated-fuels-in-vehicles-and-machines-excise-notice-75",
+    "title": "Using rebated fuels in vehicles and machines (Excise Notice 75)",
+    "format": "detailed_guide",
+    "description": "Find out when you can use rebated diesel, biodiesel or kerosene in vehicles and other machinery.",
+    "queries": [
+      "SORN declare vehicle off road"
+    ]
+  },
+  {
+    "path": "/guidance/vat-and-corporate-purchasing-cards-notice-70148",
+    "title": "Corporate purchasing cards (VAT Notice 701/48)",
+    "format": "detailed_guide",
+    "description": "How to account for VAT if you're a supplier and accept purchasing cards, or a business that buys goods and services using a purchasing card.",
+    "queries": [
+      "penalty points endorsements"
+    ]
+  },
+  {
+    "path": "/guidance/vehicle-tax-for-cars-registered-from-1-april-2017",
+    "title": "Vehicle tax for cars registered from 1 April 2017",
+    "format": "detailed_guide",
+    "description": "The way vehicle tax is calculated is different for cars that were first registered with DVLA from 1 April 2017.",
+    "queries": [
+      "SORN declare vehicle off road"
+    ]
+  },
+  {
+    "path": "/importing-vehicles-into-the-uk",
+    "title": "Importing vehicles into the UK",
+    "format": "guide",
+    "description": "Steps you must follow when importing vehicles into the UK, including making an import declaration, paying VAT and duty and telling HMRC using the NOVA service.",
+    "queries": [
+      "SORN declare vehicle off road"
+    ]
+  },
+  {
+    "path": "/learning-disabilities-and-driving",
+    "title": "Learning disabilities and driving",
+    "format": "answer",
+    "description": "You must tell DVLA if you have a learning disability - download the correct form to let them know",
+    "queries": [
+      "learn to drive"
+    ]
+  },
+  {
+    "path": "/learning-to-drive-a-tractor-or-specialist-vehicle",
+    "title": "Learning to drive a tractor or specialist vehicle",
+    "format": "guide",
+    "description": "You need the right licence to drive a tractor or specialist vehicle, there are also age limits and specific rules for driving tests ",
+    "queries": [
+      "learn to drive"
+    ]
+  },
+  {
+    "path": "/legal-obligations-drivers-riders",
+    "title": "Legal obligations of drivers and riders ",
+    "format": "answer",
+    "description": "What you need to do before you can drive a car or ride a motorcycle - driving licence, registering your vehicle, insurance, vehicle tax, MOT",
+    "queries": [
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/money-property-when-relationship-ends",
+    "title": "Money and property when you divorce or separate",
+    "format": "guide",
+    "description": "How to work out splitting up money, property and possessions when you divorce or dissolve a civil partnership - including mediation.",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  },
+  {
+    "path": "/mot-for-hgv-buses-and-trailers",
+    "title": "Get an MOT for a heavy goods vehicle (HGV), bus or trailer",
+    "format": "guide",
+    "description": "Vehicles which must have the annual test - buses, coaches, lorries and trailers, booking and fees.",
+    "queries": [
+      "MOT test exemption"
+    ]
+  },
+  {
+    "path": "/motorcycle-theory-test",
+    "title": "Theory test: motorcycles and mopeds",
+    "format": "guide",
+    "description": "When to book your motorcycle theory test, what to take with you, how the multiple-choice questions and hazard perception test work, and the pass mark.",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/parking-tickets",
+    "title": "Parking fines and penalty charge notices",
+    "format": "guide",
+    "description": "How to pay or challenge a penalty charge notice (PCN) or parking ticket - fixed penalty notice (FPN), standard or excess charge notice.\r\n",
+    "queries": [
+      "speeding fines driving offences"
+    ]
+  },
+  {
+    "path": "/pay-dvla-fine",
+    "title": "Pay a DVLA fine",
+    "format": "transaction",
+    "description": "Use this service to pay any money you owe DVLA for not taxing your vehicle or declaring a Statutory Off Road Notification (SORN)",
+    "queries": [
+      "SORN declare vehicle off road"
+    ]
+  },
+  {
+    "path": "/proof-benefits-state-pension",
+    "title": "Get proof of your benefits and State Pension ",
+    "format": "transaction",
+    "description": "Request a letter to prove your State Pension and benefits, including Attendance Allowance, DLA, ESA, Income Support, JSA, Pension Credit and PIP. ",
+    "queries": [
+      "change driving licence details"
+    ]
+  },
+  {
+    "path": "/reapply-driving-licence-health-condition",
+    "title": "Reapply for a driving licence following a health condition",
+    "format": "guide",
+    "description": "Reapply for a driving licence if your licence was taken away (revoked) or if you surrendered your licence following a health condition.",
+    "queries": [
+      "DVLA medical conditions driving"
+    ]
+  },
+  {
+    "path": "/record-delegated-driving-test-details",
+    "title": "Record delegated driving test details",
+    "format": "transaction",
+    "description": "Record the details of scheduled delegated driving tests with the Driver and Vehicle Standards Agency (DVSA)",
+    "queries": [
+      "driving test"
+    ]
+  },
+  {
+    "path": "/renew-photo-driving-licence",
+    "title": "Change the photo on your driving licence",
+    "format": "answer",
+    "description": "You can change the photo on your driving licence online at any time by renewing your licence - cost, how to pay and apply, applying by post.",
+    "queries": [
+      "renew driving licence"
+    ]
+  },
+  {
+    "path": "/report-a-mistake-on-your-mot-record",
+    "title": "Report a mistake on your MOT record",
+    "format": "answer",
+    "description": "Use this form to report a mistake with mileage, vehicle details, the country where the vehicle was registered or the name or location of the MOT centre.",
+    "queries": [
+      "MOT"
+    ]
+  },
+  {
+    "path": "/report-cloned-number-plate",
+    "title": "What to do if your number plate is cloned",
+    "format": "answer",
+    "description": "What to do when your vehicle number plate has been cloned (copied and used on another vehicle): reporting it to the police, telling DVLA and appealing fines and charges.",
+    "queries": [
+      "number plates"
+    ]
+  },
+  {
+    "path": "/report-stolen-number-plate",
+    "title": "What to do if your number plate is stolen",
+    "format": "answer",
+    "description": "What to do when your vehicle number plate has been stolen: reporting it to the police and telling DVLA.",
+    "queries": [
+      "number plates"
+    ]
+  },
+  {
+    "path": "/request-copy-criminal-record",
+    "title": "Request a basic DBS check",
+    "format": "transaction",
+    "description": "How to apply for a basic DBS check to get a copy of your criminal record, and what you must provide. It costs £20.",
+    "queries": [
+      "provisional driving licence"
+    ]
+  },
+  {
+    "path": "/request-information-from-dvla",
+    "title": "Request information about a vehicle or its registered keeper from DVLA ",
+    "format": "guide",
+    "description": "Request details about a vehicle's registered keeper: bulk data, anonymised data, mileage data requests, other information requests",
+    "queries": [
+      "driving disqualification"
+    ]
+  },
+  {
+    "path": "/self-assessment-tax-returns",
+    "title": "Self Assessment tax returns",
+    "format": "guide",
+    "description": "Self Assessment tax returns - deadlines, who must send a tax return, penalties, corrections and returns for someone who has died.",
+    "queries": [
+      "SORN declare vehicle off road"
+    ]
+  },
+  {
+    "path": "/sorn-statutory-off-road-notification",
+    "title": "When you need to make a SORN",
+    "format": "guide",
+    "description": "How and when to make a SORN (Statutory Off Road Notification) to stop taxing and insuring your vehicle, including when the SORN is valid, penalties and rules for motor traders.",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  },
+  {
+    "path": "/speeding-penalties",
+    "title": "Speeding penalties",
+    "format": "answer",
+    "description": "You could get a fine and penalty points if you're caught speeding, or could even lose your licence",
+    "queries": [
+      "speeding fines driving offences"
+    ]
+  },
+  {
+    "path": "/take-practice-theory-test",
+    "title": "Take a practice theory test",
+    "format": "answer",
+    "description": "Take free official practice theory tests from the Driver and Vehicle Standards Agency (DVSA) for cars, motorcycles, lorries and buses",
+    "queries": [
+      "theory test"
+    ]
+  },
+  {
+    "path": "/taking-vehicles-out-of-uk",
+    "title": "Taking a vehicle out of the UK",
+    "format": "guide",
+    "description": "Taking your car out of the UK - when VAT is not payable on a car you're exporting, procedures, registration and vehicle tax.",
+    "queries": [
+      "SORN declare vehicle off road"
+    ]
+  },
+  {
+    "path": "/tell-dvla-about-bereavement",
+    "title": "Telling DVLA after someone dies",
+    "format": "guide",
+    "description": "What you need to tell DVLA and how to deal with vehicle tax if someone who was a driver has died ",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  },
+  {
+    "path": "/using-your-gov-uk-one-login",
+    "title": "Using your GOV.UK One Login",
+    "format": "guide",
+    "description": "Sign in to your GOV.UK One Login to change your details. See all the services you can access with GOV.UK One Login and how to prove your identity with it.",
+    "queries": [
+      "change driving licence details"
+    ]
+  },
+  {
+    "path": "/valuing-estate-of-someone-who-died",
+    "title": "How to value an estate for Inheritance Tax and report its value",
+    "format": "guide",
+    "description": "Value the estate of someone who's died so that you can get probate: work out if tax is due, check how to report the estate's value, complete the correct form. \r\n\r\n",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  },
+  {
+    "path": "/vehicle-insurance",
+    "title": "Vehicle insurance",
+    "format": "guide",
+    "description": "Rules on what motor insurance you need, what to do if you're in an accident, insurance for driving abroad, penalties for uninsured vehicles and drivers.",
+    "queries": [
+      "SORN declare vehicle off road"
+    ]
+  },
+  {
+    "path": "/vehicle-log-book",
+    "title": "Get a vehicle log book (V5C)",
+    "format": "guide",
+    "description": "Get a replacement vehicle log book (V5C) if yours is lost, stolen, damaged, not received for a new vehicle or if you need to update details.",
+    "queries": [
+      "V5C registration certificate"
+    ]
+  },
+  {
+    "path": "/what-to-do-if-your-vehicle-has-been-stolen",
+    "title": "What to do if your vehicle has been stolen",
+    "format": "guide",
+    "description": "Tell the police and your insurance company if your vehicle has been stolen straight away - telling DVLA, vehicle tax refunds and personalised registration numbers",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  },
+  {
+    "path": "/written-off-vehicle",
+    "title": "Tell DVLA your vehicle has been written off",
+    "format": "transaction",
+    "description": "Tell DVLA if your vehicle has been damaged, written off and then scrapped by your insurance company",
+    "queries": [
+      "sell or transfer a vehicle"
+    ]
+  }
+]
