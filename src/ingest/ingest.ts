@@ -27,7 +27,7 @@ export async function ingest(deps: IngestDeps): Promise<IngestSummary> {
     try {
       const page = await deps.fetchPage(path);
       const chunks = chunkPage(page);
-      if (chunks.length === 0) throw new Error('no text found on this page');
+      if (chunks.length === 0) throw new Error(`no text found on this page (details keys: ${page.detailKeys.join(', ') || 'none'})`);
 
       if (deps.pool) {
         const { embeddings, tokens, model } = await deps.embed(chunks.map((c) => embeddingInput(c.heading, c.text)));

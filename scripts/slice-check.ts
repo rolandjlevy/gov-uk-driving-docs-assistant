@@ -12,7 +12,7 @@ for (const p of paths) {
     const page = await fetchPage(p);
     const chunks = chunkPage(page);
     console.log(`ok   ${p}  "${page.title}"  sections=${page.sections.length} chunks=${chunks.length} updated=${page.updatedAt}`);
-    if (chunks.length === 0) { bad++; console.log('     ^ no text found: this page format needs handling in content-api.ts'); }
+    if (chunks.length === 0) { bad++; console.log(`     ^ no text found (details keys: ${page.detailKeys.join(', ') || 'none'}): this page format needs handling in content-api.ts`); }
   } catch (err) {
     bad++;
     console.log(`FAIL ${p}  ${(err as Error).message}`);
