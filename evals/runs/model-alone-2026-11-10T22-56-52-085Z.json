@@ -1,0 +1,205 @@
+{
+  "system": "model-alone",
+  "model": "claude-haiku-5-5",
+  "judgeModel": "claude-haiku-5-5",
+  "ranAt": "2026-11-10T22:56:52.085Z",
+  "summary": {
+    "all": {
+      "n": 5,
+      "retrieval": null,
+      "citationValid": null,
+      "facts": null,
+      "refusalCorrect": 0.4,
+      "declinedJudged": 0.4,
+      "declinedUnreadable": 0,
+      "meanMs": 3394.8,
+      "inputTokens": 874,
+      "outputTokens": 2826
+    },
+    "byType": {
+      "not_covered": {
+        "n": 5,
+        "retrieval": null,
+        "citationValid": null,
+        "facts": null,
+        "refusalCorrect": 0.4,
+        "declinedJudged": 0.4,
+        "declinedUnreadable": 0,
+        "meanMs": 3394.8,
+        "inputTokens": 874,
+        "outputTokens": 2826
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g31",
+      "type": "not_covered",
+      "question": "Which car insurance company is cheapest for a new driver?",
+      "keyFacts": [],
+      "answer": {
+        "status": "not_covered",
+        "answer": "",
+        "citedUrls": [],
+        "retrievedUrls": [],
+        "usage": {
+          "inputTokens": 176,
+          "outputTokens": 113
+        },
+        "ms": 1328
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": false
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g32",
+      "type": "not_covered",
+      "question": "How do I renew my driving licence in Northern Ireland?",
+      "keyFacts": [],
+      "answer": {
+        "status": "answered",
+        "answer": "Your NI photocard licence is issued by the Driver and Vehicle Agency (DVA). Renew it online via nidirect or by post, using the renewal reminder the DVA sends before expiry. Check the renewal form or nidirect page for the fee, the documents you need, and whether you must send in your current licence and a new photo. Renewal is usually needed every 10 years, and every 3 years once you are over 70. If your details have changed, update them when you renew.",
+        "citedUrls": [
+          "https://www.nidirect.gov.uk/articles/renewing-your-driving-licence"
+        ],
+        "retrievedUrls": [],
+        "usage": {
+          "inputTokens": 177,
+          "outputTokens": 629
+        },
+        "ms": 3661
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": false,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": false
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g33",
+      "type": "not_covered",
+      "question": "Will my appeal against a speeding fine succeed?",
+      "keyFacts": [],
+      "answer": {
+        "status": "answered",
+        "answer": "No one can say in advance whether your appeal will succeed, as it depends on the facts and grounds. Appeals against speeding fines usually succeed only if there is a clear defect, such as the camera or equipment not being properly calibrated or certified, the notice being sent late or with incorrect details, the wrong person being identified as the driver, or a genuine mistake about the speed limit or the vehicle. Check the deadline printed on your notice (usually 28 days to respond to a Notice of Intended Prosecution, or the period stated on a penalty notice), and get advice from a solicitor or your local magistrates' court if you are unsure.",
+        "citedUrls": [
+          "https://www.gov.uk/speeding-penalties"
+        ],
+        "retrievedUrls": [],
+        "usage": {
+          "inputTokens": 175,
+          "outputTokens": 859
+        },
+        "ms": 4809
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": false,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g34",
+      "type": "not_covered",
+      "question": "How much income tax will I pay on a company car?",
+      "keyFacts": [],
+      "answer": {
+        "status": "answered",
+        "answer": "You pay income tax on the car's benefit-in-kind (BIK) value, not on a cash sum. BIK = list price (including options, capped at £130,000 for cars) × BIK percentage set by CO2 emissions (or electric range for plug-in hybrids). The percentage for zero-emission cars is 3% in 2025/26, rising to 4% in 2026/27 and 5% in 2027/28. Petrol and diesel cars use higher bands, from about 21% to 37% depending on CO2. You pay income tax on that BIK at your marginal rate (20%, 40% or 45%; Scottish rates differ). Example: a £30,000 zero-emission car at 3% gives a £900 BIK, so about £360 tax a year at 40%. If your employer also provides fuel for private use, a separate fuel benefit applies. Your employer reports the benefit on your P11D or through payroll, and this is usually taxed through your tax code. Check your exact percentage on GOV.UK for the tax year in question.",
+        "citedUrls": [
+          "https://www.gov.uk/company-car-tax-reference-guide",
+          "https://www.gov.uk/guidance/company-car-tax-rates"
+        ],
+        "retrievedUrls": [],
+        "usage": {
+          "inputTokens": 172,
+          "outputTokens": 1012
+        },
+        "ms": 5753
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": false,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": false
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g35",
+      "type": "not_covered",
+      "question": "Can you recommend a good driving instructor near me?",
+      "keyFacts": [],
+      "answer": {
+        "status": "not_covered",
+        "answer": "I can't recommend a specific instructor or see your location. You can check that an instructor is a DVSA-registered ADI using the official register at gov.uk/find-driving-instructor.",
+        "citedUrls": [
+          "https://www.gov.uk/find-driving-instructor"
+        ],
+        "retrievedUrls": [],
+        "usage": {
+          "inputTokens": 174,
+          "outputTokens": 213
+        },
+        "ms": 1423
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "system": "agent",
+  "model": "claude-haiku-5-5",
+  "judgeModel": "claude-haiku-5-5",
+  "ranAt": "2026-11-10T22:57:47.320Z",
+  "summary": {
+    "all": {
+      "n": 5,
+      "retrieval": null,
+      "citationValid": 1,
+      "facts": null,
+      "refusalCorrect": 0.6,
+      "declinedJudged": 1,
+      "declinedUnreadable": 0,
+      "meanMs": 4932.4,
+      "inputTokens": 35950,
+      "outputTokens": 3252
+    },
+    "byType": {
+      "not_covered": {
+        "n": 5,
+        "retrieval": null,
+        "citationValid": 1,
+        "facts": null,
+        "refusalCorrect": 0.6,
+        "declinedJudged": 1,
+        "declinedUnreadable": 0,
+        "meanMs": 4932.4,
+        "inputTokens": 35950,
+        "outputTokens": 3252
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g31",
+      "type": "not_covered",
+      "question": "Which car insurance company is cheapest for a new driver?",
+      "keyFacts": [],
+      "answer": {
+        "status": "not_covered",
+        "answer": "GOV.UK does not compare or rank insurance companies by price, so I can't say which insurer is cheapest for new drivers. What the pages do say: you must have at least third party motor insurance to drive on UK roads (the legal minimum), and insurance rules for learners. If you're learning in your own car you need your own learner policy; if you're practising in someone else's car you need to be covered by the owner's policy or your own. Some insurers require the supervisor to be over 25, and some policies don't cover driving lessons with an instructor, so check with the insurer first. Driving without insurance can bring an unlimited fine, a driving ban and up to 8 penalty points. To compare prices, you'd need to use an insurance comparison service or broker; GOV.UK mentions insurance brokers but doesn't recommend any.",
+        "citedUrls": [
+          "https://www.gov.uk/vehicle-insurance",
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/guidance/supervise-a-learner-driver"
+        ],
+        "retrievedUrls": [
+          "gov.uk/driving-lessons-learning-to-drive",
+          "gov.uk/guidance/supervise-a-learner-driver",
+          "gov.uk/vehicle-insurance",
+          "gov.uk/apply-first-provisional-driving-licence",
+          "gov.uk/legal-obligations-drivers-riders"
+        ],
+        "usage": {
+          "inputTokens": 4979,
+          "outputTokens": 659
+        },
+        "ms": 4758,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "cheapest car insurance for new drivers"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-lessons-learning-to-drive, https://www.gov.uk/guidance/supervise-a-learner-driver, https://www.gov.uk/vehicle-insurance, https://www.gov.uk/apply-first-provisional-driving-licence"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "car insurance requirements for learner or new drivers"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-lessons-learning-to-drive, https://www.gov.uk/guidance/supervise-a-learner-driver, https://www.gov.uk/legal-obligations-drivers-riders, https://www.gov.uk/apply-first-provisional-driving-licence"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "not_covered",
+              "answer": "GOV.UK does not compare or rank insurance companies by price, so I can't say which insurer is cheapest for new drivers. What the pages do say: you must have at least third party motor insurance to drive on UK roads (the legal minimum), and insurance rules for learners. If you're learning in your own car you need your own learner policy; if you're practising in someone else's car you need to be covered by the owner's policy or your own. Some insurers require the supervisor to be over 25, and some policies don't cover driving lessons with an instructor, so check with the insurer first. Driving without insurance can bring an unlimited fine, a driving ban and up to 8 penalty points. To compare prices, you'd need to use an insurance comparison service or broker; GOV.UK mentions insurance brokers but doesn't recommend any.",
+              "sources": [
+                "https://www.gov.uk/vehicle-insurance",
+                "https://www.gov.uk/driving-lessons-learning-to-drive",
+                "https://www.gov.uk/guidance/supervise-a-learner-driver"
+              ]
+            },
+            "summary": "not_covered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g32",
+      "type": "not_covered",
+      "question": "How do I renew my driving licence in Northern Ireland?",
+      "keyFacts": [],
+      "answer": {
+        "status": "not_covered",
+        "answer": "The GOV.UK pages I could reach say that the standard online renewal service (£14, or £17 by post) is for Great Britain residents only, and that Northern Ireland has a different service run by the Driver and Vehicle Agency (DVA). They do not give the NI application steps, fees, how to apply, or the NI contact details. Check the DVA's Northern Ireland pages or the NI fee information directly.",
+        "citedUrls": [
+          "https://www.gov.uk/renew-driving-licence",
+          "https://www.gov.uk/driving-licence-fees",
+          "https://www.gov.uk/id-for-driving-licence"
+        ],
+        "retrievedUrls": [
+          "gov.uk/driving-disqualifications",
+          "gov.uk/reapply-licence-revoked",
+          "gov.uk/driving-test",
+          "gov.uk/renew-driving-licence",
+          "gov.uk/id-for-driving-licence",
+          "gov.uk/driving-licence-fees",
+          "gov.uk/renew-photo-driving-licence",
+          "gov.uk/renew-medical-driving-licence"
+        ],
+        "usage": {
+          "inputTokens": 6762,
+          "outputTokens": 536
+        },
+        "ms": 4401,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "renew driving licence Northern Ireland"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-disqualifications, https://www.gov.uk/reapply-licence-revoked, https://www.gov.uk/driving-test, https://www.gov.uk/renew-driving-licence, https://www.gov.uk/id-for-driving-licence"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "Northern Ireland driving licence renewal photocard DVA"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-disqualifications, https://www.gov.uk/renew-driving-licence, https://www.gov.uk/driving-licence-fees, https://www.gov.uk/driving-test, https://www.gov.uk/renew-photo-driving-licence"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "Driver and Vehicle Agency renew licence Northern Ireland how to apply"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-disqualifications, https://www.gov.uk/reapply-licence-revoked, https://www.gov.uk/renew-driving-licence, https://www.gov.uk/renew-medical-driving-licence, https://www.gov.uk/id-for-driving-licence"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "not_covered",
+              "answer": "The GOV.UK pages I could reach say that the standard online renewal service (£14, or £17 by post) is for Great Britain residents only, and that Northern Ireland has a different service run by the Driver and Vehicle Agency (DVA). They do not give the NI application steps, fees, how to apply, or the NI contact details. Check the DVA's Northern Ireland pages or the NI fee information directly.",
+              "sources": [
+                "https://www.gov.uk/renew-driving-licence",
+                "https://www.gov.uk/driving-licence-fees",
+                "https://www.gov.uk/id-for-driving-licence"
+              ]
+            },
+            "summary": "not_covered"
+          }
+        ],
+        "searches": 3,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g33",
+      "type": "not_covered",
+      "question": "Will my appeal against a speeding fine succeed?",
+      "keyFacts": [],
+      "answer": {
+        "status": "answered",
+        "answer": "I can't predict whether your appeal will succeed. That depends on the facts of your case and the court's decision, and GOV.UK doesn't say how often speeding appeals succeed.\n\nWhat GOV.UK does say about challenging a speeding fine:\n- If you were given a Fixed Penalty Notice (FPN), you can plead guilty or not guilty.\n- If you plead not guilty, you have to go to court. You'll be sent a summons with a hearing date. The court decides whether you're guilty.\n- If the court finds you guilty, you can be fined more and get more penalty points than the FPN would have given. The fine is usually a percentage of your weekly income, up to £1,000 (£2,500 on a motorway).\n- If you plead guilty, the usual penalty is a £100 fine and 3 penalty points, unless you're offered a speed awareness course.\n\nThe pages I found don't list the grounds for a successful speeding appeal, so I can't say whether your reasons would work. For advice on your specific case, contact a solicitor, Citizens Advice, or your local magistrates' court.",
+        "citedUrls": [
+          "https://www.gov.uk/speeding-penalties"
+        ],
+        "retrievedUrls": [
+          "gov.uk/speeding-penalties",
+          "gov.uk/parking-tickets"
+        ],
+        "usage": {
+          "inputTokens": 3387,
+          "outputTokens": 782
+        },
+        "ms": 5288,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "appeal speeding fine grounds"
+            },
+            "summary": "5 hits: https://www.gov.uk/speeding-penalties"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how to challenge a speeding fine or penalty notice"
+            },
+            "summary": "5 hits: https://www.gov.uk/speeding-penalties, https://www.gov.uk/parking-tickets"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "I can't predict whether your appeal will succeed. That depends on the facts of your case and the court's decision, and GOV.UK doesn't say how often speeding appeals succeed.\n\nWhat GOV.UK does say about challenging a speeding fine:\n- If you were given a Fixed Penalty Notice (FPN), you can plead guilty or not guilty.\n- If you plead not guilty, you have to go to court. You'll be sent a summons with a hearing date. The court decides whether you're guilty.\n- If the court finds you guilty, you can be fined more and get more penalty points than the FPN would have given. The fine is usually a percentage of your weekly income, up to £1,000 (£2,500 on a motorway).\n- If you plead guilty, the usual penalty is a £100 fine and 3 penalty points, unless you're offered a speed awareness course.\n\nThe pages I found don't list the grounds for a successful speeding appeal, so I can't say whether your reasons would work. For advice on your specific case, contact a solicitor, Citizens Advice, or your local magistrates' court.",
+              "sources": [
+                "https://www.gov.uk/speeding-penalties"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": false,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g34",
+      "type": "not_covered",
+      "question": "How much income tax will I pay on a company car?",
+      "keyFacts": [],
+      "answer": {
+        "status": "not_covered",
+        "answer": "The pages I could search cover vehicle excise duty (road tax) for cars and the list-price supplement, not company car benefit-in-kind tax. I could not find the company car tax rates (the percentage of list price charged, based on CO2 emissions and fuel type), the taxable amount, or the income tax rate that applies to it. Some of this may be on GOV.UK's company car tax pages, which my searches did not return. Check the company car tax guide or ask your employer for your car's benefit-in-kind figure.",
+        "citedUrls": [],
+        "retrievedUrls": [
+          "gov.uk/vehicle-tax-rate-tables",
+          "gov.uk/check-tax-rates-new-unregistered-cars",
+          "gov.uk/vehicle-exempt-from-vehicle-tax",
+          "gov.uk/change-vehicle-tax-class",
+          "gov.uk/guidance/vehicle-tax-for-cars-registered-from-1-april-2017"
+        ],
+        "usage": {
+          "inputTokens": 18078,
+          "outputTokens": 714
+        },
+        "ms": 6564,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "company car tax benefit in kind rates income tax"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-tax-rate-tables, https://www.gov.uk/check-tax-rates-new-unregistered-cars, https://www.gov.uk/vehicle-exempt-from-vehicle-tax, https://www.gov.uk/change-vehicle-tax-class"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how company car tax is calculated CO2 emissions percentage list price"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-tax-rate-tables, https://www.gov.uk/check-tax-rates-new-unregistered-cars, https://www.gov.uk/guidance/vehicle-tax-for-cars-registered-from-1-april-2017"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "employer-provided car benefit in kind tax charge percentage"
+            },
+            "summary": "5 hits: https://www.gov.uk/check-tax-rates-new-unregistered-cars, https://www.gov.uk/vehicle-tax-rate-tables, https://www.gov.uk/vehicle-exempt-from-vehicle-tax"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "company car tax rates 2025 to 2026 percentage of list price"
+            },
+            "summary": "5 hits: https://www.gov.uk/check-tax-rates-new-unregistered-cars, https://www.gov.uk/vehicle-tax-rate-tables, https://www.gov.uk/guidance/vehicle-tax-for-cars-registered-from-1-april-2017"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "not_covered",
+              "answer": "The pages I could search cover vehicle excise duty (road tax) for cars and the list-price supplement, not company car benefit-in-kind tax. I could not find the company car tax rates (the percentage of list price charged, based on CO2 emissions and fuel type), the taxable amount, or the income tax rate that applies to it. Some of this may be on GOV.UK's company car tax pages, which my searches did not return. Check the company car tax guide or ask your employer for your car's benefit-in-kind figure.",
+              "sources": []
+            },
+            "summary": "not_covered"
+          }
+        ],
+        "searches": 4,
+        "invalidCitations": [],
+        "turns": 4
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g35",
+      "type": "not_covered",
+      "question": "Can you recommend a good driving instructor near me?",
+      "keyFacts": [],
+      "answer": {
+        "status": "answered",
+        "answer": "I can't recommend a specific instructor, since I don't know your location and can't check individual instructors. You can find your nearest driving instructors through the GOV.UK \"Driving lessons and learning to drive\" page, which links to the official search. Before booking, check that the instructor is qualified: they must be a qualified approved driving instructor (ADI, shown by a green badge in the windscreen) or a trainee (pink badge). Anyone charging for lessons without one of these badges can be reported to DVSA. Instructors set their own prices, and there's no minimum or maximum number of lessons. If you're unhappy with an instructor's service or behaviour, you can complain. In Northern Ireland, different rules apply for choosing an instructor.",
+        "citedUrls": [
+          "https://www.gov.uk/driving-lessons-learning-to-drive"
+        ],
+        "retrievedUrls": [
+          "gov.uk/driving-lessons-learning-to-drive",
+          "gov.uk/view-driving-licence",
+          "gov.uk/book-driving-test"
+        ],
+        "usage": {
+          "inputTokens": 2744,
+          "outputTokens": 561
+        },
+        "ms": 3651,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how to find a driving instructor approved driving instructor register"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-lessons-learning-to-drive, https://www.gov.uk/view-driving-licence, https://www.gov.uk/book-driving-test"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "I can't recommend a specific instructor, since I don't know your location and can't check individual instructors. You can find your nearest driving instructors through the GOV.UK \"Driving lessons and learning to drive\" page, which links to the official search. Before booking, check that the instructor is qualified: they must be a qualified approved driving instructor (ADI, shown by a green badge in the windscreen) or a trainee (pink badge). Anyone charging for lessons without one of these badges can be reported to DVSA. Instructors set their own prices, and there's no minimum or maximum number of lessons. If you're unhappy with an instructor's service or behaviour, you can complain. In Northern Ireland, different rules apply for choosing an instructor.",
+              "sources": [
+                "https://www.gov.uk/driving-lessons-learning-to-drive"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": false,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    }
+  ]
+}

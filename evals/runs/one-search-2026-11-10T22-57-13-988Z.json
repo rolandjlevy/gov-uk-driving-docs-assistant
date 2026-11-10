@@ -1,0 +1,221 @@
+{
+  "system": "one-search",
+  "model": "claude-haiku-5-5",
+  "judgeModel": "claude-haiku-5-5",
+  "ranAt": "2026-11-10T22:57:13.988Z",
+  "summary": {
+    "all": {
+      "n": 5,
+      "retrieval": null,
+      "citationValid": 1,
+      "facts": null,
+      "refusalCorrect": 0.8,
+      "declinedJudged": 0.8,
+      "declinedUnreadable": 0,
+      "meanMs": 2949.8,
+      "inputTokens": 6930,
+      "outputTokens": 832
+    },
+    "byType": {
+      "not_covered": {
+        "n": 5,
+        "retrieval": null,
+        "citationValid": 1,
+        "facts": null,
+        "refusalCorrect": 0.8,
+        "declinedJudged": 0.8,
+        "declinedUnreadable": 0,
+        "meanMs": 2949.8,
+        "inputTokens": 6930,
+        "outputTokens": 832
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g31",
+      "type": "not_covered",
+      "question": "Which car insurance company is cheapest for a new driver?",
+      "keyFacts": [],
+      "answer": {
+        "status": "not_covered",
+        "answer": "The extracts do not name or compare any insurance companies or their prices, so they cannot say which is cheapest for a new driver.",
+        "citedUrls": [],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/guidance/supervise-a-learner-driver",
+          "https://www.gov.uk/vehicle-insurance"
+        ],
+        "usage": {
+          "inputTokens": 1468,
+          "outputTokens": 62
+        },
+        "ms": 2703
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g32",
+      "type": "not_covered",
+      "question": "How do I renew my driving licence in Northern Ireland?",
+      "keyFacts": [],
+      "answer": {
+        "status": "answered",
+        "answer": "The GOV.UK online renewal service is only for Great Britain residents. In Northern Ireland, you apply to renew through the Driver and Vehicle Agency (DVA) instead.",
+        "citedUrls": [
+          "https://www.gov.uk/renew-driving-licence",
+          "https://www.gov.uk/driving-disqualifications"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-disqualifications",
+          "https://www.gov.uk/renew-driving-licence",
+          "https://www.gov.uk/reapply-licence-revoked",
+          "https://www.gov.uk/driving-test"
+        ],
+        "usage": {
+          "inputTokens": 886,
+          "outputTokens": 446
+        },
+        "ms": 7195
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": false,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": false
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g33",
+      "type": "not_covered",
+      "question": "Will my appeal against a speeding fine succeed?",
+      "keyFacts": [],
+      "answer": {
+        "status": "not_covered",
+        "answer": "The extracts do not say whether an appeal against a speeding fine will succeed. They only cover pleading guilty or not guilty, court outcomes, the standard £100 fine and 3 points, and speed awareness course eligibility.",
+        "citedUrls": [
+          "https://www.gov.uk/speeding-penalties"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/speeding-penalties"
+        ],
+        "usage": {
+          "inputTokens": 955,
+          "outputTokens": 114
+        },
+        "ms": 1745
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g34",
+      "type": "not_covered",
+      "question": "How much income tax will I pay on a company car?",
+      "keyFacts": [],
+      "answer": {
+        "status": "not_covered",
+        "answer": "The extracts only cover Vehicle Excise Duty (vehicle tax) rates and do not mention income tax or company car taxation.",
+        "citedUrls": [],
+        "retrievedUrls": [
+          "https://www.gov.uk/guidance/vehicle-tax-for-cars-registered-from-1-april-2017",
+          "https://www.gov.uk/check-tax-rates-new-unregistered-cars",
+          "https://www.gov.uk/vehicle-tax-rate-tables"
+        ],
+        "usage": {
+          "inputTokens": 1784,
+          "outputTokens": 66
+        },
+        "ms": 1447
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g35",
+      "type": "not_covered",
+      "question": "Can you recommend a good driving instructor near me?",
+      "keyFacts": [],
+      "answer": {
+        "status": "not_covered",
+        "answer": "The extracts do not recommend specific driving instructors. They only say you can find your nearest driving instructors on GOV.UK, and that anyone you pay to teach you must be a qualified ADI or trainee, with a green badge (qualified) or pink badge (trainee) displayed in the windscreen.",
+        "citedUrls": [
+          "https://www.gov.uk/driving-lessons-learning-to-drive"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/guidance/supervise-a-learner-driver"
+        ],
+        "usage": {
+          "inputTokens": 1837,
+          "outputTokens": 144
+        },
+        "ms": 1659
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false,
+        "declined": true
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    }
+  ]
+}
