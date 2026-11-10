@@ -1,0 +1,175 @@
+{
+  "system": "model-alone",
+  "model": "claude-haiku-5-5",
+  "judgeModel": "claude-haiku-5-5",
+  "ranAt": "2026-11-09T23:38:20.751Z",
+  "summary": {
+    "all": {
+      "n": 4,
+      "retrieval": null,
+      "citationValid": null,
+      "facts": 0.6666666666666666,
+      "refusalCorrect": 0.75,
+      "meanMs": 2436,
+      "inputTokens": 692,
+      "outputTokens": 1445
+    },
+    "byType": {
+      "single_page": {
+        "n": 2,
+        "retrieval": null,
+        "citationValid": null,
+        "facts": 1,
+        "refusalCorrect": 1,
+        "meanMs": 2590.5,
+        "inputTokens": 343,
+        "outputTokens": 833
+      },
+      "not_covered": {
+        "n": 1,
+        "retrieval": null,
+        "citationValid": null,
+        "facts": null,
+        "refusalCorrect": 1,
+        "meanMs": 1398,
+        "inputTokens": 176,
+        "outputTokens": 177
+      },
+      "recently_changed": {
+        "n": 1,
+        "retrieval": null,
+        "citationValid": null,
+        "facts": 0,
+        "refusalCorrect": 0,
+        "meanMs": 3165,
+        "inputTokens": 173,
+        "outputTokens": 435
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g01",
+      "type": "single_page",
+      "question": "How do I change the address on my driving licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "Update your address online at GOV.UK for free, using your driving licence number and National Insurance number, and you'll need to give the details DVLA asks for. You must tell DVLA when your address changes. Failing to do so can lead to a fine of up to £1,000.",
+        "citedUrls": [
+          "https://www.gov.uk/change-address-driving-licence"
+        ],
+        "retrievedUrls": [],
+        "usage": {
+          "inputTokens": 171,
+          "outputTokens": 476
+        },
+        "ms": 3073
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 253,
+        "outputTokens": 54
+      }
+    },
+    {
+      "id": "g05",
+      "type": "single_page",
+      "question": "How long do penalty points stay on my licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "Most penalty points stay on your licence for 4 years from the date of the offence, not the date of conviction. Some endorsements, such as drink-driving and certain other serious offences, stay for 11 years.",
+        "citedUrls": [
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "retrievedUrls": [],
+        "usage": {
+          "inputTokens": 172,
+          "outputTokens": 357
+        },
+        "ms": 2108
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 240,
+        "outputTokens": 88
+      }
+    },
+    {
+      "id": "g31",
+      "type": "not_covered",
+      "question": "Which car insurance company is cheapest for a new driver?",
+      "answer": {
+        "status": "not_covered",
+        "answer": "",
+        "citedUrls": [],
+        "retrievedUrls": [],
+        "usage": {
+          "inputTokens": 176,
+          "outputTokens": 177
+        },
+        "ms": 1398
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": []
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      }
+    },
+    {
+      "id": "g36",
+      "type": "recently_changed",
+      "question": "How many times can I change my car driving test booking now?",
+      "answer": {
+        "status": "not_covered",
+        "answer": "",
+        "citedUrls": [],
+        "retrievedUrls": [],
+        "usage": {
+          "inputTokens": 173,
+          "outputTokens": 435
+        },
+        "ms": 3165
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": 0,
+        "refusalCorrect": false,
+        "facts": 0,
+        "factResults": [
+          false
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 180,
+        "outputTokens": 5
+      }
+    }
+  ]
+}

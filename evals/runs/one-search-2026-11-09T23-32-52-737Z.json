@@ -1,0 +1,196 @@
+{
+  "system": "one-search",
+  "model": "claude-haiku-5-5",
+  "judgeModel": "claude-haiku-5-5",
+  "ranAt": "2026-11-09T23:32:52.737Z",
+  "summary": {
+    "all": {
+      "n": 4,
+      "retrieval": 1,
+      "citationValid": 1,
+      "facts": 0.5833333333333334,
+      "refusalCorrect": 1,
+      "meanMs": 2402.25,
+      "inputTokens": 6278,
+      "outputTokens": 1189
+    },
+    "byType": {
+      "single_page": {
+        "n": 2,
+        "retrieval": 1,
+        "citationValid": 1,
+        "facts": 0.75,
+        "refusalCorrect": 1,
+        "meanMs": 3110,
+        "inputTokens": 2403,
+        "outputTokens": 766
+      },
+      "not_covered": {
+        "n": 1,
+        "retrieval": null,
+        "citationValid": null,
+        "facts": null,
+        "refusalCorrect": 1,
+        "meanMs": 1179,
+        "inputTokens": 1468,
+        "outputTokens": 58
+      },
+      "recently_changed": {
+        "n": 1,
+        "retrieval": 1,
+        "citationValid": 1,
+        "facts": 0.25,
+        "refusalCorrect": 1,
+        "meanMs": 2210,
+        "inputTokens": 2407,
+        "outputTokens": 365
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g01",
+      "type": "single_page",
+      "question": "How do I change the address on my driving licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "Apply online (free of charge). You can still drive while waiting for the new licence. To apply by post instead, send a completed form D1 (or D2 for lorry/bus licences), your driving licence, original documents confirming your identity, and a passport photograph, with the correct postage. You must also update your vehicle log book (V5C), your vehicle tax Direct Debit if you pay that way, and your personalised registration number document (V750 or V778) if you have one. Failing to tell DVLA can result in a fine of up to £1,000.",
+        "citedUrls": [
+          "https://www.gov.uk/change-address-driving-licence"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-address-driving-licence"
+        ],
+        "usage": {
+          "inputTokens": 1192,
+          "outputTokens": 363
+        },
+        "ms": 3771
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 426,
+        "outputTokens": 218
+      }
+    },
+    {
+      "id": "g05",
+      "type": "single_page",
+      "question": "How long do penalty points stay on my licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "Most penalty points (endorsements) stay on your driving record for 4 years from the date of offence. For reckless/dangerous driving (codes DD40, DD60, DD80), offences resulting in disqualification, and code TT99, the 4 years run from the date of conviction. Some offences stay for 11 years instead, but the extracts do not say which ones.",
+        "citedUrls": [
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "usage": {
+          "inputTokens": 1211,
+          "outputTokens": 403
+        },
+        "ms": 2449
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 0.5,
+        "factResults": [
+          true,
+          false
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 314,
+        "outputTokens": 111
+      }
+    },
+    {
+      "id": "g31",
+      "type": "not_covered",
+      "question": "Which car insurance company is cheapest for a new driver?",
+      "answer": {
+        "status": "not_covered",
+        "answer": "The extracts do not name or compare any insurance companies, so they cannot say which is cheapest for a new driver.",
+        "citedUrls": [],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/guidance/supervise-a-learner-driver",
+          "https://www.gov.uk/vehicle-insurance"
+        ],
+        "usage": {
+          "inputTokens": 1468,
+          "outputTokens": 58
+        },
+        "ms": 1179
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": []
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      }
+    },
+    {
+      "id": "g36",
+      "type": "recently_changed",
+      "question": "How many times can I change my car driving test booking now?",
+      "answer": {
+        "status": "answered",
+        "answer": "You can make 2 changes to a car driving test booking (this limit has applied since 31 March 2026, replacing the old limit of 6). Changing the date, time or test centre together counts as one change. Once you've used both, you must cancel and rebook.",
+        "citedUrls": [
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
+          "https://www.gov.uk/change-driving-test"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-driving-test",
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+        ],
+        "usage": {
+          "inputTokens": 2407,
+          "outputTokens": 365
+        },
+        "ms": 2210
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 0.25,
+        "factResults": [
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 376,
+        "outputTokens": 265
+      }
+    }
+  ]
+}

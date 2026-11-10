@@ -1,0 +1,112 @@
+{
+  "system": "agent",
+  "model": "claude-haiku-5-5",
+  "judgeModel": "claude-haiku-5-5",
+  "ranAt": "2026-11-09T23:44:47.056Z",
+  "summary": {
+    "all": {
+      "n": 1,
+      "retrieval": 0.75,
+      "citationValid": 1,
+      "facts": 0.6666666666666666,
+      "refusalCorrect": 1,
+      "meanMs": 5837,
+      "inputTokens": 3844,
+      "outputTokens": 852
+    },
+    "byType": {
+      "multi_page": {
+        "n": 1,
+        "retrieval": 0.75,
+        "citationValid": 1,
+        "facts": 0.6666666666666666,
+        "refusalCorrect": 1,
+        "meanMs": 5837,
+        "inputTokens": 3844,
+        "outputTokens": 852
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g25",
+      "type": "multi_page",
+      "question": "I've just bought a used car. What do I need to do to tax it and get it registered in my name?",
+      "answer": {
+        "status": "answered",
+        "answer": "1. Tax the car before you use it on the road. Use the green 'new keeper' slip from the log book (V5C) given to you by the seller. Enter its reference number on the GOV.UK vehicle tax service and pay by Direct Debit, debit or credit card. You must tax it even if it's exempt.\n\n2. Get it registered to you. The seller will usually do this for you, either online or by post:\n- Online: the seller registers the vehicle to you online, fills in the green 'new keeper' slip and gives it to you, and destroys the V5C.\n- By post: the seller completes the relevant section of the V5C (section 2 for the new-style log book, or section 6 and the section 8 declaration for the older style), fills in the 'new keeper' slip, and sends the V5C to DVLA.\n\n3. If you don't have a V5C: DVLA advises not to buy a vehicle without one. If you do have a car without one, download form V62, send it to DVLA with the new keeper slip from the most recent V5C, and pay £25 (cheque or postal order payable to 'DVLA, Swansea', sent to DVLA, Swansea, SA99 1DD). The slip must be from the most recent V5C; otherwise there's an extra £25 charge. If the V5C hasn't arrived 4 weeks after sending V62, contact DVLA.\n\n4. When the V5C arrives, check that all the details are correct.\n\nI did not check the deadline for registering the change of keeper, so confirm that on GOV.UK.",
+        "citedUrls": [
+          "https://www.gov.uk/checks-when-buying-a-used-car",
+          "https://www.gov.uk/vehicle-registration",
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+          "https://www.gov.uk/vehicle-tax",
+          "https://www.gov.uk/vehicle-log-book"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/checks-when-buying-a-used-car",
+          "https://www.gov.uk/vehicle-registration",
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+          "https://www.gov.uk/vehicle-tax",
+          "https://www.gov.uk/vehicle-log-book"
+        ],
+        "usage": {
+          "inputTokens": 3844,
+          "outputTokens": 852
+        },
+        "ms": 5837,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "buying a used car register in your name vehicle tax"
+            },
+            "summary": "5 hits: https://www.gov.uk/checks-when-buying-a-used-car, https://www.gov.uk/vehicle-registration, https://www.gov.uk/tax-vehicle-without-v11-reminder, https://www.gov.uk/vehicle-tax"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "new keeper supplement registration certificate V5C buying a car"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-registration, https://www.gov.uk/vehicle-log-book"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "1. Tax the car before you use it on the road. Use the green 'new keeper' slip from the log book (V5C) given to you by the seller. Enter its reference number on the GOV.UK vehicle tax service and pay by Direct Debit, debit or credit card. You must tax it even if it's exempt.\n\n2. Get it registered to you. The seller will usually do this for you, either online or by post:\n- Online: the seller registers the vehicle to you online, fills in the green 'new keeper' slip and gives it to you, and destroys the V5C.\n- By post: the seller completes the relevant section of the V5C (section 2 for the new-style log book, or section 6 and the section 8 declaration for the older style), fills in the 'new keeper' slip, and sends the V5C to DVLA.\n\n3. If you don't have a V5C: DVLA advises not to buy a vehicle without one. If you do have a car without one, download form V62, send it to DVLA with the new keeper slip from the most recent V5C, and pay £25 (cheque or postal order payable to 'DVLA, Swansea', sent to DVLA, Swansea, SA99 1DD). The slip must be from the most recent V5C; otherwise there's an extra £25 charge. If the V5C hasn't arrived 4 weeks after sending V62, contact DVLA.\n\n4. When the V5C arrives, check that all the details are correct.\n\nI did not check the deadline for registering the change of keeper, so confirm that on GOV.UK.",
+              "sources": [
+                "https://www.gov.uk/checks-when-buying-a-used-car",
+                "https://www.gov.uk/vehicle-registration",
+                "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+                "https://www.gov.uk/vehicle-tax",
+                "https://www.gov.uk/vehicle-log-book"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 0.75,
+        "citationValid": 1,
+        "citationRecall": 0.75,
+        "refusalCorrect": true,
+        "facts": 0.6666666666666666,
+        "factResults": [
+          false,
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 751,
+        "outputTokens": 489
+      },
+      "judgeRaw": "[false, true, true]"
+    }
+  ]
+}

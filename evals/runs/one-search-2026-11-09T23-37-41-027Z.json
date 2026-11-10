@@ -1,0 +1,188 @@
+{
+  "system": "one-search",
+  "model": "claude-haiku-5-5",
+  "judgeModel": "claude-haiku-5-5",
+  "ranAt": "2026-11-09T23:37:41.027Z",
+  "summary": {
+    "all": {
+      "n": 4,
+      "retrieval": 1,
+      "citationValid": 1,
+      "facts": 1,
+      "refusalCorrect": 1,
+      "meanMs": 2431.25,
+      "inputTokens": 6278,
+      "outputTokens": 1179
+    },
+    "byType": {
+      "single_page": {
+        "n": 2,
+        "retrieval": 1,
+        "citationValid": 1,
+        "facts": 1,
+        "refusalCorrect": 1,
+        "meanMs": 2814,
+        "inputTokens": 2403,
+        "outputTokens": 793
+      },
+      "not_covered": {
+        "n": 1,
+        "retrieval": null,
+        "citationValid": null,
+        "facts": null,
+        "refusalCorrect": 1,
+        "meanMs": 1507,
+        "inputTokens": 1468,
+        "outputTokens": 62
+      },
+      "recently_changed": {
+        "n": 1,
+        "retrieval": 1,
+        "citationValid": 1,
+        "facts": 1,
+        "refusalCorrect": 1,
+        "meanMs": 2590,
+        "inputTokens": 2407,
+        "outputTokens": 324
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g01",
+      "type": "single_page",
+      "question": "How do I change the address on my driving licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "Apply online on GOV.UK. It is free, you must be a resident of Great Britain and not banned from driving, and you need your driving licence to hand. You can still drive while you wait for the new licence. Or apply by post: for a paper licence, send a completed D1 (car/motorbike) or D2 (lorry/bus) form, your licence, original identity documents and a passport photo, with the correct postage. For a photocard licence, complete the 'changes' section of letter D741 and send it with your photocard to DVLA, Swansea SA99 1BN; if you don't have the D741, use form D1 or D2. You must also update your V5C log book, vehicle tax Direct Debit (if used), and any V750/V778 document. Failing to tell DVLA can lead to a fine of up to £1,000.",
+        "citedUrls": [
+          "https://www.gov.uk/change-address-driving-licence"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-address-driving-licence"
+        ],
+        "usage": {
+          "inputTokens": 1192,
+          "outputTokens": 432
+        },
+        "ms": 3324
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 429,
+        "outputTokens": 80
+      }
+    },
+    {
+      "id": "g05",
+      "type": "single_page",
+      "question": "How long do penalty points stay on my licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "Most endorsements stay on your driving record for 4 years from the date of the offence. For some offences the 4 years runs from the date of conviction instead, including reckless/dangerous driving (codes DD40, DD60, DD80) and offences that result in disqualification. Some offences stay for 11 years, but the extracts don't say which ones.",
+        "citedUrls": [
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "usage": {
+          "inputTokens": 1211,
+          "outputTokens": 361
+        },
+        "ms": 2304
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 284,
+        "outputTokens": 411
+      }
+    },
+    {
+      "id": "g31",
+      "type": "not_covered",
+      "question": "Which car insurance company is cheapest for a new driver?",
+      "answer": {
+        "status": "not_covered",
+        "answer": "The extracts do not name or compare any insurance companies or their prices, so they cannot say which is cheapest for a new driver.",
+        "citedUrls": [],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/guidance/supervise-a-learner-driver",
+          "https://www.gov.uk/vehicle-insurance"
+        ],
+        "usage": {
+          "inputTokens": 1468,
+          "outputTokens": 62
+        },
+        "ms": 1507
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": []
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      }
+    },
+    {
+      "id": "g36",
+      "type": "recently_changed",
+      "question": "How many times can I change my car driving test booking now?",
+      "answer": {
+        "status": "answered",
+        "answer": "You can make 2 changes to your car driving test booking. This limit has applied since 31 March 2026, and changing the date, time or test centre counts as one change each time. Changes made by DVSA and updates to your address or contact details do not count.",
+        "citedUrls": [
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-driving-test",
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+        ],
+        "usage": {
+          "inputTokens": 2407,
+          "outputTokens": 324
+        },
+        "ms": 2590
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 0.5,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 250,
+        "outputTokens": 5
+      }
+    }
+  ]
+}

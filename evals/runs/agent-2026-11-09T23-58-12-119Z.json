@@ -1,0 +1,2860 @@
+{
+  "system": "agent",
+  "model": "claude-haiku-5-5",
+  "judgeModel": "claude-haiku-5-5",
+  "ranAt": "2026-11-09T23:58:12.119Z",
+  "summary": {
+    "all": {
+      "n": 40,
+      "retrieval": 0.9714285714285714,
+      "citationValid": 1,
+      "facts": 0.8761904761904762,
+      "refusalCorrect": 0.925,
+      "meanMs": 5092.9,
+      "inputTokens": 217390,
+      "outputTokens": 30483
+    },
+    "byType": {
+      "single_page": {
+        "n": 24,
+        "retrieval": 1,
+        "citationValid": 1,
+        "facts": 0.9166666666666666,
+        "refusalCorrect": 0.9583333333333334,
+        "meanMs": 4894.833333333333,
+        "inputTokens": 118656,
+        "outputTokens": 17690
+      },
+      "multi_page": {
+        "n": 6,
+        "retrieval": 0.8333333333333334,
+        "citationValid": 1,
+        "facts": 0.861111111111111,
+        "refusalCorrect": 1,
+        "meanMs": 5754.333333333333,
+        "inputTokens": 35722,
+        "outputTokens": 5488
+      },
+      "not_covered": {
+        "n": 5,
+        "retrieval": null,
+        "citationValid": 1,
+        "facts": null,
+        "refusalCorrect": 0.6,
+        "meanMs": 4832.8,
+        "inputTokens": 33219,
+        "outputTokens": 3093
+      },
+      "recently_changed": {
+        "n": 5,
+        "retrieval": 1,
+        "citationValid": 1,
+        "facts": 0.7,
+        "refusalCorrect": 1,
+        "meanMs": 5510,
+        "inputTokens": 29793,
+        "outputTokens": 4212
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g01",
+      "type": "single_page",
+      "question": "How do I change the address on my driving licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "You can change the address on a full or provisional driving licence online or by post, free of charge. You can keep driving while you wait for the new licence.\n\nOnline: apply on GOV.UK. You need your driving licence, must be a resident of Great Britain (Northern Ireland has a different process), and must not be banned from driving. You'll get a confirmation email afterwards.\n\nBy post:\n- Paper licence: send a completed D1 form (car and motorbike) or D2 (lorry and bus), available at most Post Offices, plus your driving licence, original documents confirming your identity, a passport photo, and the correct postage.\n- Photocard licence: fill in the \"changes\" section of letter D741 that came with your licence, then send the licence and the letter to DVLA in Swansea (SA99 1BN). If you don't have the D741, use a D1 or D2 form instead. Postage must be correct.\n\nIf you also want to change your name, you must apply by post. Changing your photo at the same time costs £17 by cheque or postal order (no fee if you're over 70 or have a medical short-period licence).\n\nYou must also update your vehicle log book (V5C), your vehicle tax Direct Debit if you pay that way, and your personalised registration number document (V750 or V778) if you have one. You can be fined up to £1,000 if you don't tell DVLA when your address changes.",
+        "citedUrls": [
+          "https://www.gov.uk/change-address-driving-licence"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-address-driving-licence"
+        ],
+        "usage": {
+          "inputTokens": 2855,
+          "outputTokens": 645
+        },
+        "ms": 3889,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how to change address on driving licence"
+            },
+            "summary": "5 hits: https://www.gov.uk/change-address-driving-licence"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You can change the address on a full or provisional driving licence online or by post, free of charge. You can keep driving while you wait for the new licence.\n\nOnline: apply on GOV.UK. You need your driving licence, must be a resident of Great Britain (Northern Ireland has a different process), and must not be banned from driving. You'll get a confirmation email afterwards.\n\nBy post:\n- Paper licence: send a completed D1 form (car and motorbike) or D2 (lorry and bus), available at most Post Offices, plus your driving licence, original documents confirming your identity, a passport photo, and the correct postage.\n- Photocard licence: fill in the \"changes\" section of letter D741 that came with your licence, then send the licence and the letter to DVLA in Swansea (SA99 1BN). If you don't have the D741, use a D1 or D2 form instead. Postage must be correct.\n\nIf you also want to change your name, you must apply by post. Changing your photo at the same time costs £17 by cheque or postal order (no fee if you're over 70 or have a medical short-period licence).\n\nYou must also update your vehicle log book (V5C), your vehicle tax Direct Debit if you pay that way, and your personalised registration number document (V750 or V778) if you have one. You can be fined up to £1,000 if you don't tell DVLA when your address changes.",
+              "sources": [
+                "https://www.gov.uk/change-address-driving-licence"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 602,
+        "outputTokens": 60
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g02",
+      "type": "single_page",
+      "question": "How much does it cost to renew my driving licence when I turn 70?",
+      "answer": {
+        "status": "answered",
+        "answer": "It's free. When you're 70 or over (or will be within the next 90 days), you can renew your driving licence online with DVLA at no cost. The standard £14 online fee does not apply to you. Photocard licences are valid for 10 years, and you'll get a reminder before your licence expires.",
+        "citedUrls": [
+          "https://www.gov.uk/renew-driving-licence-at-70",
+          "https://www.gov.uk/driving-licence-fees",
+          "https://www.gov.uk/renew-driving-licence"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-licence-fees",
+          "https://www.gov.uk/renew-driving-licence",
+          "https://www.gov.uk/renew-driving-licence-at-70",
+          "https://www.gov.uk/change-address-driving-licence"
+        ],
+        "usage": {
+          "inputTokens": 2701,
+          "outputTokens": 385
+        },
+        "ms": 3043,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "renew driving licence at 70 cost"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-licence-fees, https://www.gov.uk/renew-driving-licence, https://www.gov.uk/renew-driving-licence-at-70, https://www.gov.uk/change-address-driving-licence"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "It's free. When you're 70 or over (or will be within the next 90 days), you can renew your driving licence online with DVLA at no cost. The standard £14 online fee does not apply to you. Photocard licences are valid for 10 years, and you'll get a reminder before your licence expires.",
+              "sources": [
+                "https://www.gov.uk/renew-driving-licence-at-70",
+                "https://www.gov.uk/driving-licence-fees",
+                "https://www.gov.uk/renew-driving-licence"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 0.5,
+        "factResults": [
+          true,
+          false
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 274,
+        "outputTokens": 89
+      },
+      "judgeRaw": "[true, false]"
+    },
+    {
+      "id": "g03",
+      "type": "single_page",
+      "question": "How old do I have to be to apply for a provisional driving licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "You must be at least 15 years and 9 months old to apply for a provisional driving licence. You also need to be able to read a number plate from 20 metres away, and have been given permission to live in Great Britain (England, Scotland and Wales) for at least 185 days. Applying online costs £34. You usually can start driving a car at 17, and the rules differ if you have a disability or long-term health condition.",
+        "citedUrls": [
+          "https://www.gov.uk/apply-first-provisional-driving-licence",
+          "https://www.gov.uk/driving-lessons-learning-to-drive"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/apply-first-provisional-driving-licence",
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/theory-test"
+        ],
+        "usage": {
+          "inputTokens": 2627,
+          "outputTokens": 462
+        },
+        "ms": 3144,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "minimum age to apply for a provisional driving licence"
+            },
+            "summary": "5 hits: https://www.gov.uk/apply-first-provisional-driving-licence, https://www.gov.uk/driving-lessons-learning-to-drive, https://www.gov.uk/theory-test"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You must be at least 15 years and 9 months old to apply for a provisional driving licence. You also need to be able to read a number plate from 20 metres away, and have been given permission to live in Great Britain (England, Scotland and Wales) for at least 185 days. Applying online costs £34. You usually can start driving a car at 17, and the rules differ if you have a disability or long-term health condition.",
+              "sources": [
+                "https://www.gov.uk/apply-first-provisional-driving-licence",
+                "https://www.gov.uk/driving-lessons-learning-to-drive"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 301,
+        "outputTokens": 7
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g04",
+      "type": "single_page",
+      "question": "How much does it cost to replace a stolen driving licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "A replacement driving licence costs £20 if yours has been lost, stolen, damaged or destroyed. You can apply online at GOV.UK and pay by MasterCard, Visa, Electron or Delta debit or credit card. If applying by post, pay by cheque or postal order payable to DVLA (damaged or altered cheques are not accepted). Note that the fee is for Great Britain licences; Northern Ireland has different fees.",
+        "citedUrls": [
+          "https://www.gov.uk/driving-licence-fees",
+          "https://www.gov.uk/replace-a-driving-licence",
+          "https://www.gov.uk/exchange-paper-driving-licence"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-licence-fees",
+          "https://www.gov.uk/replace-a-driving-licence",
+          "https://www.gov.uk/exchange-paper-driving-licence",
+          "https://www.gov.uk/change-name-driving-licence"
+        ],
+        "usage": {
+          "inputTokens": 2777,
+          "outputTokens": 355
+        },
+        "ms": 2598,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "replace stolen driving licence cost"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-licence-fees, https://www.gov.uk/replace-a-driving-licence, https://www.gov.uk/exchange-paper-driving-licence, https://www.gov.uk/change-name-driving-licence"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "A replacement driving licence costs £20 if yours has been lost, stolen, damaged or destroyed. You can apply online at GOV.UK and pay by MasterCard, Visa, Electron or Delta debit or credit card. If applying by post, pay by cheque or postal order payable to DVLA (damaged or altered cheques are not accepted). Note that the fee is for Great Britain licences; Northern Ireland has different fees.",
+              "sources": [
+                "https://www.gov.uk/driving-licence-fees",
+                "https://www.gov.uk/replace-a-driving-licence",
+                "https://www.gov.uk/exchange-paper-driving-licence"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 0.5,
+        "factResults": [
+          true,
+          false
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 315,
+        "outputTokens": 102
+      },
+      "judgeRaw": "[true, false]"
+    },
+    {
+      "id": "g05",
+      "type": "single_page",
+      "question": "How long do penalty points stay on my licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "It depends on the offence. Most penalty points (endorsements) stay on your driving record for 4 years, counted from the date of the offence (or from the date of conviction for some offences, such as reckless/dangerous driving or offences that result in disqualification). Drink and drug driving offences (codes DR10, DR20, DR30, DR31, DR61, DR80), and causing death by careless driving while under the influence (CD40, CD50, CD60) or failing to provide a specimen (CD70), stay for 11 years from the date of conviction. Some drink-related codes (DR40–DR70, e.g. in charge of a vehicle) stay 4 years from the offence date, or from conviction if disqualified. Code TT99 (totting-up disqualification) stays 4 years from conviction. Example: an offence on 10 June 2012 stays until 10 June 2016. The endorsement is 'valid' for the first 3 years (4-year endorsements) or 10 years (11-year endorsements), during which courts can take it into account for new offences. Insurers and employers may see it for the first 5 years of an 11-year endorsement. Northern Ireland has different rules.",
+        "citedUrls": [
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "usage": {
+          "inputTokens": 6415,
+          "outputTokens": 669
+        },
+        "ms": 5471,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how long do penalty points stay on driving licence"
+            },
+            "summary": "5 hits: https://www.gov.uk/penalty-points-endorsements"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "endorsement stays on driving record 11 years drink driving"
+            },
+            "summary": "5 hits: https://www.gov.uk/penalty-points-endorsements"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "It depends on the offence. Most penalty points (endorsements) stay on your driving record for 4 years, counted from the date of the offence (or from the date of conviction for some offences, such as reckless/dangerous driving or offences that result in disqualification). Drink and drug driving offences (codes DR10, DR20, DR30, DR31, DR61, DR80), and causing death by careless driving while under the influence (CD40, CD50, CD60) or failing to provide a specimen (CD70), stay for 11 years from the date of conviction. Some drink-related codes (DR40–DR70, e.g. in charge of a vehicle) stay 4 years from the offence date, or from conviction if disqualified. Code TT99 (totting-up disqualification) stays 4 years from conviction. Example: an offence on 10 June 2012 stays until 10 June 2016. The endorsement is 'valid' for the first 3 years (4-year endorsements) or 10 years (11-year endorsements), during which courts can take it into account for new offences. Insurers and employers may see it for the first 5 years of an 11-year endorsement. Northern Ireland has different rules.",
+              "sources": [
+                "https://www.gov.uk/penalty-points-endorsements"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 551,
+        "outputTokens": 73
+      },
+      "judgeRaw": "```json\n[true]\n```"
+    },
+    {
+      "id": "g06",
+      "type": "single_page",
+      "question": "How much does the car theory test cost?",
+      "answer": {
+        "status": "answered",
+        "answer": "The car theory test costs £23 (same price on weekdays and on evenings, weekends and bank holidays). Book through GOV.UK; unofficial websites usually charge more.",
+        "citedUrls": [
+          "https://www.gov.uk/driving-test-cost",
+          "https://www.gov.uk/book-theory-test"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-test-cost",
+          "https://www.gov.uk/book-theory-test"
+        ],
+        "usage": {
+          "inputTokens": 2563,
+          "outputTokens": 293
+        },
+        "ms": 2225,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "car theory test cost"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-test-cost, https://www.gov.uk/book-theory-test"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "The car theory test costs £23 (same price on weekdays and on evenings, weekends and bank holidays). Book through GOV.UK; unofficial websites usually charge more.",
+              "sources": [
+                "https://www.gov.uk/driving-test-cost",
+                "https://www.gov.uk/book-theory-test"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 205,
+        "outputTokens": 5
+      },
+      "judgeRaw": "[true]"
+    },
+    {
+      "id": "g07",
+      "type": "single_page",
+      "question": "How do I tell DVLA my car is off the road?",
+      "answer": {
+        "status": "answered",
+        "answer": "Register it as off the road with a SORN (Statutory Off Road Notification). Options:\n- Online at gov.uk/make-a-sorn if the car is registered in your name. You'll need the 11-digit number from your V5C log book or the 16-digit reference from your vehicle tax reminder (V11 letter, email or text).\n- By phone: DVLA vehicle service on 0300 123 4321 (24-hour service).\n- By post: send a V890 form to DVLA, Swansea SA99 1AR. If you post it, you can apply for this month, or next month or the month after (include a letter explaining why you can't send it nearer the time).\n\nTiming: if your tax has already expired, or you apply in a month other than the month tax is due to expire, the SORN starts immediately. If you apply in the tax-expiry month, it starts on the first day of the next month. You'll get a refund for any full months of remaining tax, and you can't use the vehicle on the road until you tax it again. If the car isn't in your name, fill in the relevant part of the log book and send it with the V890. If you don't have a log book, you need a V62 application (£25) plus the V890.\n\nYou don't need a SORN if you've already sold the vehicle; tell DVLA about the sale instead.",
+        "citedUrls": [
+          "https://www.gov.uk/make-a-sorn",
+          "https://www.gov.uk/sorn-statutory-off-road-notification"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/make-a-sorn",
+          "https://www.gov.uk/sorn-statutory-off-road-notification"
+        ],
+        "usage": {
+          "inputTokens": 5373,
+          "outputTokens": 711
+        },
+        "ms": 4730,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "tell DVLA my car is off the road SORN"
+            },
+            "summary": "5 hits: https://www.gov.uk/make-a-sorn, https://www.gov.uk/sorn-statutory-off-road-notification"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/make-a-sorn"
+            },
+            "summary": "2788 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Register it as off the road with a SORN (Statutory Off Road Notification). Options:\n- Online at gov.uk/make-a-sorn if the car is registered in your name. You'll need the 11-digit number from your V5C log book or the 16-digit reference from your vehicle tax reminder (V11 letter, email or text).\n- By phone: DVLA vehicle service on 0300 123 4321 (24-hour service).\n- By post: send a V890 form to DVLA, Swansea SA99 1AR. If you post it, you can apply for this month, or next month or the month after (include a letter explaining why you can't send it nearer the time).\n\nTiming: if your tax has already expired, or you apply in a month other than the month tax is due to expire, the SORN starts immediately. If you apply in the tax-expiry month, it starts on the first day of the next month. You'll get a refund for any full months of remaining tax, and you can't use the vehicle on the road until you tax it again. If the car isn't in your name, fill in the relevant part of the log book and send it with the V890. If you don't have a log book, you need a V62 application (£25) plus the V890.\n\nYou don't need a SORN if you've already sold the vehicle; tell DVLA about the sale instead.",
+              "sources": [
+                "https://www.gov.uk/make-a-sorn",
+                "https://www.gov.uk/sorn-statutory-off-road-notification"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 597,
+        "outputTokens": 79
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g08",
+      "type": "single_page",
+      "question": "Can I get a refund on my vehicle tax if I sell my car?",
+      "answer": {
+        "status": "answered",
+        "answer": "Yes. If you sell your car, you must tell DVLA it has been sold or transferred. DVLA then cancels the vehicle tax and you automatically get a refund cheque for any full months of tax left. The refund is calculated from the date DVLA receives your information and is sent to the name and address on the log book (V5C). If you pay by Direct Debit, it is cancelled automatically. You won't get a refund for credit card fees, the 5% surcharge on some Direct Debit payments, or the 10% surcharge on a single 6-month payment. If you haven't received the cheque after 8 weeks, contact DVLA. There's no other way to cancel vehicle tax, so telling DVLA is required.",
+        "citedUrls": [
+          "https://www.gov.uk/vehicle-tax-refund"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/vehicle-tax-refund",
+          "https://www.gov.uk/sorn-statutory-off-road-notification",
+          "https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
+        ],
+        "usage": {
+          "inputTokens": 5458,
+          "outputTokens": 515
+        },
+        "ms": 3184,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "vehicle tax refund when you sell your car"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-tax-refund, https://www.gov.uk/sorn-statutory-off-road-notification, https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/vehicle-tax-refund"
+            },
+            "summary": "2044 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Yes. If you sell your car, you must tell DVLA it has been sold or transferred. DVLA then cancels the vehicle tax and you automatically get a refund cheque for any full months of tax left. The refund is calculated from the date DVLA receives your information and is sent to the name and address on the log book (V5C). If you pay by Direct Debit, it is cancelled automatically. You won't get a refund for credit card fees, the 5% surcharge on some Direct Debit payments, or the 10% surcharge on a single 6-month payment. If you haven't received the cheque after 8 weeks, contact DVLA. There's no other way to cancel vehicle tax, so telling DVLA is required.",
+              "sources": [
+                "https://www.gov.uk/vehicle-tax-refund"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 434,
+        "outputTokens": 162
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g09",
+      "type": "single_page",
+      "question": "Which vehicles are exempt from vehicle tax?",
+      "answer": {
+        "status": "answered",
+        "answer": "These vehicle types are exempt from vehicle tax (you must still tax them, even though no payment is due):\n- Vehicles used by a disabled person (one vehicle at a time; claim when applying for tax)\n- Vehicles (except ambulances) used by organisations providing transport for disabled people\n- Historic vehicles made before 1 January 1986\n- Mobility vehicles and powered wheelchairs with a maximum speed of 8mph on the road and a device limiting them to 4mph on footways\n- Electric vehicles, but only heavy goods vehicles over 3,500kg remain exempt. From 1 April 2025, electric cars, vans, motorcycles and tricycles must pay vehicle tax. Hybrid electric vehicles must also pay.\n- Mowing machines designed and used for cutting grass only (not tractors towing gang mowers)\n- Steam-powered vehicles\n- Vehicles used for agriculture, horticulture and forestry, including tractors, agricultural engines, light agricultural vehicles used off-road, and 'limited use' vehicles making journeys of no more than 1.5km on a public road between land used by the same person\n\nIf you register a vehicle as off the road (SORN), you can get a refund for unused vehicle tax already paid.",
+        "citedUrls": [
+          "https://www.gov.uk/vehicle-exempt-from-vehicle-tax"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/vehicle-exempt-from-vehicle-tax",
+          "https://www.gov.uk/historic-vehicles"
+        ],
+        "usage": {
+          "inputTokens": 5335,
+          "outputTokens": 688
+        },
+        "ms": 4331,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "which vehicles are exempt from vehicle tax"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-exempt-from-vehicle-tax, https://www.gov.uk/historic-vehicles"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/vehicle-exempt-from-vehicle-tax"
+            },
+            "summary": "2852 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "These vehicle types are exempt from vehicle tax (you must still tax them, even though no payment is due):\n- Vehicles used by a disabled person (one vehicle at a time; claim when applying for tax)\n- Vehicles (except ambulances) used by organisations providing transport for disabled people\n- Historic vehicles made before 1 January 1986\n- Mobility vehicles and powered wheelchairs with a maximum speed of 8mph on the road and a device limiting them to 4mph on footways\n- Electric vehicles, but only heavy goods vehicles over 3,500kg remain exempt. From 1 April 2025, electric cars, vans, motorcycles and tricycles must pay vehicle tax. Hybrid electric vehicles must also pay.\n- Mowing machines designed and used for cutting grass only (not tractors towing gang mowers)\n- Steam-powered vehicles\n- Vehicles used for agriculture, horticulture and forestry, including tractors, agricultural engines, light agricultural vehicles used off-road, and 'limited use' vehicles making journeys of no more than 1.5km on a public road between land used by the same person\n\nIf you register a vehicle as off the road (SORN), you can get a refund for unused vehicle tax already paid.",
+              "sources": [
+                "https://www.gov.uk/vehicle-exempt-from-vehicle-tax"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 667,
+        "outputTokens": 246
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g10",
+      "type": "single_page",
+      "question": "How do I check the MOT history of a car?",
+      "answer": {
+        "status": "answered",
+        "answer": "Go to the GOV.UK \"Check the MOT history of a vehicle\" service and enter the vehicle's number plate (registration number). You'll see past test results: pass or fail, the mileage at each test, and when the next MOT is due. Some records may also show safety recalls, depending on the manufacturer.\n\nExtra details:\n- For tests in England, Scotland or Wales, you can also download current and previous MOT certificates, see where each test was done (you'll need the 11-digit number from the V5C log book), and see which parts failed or had minor problems.\n- Results are available for cars, motorcycles and vans for tests since 2005 (HGVs, trailers, buses and coaches since 2018).\n- For tests in Northern Ireland, results are available since 2017, but certificates can't be downloaded. If the MOT is still valid, you can apply for a duplicate certificate on NI Direct; this isn't possible for an expired MOT.",
+        "citedUrls": [
+          "https://www.gov.uk/check-mot-history"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/check-mot-history",
+          "https://www.gov.uk/getting-an-mot"
+        ],
+        "usage": {
+          "inputTokens": 4697,
+          "outputTokens": 525
+        },
+        "ms": 3891,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "check MOT history of a car"
+            },
+            "summary": "5 hits: https://www.gov.uk/check-mot-history, https://www.gov.uk/getting-an-mot"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/check-mot-history"
+            },
+            "summary": "1605 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Go to the GOV.UK \"Check the MOT history of a vehicle\" service and enter the vehicle's number plate (registration number). You'll see past test results: pass or fail, the mileage at each test, and when the next MOT is due. Some records may also show safety recalls, depending on the manufacturer.\n\nExtra details:\n- For tests in England, Scotland or Wales, you can also download current and previous MOT certificates, see where each test was done (you'll need the 11-digit number from the V5C log book), and see which parts failed or had minor problems.\n- Results are available for cars, motorcycles and vans for tests since 2005 (HGVs, trailers, buses and coaches since 2018).\n- For tests in Northern Ireland, results are available since 2017, but certificates can't be downloaded. If the MOT is still valid, you can apply for a duplicate certificate on NI Direct; this isn't possible for an expired MOT.",
+              "sources": [
+                "https://www.gov.uk/check-mot-history"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 488,
+        "outputTokens": 7
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g11",
+      "type": "single_page",
+      "question": "How early can I get my MOT without losing my renewal date?",
+      "answer": {
+        "status": "answered",
+        "answer": "You can get an MOT up to a month (minus a day) before it runs out and keep the same renewal date. Example: if your MOT runs out on 15 May, the earliest is 16 April. Getting it earlier and passing changes the expiry to one year (minus a day) from the pass date (e.g. passing on 14 April gives an expiry of 13 April the following year). This doesn't apply if your last MOT was in Northern Ireland and the next test is in Great Britain; the renewal date is then based on the GB test date.",
+        "citedUrls": [
+          "https://www.gov.uk/getting-an-mot"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/getting-an-mot",
+          "https://www.gov.uk/get-stop-view-mot-reminder"
+        ],
+        "usage": {
+          "inputTokens": 3061,
+          "outputTokens": 531
+        },
+        "ms": 3160,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how early can I get an MOT without losing my renewal date"
+            },
+            "summary": "5 hits: https://www.gov.uk/getting-an-mot, https://www.gov.uk/get-stop-view-mot-reminder"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You can get an MOT up to a month (minus a day) before it runs out and keep the same renewal date. Example: if your MOT runs out on 15 May, the earliest is 16 April. Getting it earlier and passing changes the expiry to one year (minus a day) from the pass date (e.g. passing on 14 April gives an expiry of 13 April the following year). This doesn't apply if your last MOT was in Northern Ireland and the next test is in Great Britain; the renewal date is then based on the GB test date.",
+              "sources": [
+                "https://www.gov.uk/getting-an-mot"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 343,
+        "outputTokens": 5
+      },
+      "judgeRaw": "[true]"
+    },
+    {
+      "id": "g12",
+      "type": "single_page",
+      "question": "What do I need to do when I sell my car?",
+      "answer": {
+        "status": "answered",
+        "answer": "When you sell a car:\n1. Tell DVLA you've sold it. Use the online service at GOV.UK (\"Tell DVLA you've sold, transferred or bought a vehicle\"), which changes the registered keeper and cancels the vehicle tax. You get a refund for any full months of remaining tax. You can't use the online service if you've already posted the V5C log book, or if you don't have it.\n2. Give the buyer the log book (V5C). If you're selling to a private buyer, fill in section 2 (new-style V5C with multi-coloured numbered blocks) or section 6 (older style), sign the declaration in section 8 if it's the older style, and give the green 'new keeper' slip to the buyer. Then send the V5C to DVLA (the buyer should not be given it until you have done this, as per the online/postal process).\n3. If you don't have the log book, write to DVLA with your name and address, the registration number, make and model, the exact sale date, and the new keeper's or trader's name and address (send to the DVLA address on the page, Swansea SA99 1BA). Tell the buyer they'll need to apply for a new V5C using form V62 (£25 fee).\n4. If selling to a motor trader, have them complete the yellow 'sell, transfer or part-exchange your vehicle to the motor trade' section of the V5C and send the perforated section to DVLA; give them the rest of the log book.\n5. Don't forget that the buyer must tax the vehicle before driving it, or declare it off the road (SORN); vehicle tax does not transfer to the buyer.\n\nNote: the sources I found don't cover insurance cancellation or any other steps beyond these, so check those separately.",
+        "citedUrls": [
+          "https://www.gov.uk/sold-bought-vehicle",
+          "https://www.gov.uk/tell-dvla-about-bereavement",
+          "https://www.gov.uk/vehicle-registration"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/sold-bought-vehicle",
+          "https://www.gov.uk/tell-dvla-about-bereavement",
+          "https://www.gov.uk/written-off-vehicle",
+          "https://www.gov.uk/vehicle-registration"
+        ],
+        "usage": {
+          "inputTokens": 7699,
+          "outputTokens": 934
+        },
+        "ms": 6572,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "what to do when you sell your car"
+            },
+            "summary": "5 hits: https://www.gov.uk/sold-bought-vehicle, https://www.gov.uk/tell-dvla-about-bereavement, https://www.gov.uk/written-off-vehicle"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "selling a vehicle tell DVLA new keeper V5C"
+            },
+            "summary": "5 hits: https://www.gov.uk/tell-dvla-about-bereavement, https://www.gov.uk/sold-bought-vehicle, https://www.gov.uk/vehicle-registration"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/sold-bought-vehicle"
+            },
+            "summary": "1442 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "When you sell a car:\n1. Tell DVLA you've sold it. Use the online service at GOV.UK (\"Tell DVLA you've sold, transferred or bought a vehicle\"), which changes the registered keeper and cancels the vehicle tax. You get a refund for any full months of remaining tax. You can't use the online service if you've already posted the V5C log book, or if you don't have it.\n2. Give the buyer the log book (V5C). If you're selling to a private buyer, fill in section 2 (new-style V5C with multi-coloured numbered blocks) or section 6 (older style), sign the declaration in section 8 if it's the older style, and give the green 'new keeper' slip to the buyer. Then send the V5C to DVLA (the buyer should not be given it until you have done this, as per the online/postal process).\n3. If you don't have the log book, write to DVLA with your name and address, the registration number, make and model, the exact sale date, and the new keeper's or trader's name and address (send to the DVLA address on the page, Swansea SA99 1BA). Tell the buyer they'll need to apply for a new V5C using form V62 (£25 fee).\n4. If selling to a motor trader, have them complete the yellow 'sell, transfer or part-exchange your vehicle to the motor trade' section of the V5C and send the perforated section to DVLA; give them the rest of the log book.\n5. Don't forget that the buyer must tax the vehicle before driving it, or declare it off the road (SORN); vehicle tax does not transfer to the buyer.\n\nNote: the sources I found don't cover insurance cancellation or any other steps beyond these, so check those separately.",
+              "sources": [
+                "https://www.gov.uk/sold-bought-vehicle",
+                "https://www.gov.uk/tell-dvla-about-bereavement",
+                "https://www.gov.uk/vehicle-registration"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 747,
+        "outputTokens": 155
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g13",
+      "type": "single_page",
+      "question": "How do I change the address on my V5C log book?",
+      "answer": {
+        "status": "answered",
+        "answer": "You must be the registered keeper to change the address on your V5C. You can do it online or by post.\n\nOnline: use the DVLA \"Change your address online\" service (available Monday to Friday 7am to 9pm, and Saturday and Sunday 7am to 8pm). It only works for a new UK address. It's usually free.\n\nBy post:\n- New style log book (multi-coloured numbered blocks on the front cover): write the new address in section 3 (no PO Box), and send the whole log book to the DVLA address in section 3.\n- Older style log book: write the new address in section 6 (no PO Box), sign, and send the whole log book to the DVLA address in section 8. Don't tick the 'new keeper' box or fill in your name on this form.\n\nPay the correct postage. You must also update your driving licence address and your vehicle tax Direct Debit (if you pay that way), and your V750/V778 if you have a personalised registration number document. You can be fined up to £1,000 if you don't tell DVLA when your address changes.\n\nIf you're also taking the car off the road, you can change the address online first, then register a SORN.",
+        "citedUrls": [
+          "https://www.gov.uk/change-address-v5c",
+          "https://www.gov.uk/make-a-sorn"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-address-v5c",
+          "https://www.gov.uk/make-a-sorn"
+        ],
+        "usage": {
+          "inputTokens": 3911,
+          "outputTokens": 652
+        },
+        "ms": 4443,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "change address on V5C log book"
+            },
+            "summary": "5 hits: https://www.gov.uk/change-address-v5c, https://www.gov.uk/make-a-sorn"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "update keeper address vehicle registration certificate V5C"
+            },
+            "summary": "5 hits: https://www.gov.uk/change-address-v5c"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You must be the registered keeper to change the address on your V5C. You can do it online or by post.\n\nOnline: use the DVLA \"Change your address online\" service (available Monday to Friday 7am to 9pm, and Saturday and Sunday 7am to 8pm). It only works for a new UK address. It's usually free.\n\nBy post:\n- New style log book (multi-coloured numbered blocks on the front cover): write the new address in section 3 (no PO Box), and send the whole log book to the DVLA address in section 3.\n- Older style log book: write the new address in section 6 (no PO Box), sign, and send the whole log book to the DVLA address in section 8. Don't tick the 'new keeper' box or fill in your name on this form.\n\nPay the correct postage. You must also update your driving licence address and your vehicle tax Direct Debit (if you pay that way), and your V750/V778 if you have a personalised registration number document. You can be fined up to £1,000 if you don't tell DVLA when your address changes.\n\nIf you're also taking the car off the road, you can change the address online first, then register a SORN.",
+              "sources": [
+                "https://www.gov.uk/change-address-v5c",
+                "https://www.gov.uk/make-a-sorn"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 525,
+        "outputTokens": 72
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g14",
+      "type": "single_page",
+      "question": "What should I do if my car has been stolen?",
+      "answer": {
+        "status": "answered",
+        "answer": "1. Report it to the police straight away. Dial 101, ask for your local police, and have the registration number, make and model, and colour ready. You'll get a crime reference number, which you need for your insurer. The police will tell DVLA about the theft, and will also tell DVLA if the vehicle is found.\n2. Tell your insurance company straight away and make a claim, using the crime reference number.\n3. If your insurer pays out, you must tell DVLA the vehicle has been sold to the insurance company. You can do this online, or by filling in the 'sell, transfer or part-exchange to the motor trade' section of the log book (V5C) and sending the perforated section to DVLA with a letter giving the payment date and your insurer's details. Send the rest of the log book to your insurer (if they ask for the whole log book, write to DVLA with your insurer's details, claim date, registration number, make, model, colour and signature, at DVLA, Swansea, SA99 1BD).\n4. If you have a private (personalised) registration number you want to keep, apply to keep it as soon as the car is stolen, within 2 years and 6 months of telling DVLA. You can only get it back if you told the police, and the vehicle had a valid MOT and up-to-date vehicle tax when stolen. You must get the number back before you tell DVLA you no longer own the vehicle.",
+        "citedUrls": [
+          "https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
+        ],
+        "usage": {
+          "inputTokens": 4190,
+          "outputTokens": 717
+        },
+        "ms": 4494,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "what to do if your car has been stolen"
+            },
+            "summary": "5 hits: https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "stolen vehicle report to DVLA SORN police"
+            },
+            "summary": "5 hits: https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "1. Report it to the police straight away. Dial 101, ask for your local police, and have the registration number, make and model, and colour ready. You'll get a crime reference number, which you need for your insurer. The police will tell DVLA about the theft, and will also tell DVLA if the vehicle is found.\n2. Tell your insurance company straight away and make a claim, using the crime reference number.\n3. If your insurer pays out, you must tell DVLA the vehicle has been sold to the insurance company. You can do this online, or by filling in the 'sell, transfer or part-exchange to the motor trade' section of the log book (V5C) and sending the perforated section to DVLA with a letter giving the payment date and your insurer's details. Send the rest of the log book to your insurer (if they ask for the whole log book, write to DVLA with your insurer's details, claim date, registration number, make, model, colour and signature, at DVLA, Swansea, SA99 1BD).\n4. If you have a private (personalised) registration number you want to keep, apply to keep it as soon as the car is stolen, within 2 years and 6 months of telling DVLA. You can only get it back if you told the police, and the vehicle had a valid MOT and up-to-date vehicle tax when stolen. You must get the number back before you tell DVLA you no longer own the vehicle.",
+              "sources": [
+                "https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 629,
+        "outputTokens": 101
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g15",
+      "type": "single_page",
+      "question": "What are the penalties for speeding?",
+      "answer": {
+        "status": "answered",
+        "answer": "The minimum penalty for speeding is a £100 fine and 3 penalty points on your licence. You can be disqualified if you build up 12 or more penalty points within 3 years.\n\n- If you plead guilty: you pay the £100 fine and get 3 points, unless you're offered a speed awareness course. You can be offered one if the police think it's appropriate and you haven't been on one in the past 3 years. The code stays on your licence for 4 years.\n- If you plead not guilty: you go to court. If the court finds you guilty, you can be fined more and get more points. The fine is usually a percentage of your weekly income, up to a maximum of £1,000 (£2,500 if you were on a motorway). You could also be disqualified or have your licence suspended.\n- When stopped by police, they can give you a verbal warning, give you a fixed penalty notice (FPN), or order you to go to court.\n\nSpeeding offences carry 3 to 6 penalty points under the endorsement codes (SP10–SP50), and these codes stay on your record for 4 years from the offence date.",
+        "citedUrls": [
+          "https://www.gov.uk/speeding-penalties",
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/speeding-penalties",
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "usage": {
+          "inputTokens": 2800,
+          "outputTokens": 564
+        },
+        "ms": 3608,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "penalties for speeding"
+            },
+            "summary": "5 hits: https://www.gov.uk/speeding-penalties, https://www.gov.uk/penalty-points-endorsements"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "The minimum penalty for speeding is a £100 fine and 3 penalty points on your licence. You can be disqualified if you build up 12 or more penalty points within 3 years.\n\n- If you plead guilty: you pay the £100 fine and get 3 points, unless you're offered a speed awareness course. You can be offered one if the police think it's appropriate and you haven't been on one in the past 3 years. The code stays on your licence for 4 years.\n- If you plead not guilty: you go to court. If the court finds you guilty, you can be fined more and get more points. The fine is usually a percentage of your weekly income, up to a maximum of £1,000 (£2,500 if you were on a motorway). You could also be disqualified or have your licence suspended.\n- When stopped by police, they can give you a verbal warning, give you a fixed penalty notice (FPN), or order you to go to court.\n\nSpeeding offences carry 3 to 6 penalty points under the endorsement codes (SP10–SP50), and these codes stay on your record for 4 years from the offence date.",
+              "sources": [
+                "https://www.gov.uk/speeding-penalties",
+                "https://www.gov.uk/penalty-points-endorsements"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 529,
+        "outputTokens": 7
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g16",
+      "type": "single_page",
+      "question": "How do I get my licence back after a driving ban?",
+      "answer": {
+        "status": "answered",
+        "answer": "To get your licence back after a ban, you must apply for a new licence. You can't drive until the disqualification period is over.\n\n- Check your driving record online to see when your disqualification ends.\n- Drink or drug driving disqualifications: DVLA sends a D27 renewal form 56 days before the ban ends (90 days if you're a high risk offender). Fill it in and send it to DVLA with the fee. You may need to send a passport-style photo, and the form will say if you do. If the form doesn't arrive, get form D1 (car or motorcycle) or D2 (lorry or bus) from a Post Office that offers DVLA services. You can apply before the ban ends.\n- If your licence was revoked, or you were disqualified otherwise, apply for a new one with form D1 (or D2 for lorry or bus) from the Post Office, sent with the fee to the address on the form. You can apply at any time once it's cancelled.\n- If the court ordered you to take another driving test, you must apply for a new provisional licence and pass the tests before driving again. If you're a new driver whose licence was cancelled within 2 years of passing, you must also retake both parts of the test.\n- If you hold a non-GB licence, DVLA returns your licence when the disqualification period ends.\n- In Northern Ireland, contact the Driver and Vehicle Agency (DVA).\n\nIf you were banned for 12 months or more for drink-driving, you may be able to reduce the ban by taking a drink-drive rehabilitation course. The pages don't say how to apply for that course.",
+        "citedUrls": [
+          "https://www.gov.uk/reapply-licence-revoked",
+          "https://www.gov.uk/driving-disqualifications"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-disqualifications",
+          "https://www.gov.uk/reapply-licence-revoked"
+        ],
+        "usage": {
+          "inputTokens": 4969,
+          "outputTokens": 878
+        },
+        "ms": 6350,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how to get your driving licence back after a driving ban"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-disqualifications, https://www.gov.uk/reapply-licence-revoked"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/reapply-licence-revoked"
+            },
+            "summary": "2661 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "To get your licence back after a ban, you must apply for a new licence. You can't drive until the disqualification period is over.\n\n- Check your driving record online to see when your disqualification ends.\n- Drink or drug driving disqualifications: DVLA sends a D27 renewal form 56 days before the ban ends (90 days if you're a high risk offender). Fill it in and send it to DVLA with the fee. You may need to send a passport-style photo, and the form will say if you do. If the form doesn't arrive, get form D1 (car or motorcycle) or D2 (lorry or bus) from a Post Office that offers DVLA services. You can apply before the ban ends.\n- If your licence was revoked, or you were disqualified otherwise, apply for a new one with form D1 (or D2 for lorry or bus) from the Post Office, sent with the fee to the address on the form. You can apply at any time once it's cancelled.\n- If the court ordered you to take another driving test, you must apply for a new provisional licence and pass the tests before driving again. If you're a new driver whose licence was cancelled within 2 years of passing, you must also retake both parts of the test.\n- If you hold a non-GB licence, DVLA returns your licence when the disqualification period ends.\n- In Northern Ireland, contact the Driver and Vehicle Agency (DVA).\n\nIf you were banned for 12 months or more for drink-driving, you may be able to reduce the ban by taking a drink-drive rehabilitation course. The pages don't say how to apply for that course.",
+              "sources": [
+                "https://www.gov.uk/reapply-licence-revoked",
+                "https://www.gov.uk/driving-disqualifications"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 691,
+        "outputTokens": 131
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g17",
+      "type": "single_page",
+      "question": "Can I drive if I have diabetes?",
+      "answer": {
+        "status": "not_covered",
+        "answer": "I could not back an answer with a GOV.UK page I retrieved.",
+        "citedUrls": [],
+        "retrievedUrls": [
+          "https://www.gov.uk/diabetes-driving"
+        ],
+        "usage": {
+          "inputTokens": 6582,
+          "outputTokens": 1344
+        },
+        "ms": 7725,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "driving with diabetes rules DVLA"
+            },
+            "summary": "5 hits: https://www.gov.uk/diabetes-driving"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "diabetes and driving insulin notify DVLA"
+            },
+            "summary": "5 hits: https://www.gov.uk/diabetes-driving"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Yes, in most cases you can drive with diabetes, but whether you must tell DVLA depends on how it is treated.\n\nCar or motorbike licence:\n- Diet-only treatment: you do not need to tell DVLA.\n- Non-insulin medication, diet or both: check with your doctor or nurse whether you need to tell DVLA. If you do, complete form DIAB1 and send it to DVLA (or see the leaflet INF188/2).\n- Insulin treatment: you need to tell DVLA if your insulin treatment lasts (or will last) over 3 months, if you had gestational diabetes and insulin continues for more than 3 months after the birth, or if you get disabling hypoglycaemia (low blood glucose) or a medical professional has told you that you are at risk of it. You can report online or use form DIAB1 (see leaflet INF294).\n\nBus, coach or lorry licence:\n- Diet or non-insulin treatment: you do not need to tell DVLA.\n- Insulin treatment: you must stop driving and tell DVLA when you start insulin. DVLA will tell you when you can drive again. Use form VDIAB1I, and see leaflet INS186 for getting a licence for larger vehicles.\n\nFailing to tell DVLA about a condition that affects your driving can result in a fine of up to £1,000, and you may be prosecuted if you are involved in an accident as a result. If you are unsure what medication you are on, check with your nurse or doctor.</answer>\n<parameter name=\"sources\">[\"https://www.gov.uk/diabetes-driving\"]"
+            },
+            "summary": "rejected: no valid source"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Yes, in most cases you can drive with diabetes, but whether you must tell DVLA depends on how it is treated.\n\nCar or motorbike licence:\n- Diet-only treatment: you do not need to tell DVLA.\n- Non-insulin medication, diet or both: check with your doctor or nurse whether you need to tell DVLA. If you do, complete form DIAB1 and send it to DVLA (or see leaflet INF188/2).\n- Insulin treatment: you need to tell DVLA if your insulin treatment lasts (or will last) over 3 months, if you had gestational diabetes and insulin continues for more than 3 months after the birth, or if you get disabling hypoglycaemia (low blood glucose) or a medical professional has told you that you are at risk of it. You can report online or use form DIAB1 (see leaflet INF294).\n\nBus, coach or lorry licence:\n- Diet or non-insulin treatment: you do not need to tell DVLA.\n- Insulin treatment: you must stop driving and tell DVLA when you start insulin. DVLA will tell you when you can drive again. Use form VDIAB1I, and see leaflet INS186 for getting a licence for larger vehicles.\n\nFailing to tell DVLA about a condition that affects your driving can result in a fine of up to £1,000, and you may be prosecuted if you are involved in an accident as a result. If you are unsure what medication you are on, check with your nurse or doctor.</answer>\n<parameter name=\"sources\">[\"https://www.gov.uk/diabetes-driving\"]"
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": null,
+        "citationRecall": 0,
+        "refusalCorrect": false,
+        "facts": 0,
+        "factResults": [
+          false,
+          false
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 221,
+        "outputTokens": 7
+      },
+      "judgeRaw": "[false, false]"
+    },
+    {
+      "id": "g18",
+      "type": "single_page",
+      "question": "What are the eyesight rules for driving?",
+      "answer": {
+        "status": "answered",
+        "answer": "Standard car driving (from GOV.UK):\n- You must be able to read a number plate from 20 metres away. You can wear glasses or contact lenses if you need them for driving, and you must wear them every time you drive if you need them to meet the standard.\n- Visual acuity must be at least decimal 0.5 (6/12) on the Snellen scale, with both eyes together or, if you have sight in only one eye, that eye (glasses or contact lenses allowed).\n- You must have an adequate field of vision. An optician can check this.\n- You must tell DVLA about any eyesight problem affecting both eyes (or your only good eye if you have one eye). Being short or long sighted, colour blind, or having had surgery to correct short sightedness (if you meet the standards) does not need to be reported.\n- You can submit an eyesight test done by another optician only if it includes an 'Esterman visual test'. DVLA does not guarantee it will accept it, and you pay for it yourself. Driving without meeting the standards could lead to prosecution.\n\nLorry and bus drivers (higher standard):\n- Visual acuity of at least 0.8 (6/7.5) in the better eye and at least 0.1 (6/60) in the other, with glasses of no more than (+) 8 dioptres or contact lenses.\n- Uninterrupted horizontal visual field of at least 160 degrees, extending at least 70 degrees left and right and 30 degrees up and down, with no defects within the central 30 degrees.\n- You must tell DVLA about any eyesight problem affecting either eye.\n\nPractical driving test: you must correctly read a number plate on a parked vehicle at the start. If you cannot, the test stops and you fail. When reapplying for a licence after this, DVLA will ask for an eyesight test with DVSA.",
+        "citedUrls": [
+          "https://www.gov.uk/driving-eyesight-rules"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-eyesight-rules"
+        ],
+        "usage": {
+          "inputTokens": 3045,
+          "outputTokens": 806
+        },
+        "ms": 5363,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "eyesight rules for driving"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-eyesight-rules"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Standard car driving (from GOV.UK):\n- You must be able to read a number plate from 20 metres away. You can wear glasses or contact lenses if you need them for driving, and you must wear them every time you drive if you need them to meet the standard.\n- Visual acuity must be at least decimal 0.5 (6/12) on the Snellen scale, with both eyes together or, if you have sight in only one eye, that eye (glasses or contact lenses allowed).\n- You must have an adequate field of vision. An optician can check this.\n- You must tell DVLA about any eyesight problem affecting both eyes (or your only good eye if you have one eye). Being short or long sighted, colour blind, or having had surgery to correct short sightedness (if you meet the standards) does not need to be reported.\n- You can submit an eyesight test done by another optician only if it includes an 'Esterman visual test'. DVLA does not guarantee it will accept it, and you pay for it yourself. Driving without meeting the standards could lead to prosecution.\n\nLorry and bus drivers (higher standard):\n- Visual acuity of at least 0.8 (6/7.5) in the better eye and at least 0.1 (6/60) in the other, with glasses of no more than (+) 8 dioptres or contact lenses.\n- Uninterrupted horizontal visual field of at least 160 degrees, extending at least 70 degrees left and right and 30 degrees up and down, with no defects within the central 30 degrees.\n- You must tell DVLA about any eyesight problem affecting either eye.\n\nPractical driving test: you must correctly read a number plate on a parked vehicle at the start. If you cannot, the test stops and you fail. When reapplying for a licence after this, DVLA will ask for an eyesight test with DVSA.",
+              "sources": [
+                "https://www.gov.uk/driving-eyesight-rules"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 792,
+        "outputTokens": 91
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g19",
+      "type": "single_page",
+      "question": "How do I change the photo on my driving licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "You change the photo by renewing your driving licence. Online costs £14: sign in to renew at GOV.UK, use your passport-style photo or upload a new one, and prove your identity when prompted. Online renewal is only for Great Britain residents who aren't disqualified, haven't changed their name or title since getting the current licence, and don't hold a 5-year bus or lorry licence. By post costs £17: get a 'D1 pack' from a Post Office offering DVLA photocard renewal, and send the completed forms, a recent printed passport-type photo, your photocard and paper counterpart (or tick the lost box), and a cheque or postal order payable to DVLA to DVLA, Swansea, SA99 1DH (add identity documents if you've changed your name). No fee if over 70 or on a medical short-period licence. The new licence should arrive within 3 weeks and you can keep driving meanwhile.",
+        "citedUrls": [
+          "https://www.gov.uk/renew-photo-driving-licence"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/renew-photo-driving-licence",
+          "https://www.gov.uk/change-name-driving-licence"
+        ],
+        "usage": {
+          "inputTokens": 7431,
+          "outputTokens": 1052
+        },
+        "ms": 6289,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how to change the photo on my driving licence"
+            },
+            "summary": "5 hits: https://www.gov.uk/renew-photo-driving-licence, https://www.gov.uk/change-name-driving-licence"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "replace driving licence photo update photograph DVLA"
+            },
+            "summary": "5 hits: https://www.gov.uk/renew-photo-driving-licence, https://www.gov.uk/change-name-driving-licence"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/renew-photo-driving-licence"
+            },
+            "summary": "2682 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You change the photo by renewing your driving licence. Online costs £14: sign in to renew at GOV.UK, use your passport-style photo or upload a new one, and prove your identity when prompted. Online renewal is only for Great Britain residents who aren't disqualified, haven't changed their name or title since getting the current licence, and don't hold a 5-year bus or lorry licence. By post costs £17: get a 'D1 pack' from a Post Office offering DVLA photocard renewal, and send the completed forms, a recent printed passport-type photo, your photocard and paper counterpart (or tick the lost box), and a cheque or postal order payable to DVLA to DVLA, Swansea, SA99 1DH (add identity documents if you've changed your name). No fee if over 70 or on a medical short-period licence. The new licence should arrive within 3 weeks and you can keep driving meanwhile.",
+              "sources": [
+                "https://www.gov.uk/renew-photo-driving-licence"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 471,
+        "outputTokens": 83
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g20",
+      "type": "single_page",
+      "question": "What do the codes on my driving licence mean?",
+      "answer": {
+        "status": "answered",
+        "answer": "The codes on the back of your photocard licence are restriction codes. They tell you what conditions you must meet to drive (some may differ in Northern Ireland). Common examples: 01 = glasses or contact lenses; 02 = hearing/communication aid; 78 = automatic transmission only; 79 = must match the vehicle specifications in brackets; 101 = not for hire or reward; 115 = organ donor; 118 = start date is for earliest entitlement; 122 = valid on completing the Basic Moped Training Course. Other codes: 10 to 44 show vehicle adaptations (for example modified transmission, steering, controls, or motorbike adaptations); 70 = exchanged licence; 71 = duplicate licence. Vehicle category letters (such as B, B auto) are explained on the categories page. Penalty codes such as MR or LC are endorsements on your driving record, not licence printed codes.",
+        "citedUrls": [
+          "https://www.gov.uk/driving-licence-codes",
+          "https://www.gov.uk/driving-licence-categories",
+          "https://www.gov.uk/penalty-points-endorsements"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-licence-codes",
+          "https://www.gov.uk/penalty-points-endorsements",
+          "https://www.gov.uk/driving-licence-categories"
+        ],
+        "usage": {
+          "inputTokens": 10930,
+          "outputTokens": 1181
+        },
+        "ms": 7038,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "what do the codes on my driving licence mean"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-licence-codes, https://www.gov.uk/penalty-points-endorsements"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "driving licence categories codes explained"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-licence-codes, https://www.gov.uk/driving-licence-categories"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "The codes on the back of your photocard licence are restriction codes. They tell you what conditions you must meet to drive (some may differ in Northern Ireland). Common examples: 01 = glasses or contact lenses; 02 = hearing/communication aid; 78 = automatic transmission only; 79 = must match the vehicle specifications in brackets; 101 = not for hire or reward; 115 = organ donor; 118 = start date is for earliest entitlement; 122 = valid on completing the Basic Moped Training Course. Other codes: 10 to 44 show vehicle adaptations (for example modified transmission, steering, controls, or motorbike adaptations); 70 = exchanged licence; 71 = duplicate licence. Vehicle category letters (such as B, B auto) are explained on the categories page. Penalty codes such as MR or LC are endorsements on your driving record, not licence printed codes.",
+              "sources": [
+                "https://www.gov.uk/driving-licence-codes",
+                "https://www.gov.uk/driving-licence-categories",
+                "https://www.gov.uk/penalty-points-endorsements"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 497,
+        "outputTokens": 104
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g21",
+      "type": "single_page",
+      "question": "How do I swap my paper driving licence for a photocard?",
+      "answer": {
+        "status": "answered",
+        "answer": "You only need to swap a paper licence if it's no longer valid for your circumstances. You must get a new licence if you change your address or name, want to do Driver CPC training, or your licence is defaced, lost, stolen or destroyed. If none of these apply and your paper licence is still valid, you don't need to exchange it.\n\nHow to apply:\n- Online: sign in to the DVLA service on GOV.UK to exchange your licence. You must be a resident of Great Britain, not disqualified or prevented from driving, and meet the minimum eyesight requirement. You may be asked to prove your identity, usually with photo ID such. You can't apply online if you've changed your name.\n- By post: complete form D1 (cars and motorbikes) or D2 (buses and lorries), available from most Post Offices. Include your original identity documents, a colour passport-type photo, and the fee if required (cheques or postal orders payable to DVLA, not cash). Send cars and motorbikes applications to DVLA, Swansea, SA99 1BU, and buses and lorries to DVLA, Swansea, SA99 1BR.\n\nFees: free if you've changed your name or address and still have your paper licence; £20 if it's defaced, lost, stolen or destroyed, or for any other reason. Online payment is by MasterCard, Visa, Electron or Delta.\n\nTiming: DVLA aims to send the new licence within 3 weeks, possibly longer if medical or personal details need checking. You can drive while it's being processed only if you meet all the listed conditions, including having your doctor's support, and the application is less than a year old.",
+        "citedUrls": [
+          "https://www.gov.uk/exchange-paper-driving-licence"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/exchange-paper-driving-licence",
+          "https://www.gov.uk/renew-photo-driving-licence"
+        ],
+        "usage": {
+          "inputTokens": 6389,
+          "outputTokens": 877
+        },
+        "ms": 5364,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how to exchange paper driving licence for photocard"
+            },
+            "summary": "5 hits: https://www.gov.uk/exchange-paper-driving-licence, https://www.gov.uk/renew-photo-driving-licence"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/exchange-paper-driving-licence"
+            },
+            "summary": "3399 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You only need to swap a paper licence if it's no longer valid for your circumstances. You must get a new licence if you change your address or name, want to do Driver CPC training, or your licence is defaced, lost, stolen or destroyed. If none of these apply and your paper licence is still valid, you don't need to exchange it.\n\nHow to apply:\n- Online: sign in to the DVLA service on GOV.UK to exchange your licence. You must be a resident of Great Britain, not disqualified or prevented from driving, and meet the minimum eyesight requirement. You may be asked to prove your identity, usually with photo ID such. You can't apply online if you've changed your name.\n- By post: complete form D1 (cars and motorbikes) or D2 (buses and lorries), available from most Post Offices. Include your original identity documents, a colour passport-type photo, and the fee if required (cheques or postal orders payable to DVLA, not cash). Send cars and motorbikes applications to DVLA, Swansea, SA99 1BU, and buses and lorries to DVLA, Swansea, SA99 1BR.\n\nFees: free if you've changed your name or address and still have your paper licence; £20 if it's defaced, lost, stolen or destroyed, or for any other reason. Online payment is by MasterCard, Visa, Electron or Delta.\n\nTiming: DVLA aims to send the new licence within 3 weeks, possibly longer if medical or personal details need checking. You can drive while it's being processed only if you meet all the listed conditions, including having your doctor's support, and the application is less than a year old.",
+              "sources": [
+                "https://www.gov.uk/exchange-paper-driving-licence"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 741,
+        "outputTokens": 171
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g22",
+      "type": "single_page",
+      "question": "How much does the driving test cost?",
+      "answer": {
+        "status": "answered",
+        "answer": "The car driving test costs £62 on weekdays and £75 in the evenings, at weekends and on bank holidays. The car theory test costs £23. If you do not pass and want to book another test, you pay the full amount again. Costs for lorries, buses, motorcycles and other vehicles are in separate tables on the same page. Booking through GOV.UK is the official route; unofficial websites usually charge more.",
+        "citedUrls": [
+          "https://www.gov.uk/driving-test-cost",
+          "https://www.gov.uk/book-theory-test"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-test-cost",
+          "https://www.gov.uk/book-theory-test"
+        ],
+        "usage": {
+          "inputTokens": 2427,
+          "outputTokens": 567
+        },
+        "ms": 3902,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how much does the driving test cost"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-test-cost, https://www.gov.uk/book-theory-test"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "The car driving test costs £62 on weekdays and £75 in the evenings, at weekends and on bank holidays. The car theory test costs £23. If you do not pass and want to book another test, you pay the full amount again. Costs for lorries, buses, motorcycles and other vehicles are in separate tables on the same page. Booking through GOV.UK is the official route; unofficial websites usually charge more.",
+              "sources": [
+                "https://www.gov.uk/driving-test-cost",
+                "https://www.gov.uk/book-theory-test"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 306,
+        "outputTokens": 7
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g23",
+      "type": "single_page",
+      "question": "How do I change my driving test appointment?",
+      "answer": {
+        "status": "answered",
+        "answer": "Change your test online at the GOV.UK driving test booking service (6am to 11:40pm; separate service for Northern Ireland). Only you can make changes; your instructor cannot. You'll need your UK driving licence number and driving test reference number or theory pass certificate number (DVSA may ask for at least two of licence number, theory certificate number or booking reference). You can find an earlier (cancellation) appointment, move to a later date, or change test centre. Car tests allow 2 changes (other test types 6); changing date, time and centre together counts as one. To change free, give 10 full working days' notice for car tests (3 for other tests; Monday to Saturday count, Sundays and public holidays don't). Pay the difference if moving to a more expensive slot (weekends, evenings, bank holidays); get a refund for a cheaper one. If no slot suits, cancel with the same notice for a refund. New slots release every Monday at 6am, 24 weeks ahead; cancellation slots appear any time. Short-notice refunds for unavoidable reasons: email customerservices@dvsa.gov.uk with subject \"Unavoidable short notice cancellation\" and proof.",
+        "citedUrls": [
+          "https://www.gov.uk/change-driving-test",
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-driving-test",
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+        ],
+        "usage": {
+          "inputTokens": 6802,
+          "outputTokens": 1510
+        },
+        "ms": 9561,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how to change driving test appointment"
+            },
+            "summary": "5 hits: https://www.gov.uk/change-driving-test, https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/change-driving-test"
+            },
+            "summary": "4861 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Change your test online at the GOV.UK driving test booking service (6am to 11:40pm; separate service for Northern Ireland). Only you can make changes; your instructor cannot. You'll need your UK driving licence number and driving test reference number or theory pass certificate number (DVSA may ask for at least two of licence number, theory certificate number or booking reference). You can find an earlier (cancellation) appointment, move to a later date, or change test centre. Car tests allow 2 changes (other test types 6); changing date, time and centre together counts as one. To change free, give 10 full working days' notice for car tests (3 for other tests; Monday to Saturday count, Sundays and public holidays don't). Pay the difference if moving to a more expensive slot (weekends, evenings, bank holidays); get a refund for a cheaper one. If no slot suits, cancel with the same notice for a refund. New slots release every Monday at 6am, 24 weeks ahead; cancellation slots appear any time. Short-notice refunds for unavoidable reasons: email customerservices@dvsa.gov.uk with subject \"Unavoidable short notice cancellation\" and proof.",
+              "sources": [
+                "https://www.gov.uk/change-driving-test",
+                "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 553,
+        "outputTokens": 90
+      },
+      "judgeRaw": "[true,true]"
+    },
+    {
+      "id": "g24",
+      "type": "single_page",
+      "question": "How do I tax a car if I haven't received a tax reminder?",
+      "answer": {
+        "status": "answered",
+        "answer": "You don't need the reminder letter (V11), email or text to tax your vehicle. You can tax it online, by phone, or at a Post Office that deals with vehicle tax, as long as you have the right document:\n\n- Online: you need the 11-digit reference number from your V5C logbook (if you're the current keeper), or the 12-digit reference number from the green new keeper slip (if you've just bought the car and don't yet have a V5C in your name).\n- By phone: call DVLA on 0300 123 4321 with your V5C or new keeper slip to hand.\n- At a Post Office: take your V5C in your name (or a V62 application if you're the current keeper, or the new keeper slip). You may also need payment and evidence of a current MOT, such as your MOT history screenshot or certificate. You can also set up a Direct Debit there, which requires your address, date of birth and bank or building society details.\n- If you're in Northern Ireland, you also need a valid MOT certificate and an insurance certificate or cover note.\n\nIf you're the current keeper but don't have a V5C, you must apply for a replacement V5C (£25 for a new keeper applying by post), and you can tax the vehicle at the same time. If you're a new keeper without a V5C or new keeper slip, you can't tax the vehicle until you get the new V5C. You can check online that the vehicle has been taxed.\n\nDriving untaxed is illegal, and the fine for not taxing on time is £80 (per the historic vehicles guidance).",
+        "citedUrls": [
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+          "https://www.gov.uk/historic-vehicles"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+          "https://www.gov.uk/historic-vehicles",
+          "https://www.gov.uk/vehicle-tax-direct-debit"
+        ],
+        "usage": {
+          "inputTokens": 7619,
+          "outputTokens": 829
+        },
+        "ms": 7101,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "tax a car if you have not received a reminder"
+            },
+            "summary": "5 hits: https://www.gov.uk/tax-vehicle-without-v11-reminder, https://www.gov.uk/historic-vehicles"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "vehicle tax reminder not received"
+            },
+            "summary": "5 hits: https://www.gov.uk/tax-vehicle-without-v11-reminder, https://www.gov.uk/vehicle-tax-direct-debit, https://www.gov.uk/historic-vehicles"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/tax-vehicle-without-v11-reminder"
+            },
+            "summary": "2668 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You don't need the reminder letter (V11), email or text to tax your vehicle. You can tax it online, by phone, or at a Post Office that deals with vehicle tax, as long as you have the right document:\n\n- Online: you need the 11-digit reference number from your V5C logbook (if you're the current keeper), or the 12-digit reference number from the green new keeper slip (if you've just bought the car and don't yet have a V5C in your name).\n- By phone: call DVLA on 0300 123 4321 with your V5C or new keeper slip to hand.\n- At a Post Office: take your V5C in your name (or a V62 application if you're the current keeper, or the new keeper slip). You may also need payment and evidence of a current MOT, such as your MOT history screenshot or certificate. You can also set up a Direct Debit there, which requires your address, date of birth and bank or building society details.\n- If you're in Northern Ireland, you also need a valid MOT certificate and an insurance certificate or cover note.\n\nIf you're the current keeper but don't have a V5C, you must apply for a replacement V5C (£25 for a new keeper applying by post), and you can tax the vehicle at the same time. If you're a new keeper without a V5C or new keeper slip, you can't tax the vehicle until you get the new V5C. You can check online that the vehicle has been taxed.\n\nDriving untaxed is illegal, and the fine for not taxing on time is £80 (per the historic vehicles guidance).",
+              "sources": [
+                "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+                "https://www.gov.uk/historic-vehicles"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 686,
+        "outputTokens": 99
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g25",
+      "type": "multi_page",
+      "question": "I've just bought a used car. What do I need to do to tax it and get it registered in my name?",
+      "answer": {
+        "status": "answered",
+        "answer": "1. Tax the car straight away. You can't use a used vehicle on the road until it's taxed. Use the green 'new keeper' slip from the vehicle's log book (V5C) to do it. You don't need to wait for a tax reminder (V11).\n\n2. Get the car registered in your name. The seller will usually do this for you, either online or by post. The seller should:\n- register the vehicle to you online and destroy the V5C, or\n- for a postal registration, complete the relevant section of the V5C, sign the declaration if it's the older style V5C, and send the V5C to DVLA.\nIn both cases the seller should fill in the green 'new keeper' slip and give it to you.\n\n3. If you don't have a V5C, don't buy the car. DVLA advises against it. If you already have it, download form V62 and send it to DVLA with the new keeper slip, along with the £25 fee. The slip must be from the most recent V5C. If it isn't, you'll pay £25 more. DVLA may inspect the vehicle, and if so it won't charge a fee. Allow about 4 weeks for the V5C to arrive, then contact DVLA if it hasn't come.\n\nAlso check the car's history before buying, and make sure you meet the legal obligations for drivers (such as insurance) before you drive it.",
+        "citedUrls": [
+          "https://www.gov.uk/checks-when-buying-a-used-car",
+          "https://www.gov.uk/vehicle-registration",
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+          "https://www.gov.uk/vehicle-log-book"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/checks-when-buying-a-used-car",
+          "https://www.gov.uk/vehicle-registration",
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+          "https://www.gov.uk/vehicle-log-book"
+        ],
+        "usage": {
+          "inputTokens": 4052,
+          "outputTokens": 814
+        },
+        "ms": 5185,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "buying a used car register in your name tax it"
+            },
+            "summary": "5 hits: https://www.gov.uk/checks-when-buying-a-used-car, https://www.gov.uk/vehicle-registration, https://www.gov.uk/tax-vehicle-without-v11-reminder"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "new keeper supplement V5C registration certificate when you buy a car"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-registration, https://www.gov.uk/vehicle-log-book"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "1. Tax the car straight away. You can't use a used vehicle on the road until it's taxed. Use the green 'new keeper' slip from the vehicle's log book (V5C) to do it. You don't need to wait for a tax reminder (V11).\n\n2. Get the car registered in your name. The seller will usually do this for you, either online or by post. The seller should:\n- register the vehicle to you online and destroy the V5C, or\n- for a postal registration, complete the relevant section of the V5C, sign the declaration if it's the older style V5C, and send the V5C to DVLA.\nIn both cases the seller should fill in the green 'new keeper' slip and give it to you.\n\n3. If you don't have a V5C, don't buy the car. DVLA advises against it. If you already have it, download form V62 and send it to DVLA with the new keeper slip, along with the £25 fee. The slip must be from the most recent V5C. If it isn't, you'll pay £25 more. DVLA may inspect the vehicle, and if so it won't charge a fee. Allow about 4 weeks for the V5C to arrive, then contact DVLA if it hasn't come.\n\nAlso check the car's history before buying, and make sure you meet the legal obligations for drivers (such as insurance) before you drive it.",
+              "sources": [
+                "https://www.gov.uk/checks-when-buying-a-used-car",
+                "https://www.gov.uk/vehicle-registration",
+                "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+                "https://www.gov.uk/vehicle-log-book"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 0.5,
+        "citationValid": 1,
+        "citationRecall": 0.5,
+        "refusalCorrect": true,
+        "facts": 0.6666666666666666,
+        "factResults": [
+          false,
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 679,
+        "outputTokens": 593
+      },
+      "judgeRaw": "[false, true, true]"
+    },
+    {
+      "id": "g26",
+      "type": "multi_page",
+      "question": "I'm moving house. Which of my licence and vehicle records do I need to update?",
+      "answer": {
+        "status": "answered",
+        "answer": "When you move house you need to update:\n1. Your driving licence (full or provisional) – free to change online or by post. You can keep driving while waiting for the new licence. (If you're moving abroad, you can't register the new address on a UK licence; contact the licensing authority in your new country.)\n2. Your vehicle log book (V5C) – usually free. Online for a new UK address, or by post (send the whole log book; use the address in section 3 for the new-style log book or section 6 for the older one, and don't use a PO Box). You can't use the online service if you've already sent the log book, lost it, have a DVLA fleet vehicle, or are moving abroad (including Jersey, Guernsey, Isle of Man or Ireland).\n3. Your vehicle tax Direct Debit, if you pay that way.\n4. Your personalised registration number document (V750 or V778), if you have one.\n\nIf you change your name as well, you must update the driving licence and V5C at the same time, and the licence change must be done by post. You can be fined up to £1,000 if you don't tell DVLA when your address changes.",
+        "citedUrls": [
+          "https://www.gov.uk/change-address-driving-licence",
+          "https://www.gov.uk/change-address-v5c"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-address-driving-licence",
+          "https://www.gov.uk/change-address-v5c"
+        ],
+        "usage": {
+          "inputTokens": 3789,
+          "outputTokens": 590
+        },
+        "ms": 4617,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "change of address driving licence update"
+            },
+            "summary": "5 hits: https://www.gov.uk/change-address-driving-licence, https://www.gov.uk/change-address-v5c"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "change address vehicle registration V5C update keeper"
+            },
+            "summary": "5 hits: https://www.gov.uk/change-address-v5c"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "When you move house you need to update:\n1. Your driving licence (full or provisional) – free to change online or by post. You can keep driving while waiting for the new licence. (If you're moving abroad, you can't register the new address on a UK licence; contact the licensing authority in your new country.)\n2. Your vehicle log book (V5C) – usually free. Online for a new UK address, or by post (send the whole log book; use the address in section 3 for the new-style log book or section 6 for the older one, and don't use a PO Box). You can't use the online service if you've already sent the log book, lost it, have a DVLA fleet vehicle, or are moving abroad (including Jersey, Guernsey, Isle of Man or Ireland).\n3. Your vehicle tax Direct Debit, if you pay that way.\n4. Your personalised registration number document (V750 or V778), if you have one.\n\nIf you change your name as well, you must update the driving licence and V5C at the same time, and the licence change must be done by post. You can be fined up to £1,000 if you don't tell DVLA when your address changes.",
+              "sources": [
+                "https://www.gov.uk/change-address-driving-licence",
+                "https://www.gov.uk/change-address-v5c"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 551,
+        "outputTokens": 100
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g27",
+      "type": "multi_page",
+      "question": "My car is over 40 years old. Does it need an MOT, and does it need vehicle tax?",
+      "answer": {
+        "status": "answered",
+        "answer": "MOT: You do not need an MOT if the car was built or first registered more than 40 years ago and no 'substantial changes' have been made (such as replacing the chassis, body, axles or engine to change how it works). You must still keep it roadworthy; you can be fined up to £2,500 and get 3 penalty points for using it in a dangerous condition. If it has had substantial changes, it needs an MOT, and if it is over 40 years old you must send proof of the MOT to DVLA when you tell them about the change.\n\nVehicle tax: You must still tax the car even if you don't have to pay. If it was built before 1 January 1986 (or, if you don't know the build date, first registered before 8 January 1986), you can apply to stop paying vehicle tax from 1 April 2026 (the 'historic tax class'). You apply at a Post Office that deals with vehicle tax, taking your V5C log book, any V11 reminder, and evidence of MOT exemption (V112) or a current MOT if needed. Exemption does not apply if the car is used for hire or reward or for a trade or business. If you don't have a V5C, a V62 costs £25. Driving untaxed can incur a £80 fine. Since a car over 40 years old is usually built before 1986, it will most likely qualify, but check the build date; if it was built in 1986 or later, you will need to pay vehicle tax.",
+        "citedUrls": [
+          "https://www.gov.uk/historic-vehicles",
+          "https://www.gov.uk/vehicle-registration"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/historic-vehicles",
+          "https://www.gov.uk/vehicle-registration",
+          "https://www.gov.uk/getting-an-mot",
+          "https://www.gov.uk/vehicle-exempt-from-vehicle-tax"
+        ],
+        "usage": {
+          "inputTokens": 8747,
+          "outputTokens": 1165
+        },
+        "ms": 7214,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "MOT exemption vehicles over 40 years old"
+            },
+            "summary": "5 hits: https://www.gov.uk/historic-vehicles, https://www.gov.uk/vehicle-registration, https://www.gov.uk/getting-an-mot"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "vehicle tax classic vehicle over 40 years old free tax"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-exempt-from-vehicle-tax, https://www.gov.uk/historic-vehicles"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/historic-vehicles"
+            },
+            "summary": "4773 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "MOT: You do not need an MOT if the car was built or first registered more than 40 years ago and no 'substantial changes' have been made (such as replacing the chassis, body, axles or engine to change how it works). You must still keep it roadworthy; you can be fined up to £2,500 and get 3 penalty points for using it in a dangerous condition. If it has had substantial changes, it needs an MOT, and if it is over 40 years old you must send proof of the MOT to DVLA when you tell them about the change.\n\nVehicle tax: You must still tax the car even if you don't have to pay. If it was built before 1 January 1986 (or, if you don't know the build date, first registered before 8 January 1986), you can apply to stop paying vehicle tax from 1 April 2026 (the 'historic tax class'). You apply at a Post Office that deals with vehicle tax, taking your V5C log book, any V11 reminder, and evidence of MOT exemption (V112) or a current MOT if needed. Exemption does not apply if the car is used for hire or reward or for a trade or business. If you don't have a V5C, a V62 costs £25. Driving untaxed can incur a £80 fine. Since a car over 40 years old is usually built before 1986, it will most likely qualify, but check the build date; if it was built in 1986 or later, you will need to pay vehicle tax.",
+              "sources": [
+                "https://www.gov.uk/historic-vehicles",
+                "https://www.gov.uk/vehicle-registration"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 0.5,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 690,
+        "outputTokens": 222
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g28",
+      "type": "multi_page",
+      "question": "I'm 17 and want to learn to drive. What licence and tests do I need, and what do they cost?",
+      "answer": {
+        "status": "answered",
+        "answer": "You need a provisional driving licence, then a car theory test, then a car driving test.\n\n1. Provisional licence: You can apply from 15 years 9 months old, and you can usually start driving a car at 17. You must be able to read a number plate from 20 metres and have been given permission to live in Great Britain for at least 185 days. Applying online costs £34; applying by post (form D1) costs £43.\n\n2. Theory test (car): You must hold a provisional licence to book it. It has two parts, multiple-choice questions and hazard perception, and you must pass both. It costs £23.\n\n3. Driving test (car): You can book it once you've passed the theory test. It costs £62 on weekdays or £75 on evenings, weekends and bank holidays. There is no minimum number of lessons; you should only take the test when you can drive safely without instruction. You also need to have lived in England, Wales or Scotland for at least 185 days in the last 12 months before taking either test.\n\nTotal for the tests: £85 on weekdays (£23 + £62), or £98 in the evenings/weekends. Unofficial booking sites usually charge more than the GOV.UK prices. The pages I found don't cover the rules for supervising while learning, so check those separately.",
+        "citedUrls": [
+          "https://www.gov.uk/apply-first-provisional-driving-licence",
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/driving-test-cost",
+          "https://www.gov.uk/book-theory-test",
+          "https://www.gov.uk/driving-test",
+          "https://www.gov.uk/theory-test"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/apply-first-provisional-driving-licence",
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/driving-test-cost",
+          "https://www.gov.uk/book-theory-test",
+          "https://www.gov.uk/driving-test",
+          "https://www.gov.uk/theory-test",
+          "https://www.gov.uk/take-practice-theory-test"
+        ],
+        "usage": {
+          "inputTokens": 6882,
+          "outputTokens": 1005
+        },
+        "ms": 6605,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "learner driver aged 17 provisional licence how to apply"
+            },
+            "summary": "5 hits: https://www.gov.uk/apply-first-provisional-driving-licence, https://www.gov.uk/driving-lessons-learning-to-drive"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "driving test cost theory test practical test fee"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-test-cost, https://www.gov.uk/book-theory-test"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "pass theory test before booking practical driving test learner supervising driver"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-test, https://www.gov.uk/theory-test, https://www.gov.uk/take-practice-theory-test"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You need a provisional driving licence, then a car theory test, then a car driving test.\n\n1. Provisional licence: You can apply from 15 years 9 months old, and you can usually start driving a car at 17. You must be able to read a number plate from 20 metres and have been given permission to live in Great Britain for at least 185 days. Applying online costs £34; applying by post (form D1) costs £43.\n\n2. Theory test (car): You must hold a provisional licence to book it. It has two parts, multiple-choice questions and hazard perception, and you must pass both. It costs £23.\n\n3. Driving test (car): You can book it once you've passed the theory test. It costs £62 on weekdays or £75 on evenings, weekends and bank holidays. There is no minimum number of lessons; you should only take the test when you can drive safely without instruction. You also need to have lived in England, Wales or Scotland for at least 185 days in the last 12 months before taking either test.\n\nTotal for the tests: £85 on weekdays (£23 + £62), or £98 in the evenings/weekends. Unofficial booking sites usually charge more than the GOV.UK prices. The pages I found don't cover the rules for supervising while learning, so check those separately.",
+              "sources": [
+                "https://www.gov.uk/apply-first-provisional-driving-licence",
+                "https://www.gov.uk/driving-lessons-learning-to-drive",
+                "https://www.gov.uk/driving-test-cost",
+                "https://www.gov.uk/book-theory-test",
+                "https://www.gov.uk/driving-test",
+                "https://www.gov.uk/theory-test"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 3,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 626,
+        "outputTokens": 129
+      },
+      "judgeRaw": "[true, true, true]"
+    },
+    {
+      "id": "g29",
+      "type": "multi_page",
+      "question": "My car has been written off. What do I tell DVLA and what happens to my vehicle tax?",
+      "answer": {
+        "status": "answered",
+        "answer": "What to tell DVLA: Tell DVLA that your vehicle has been written off (usually by your insurance company, which typically scraps it). You'll need your insurance company's name and postcode, the vehicle registration number, and the 11-digit reference number from the yellow 'sell, transfer or part-exchange your vehicle to the motor trade' section of the V5C log book. You can do this online at gov.uk/written-off-vehicle (Mon–Fri 7am–9pm, Sat–Sun 7am–8pm), or by post by sending the perforated yellow section to DVLA, Swansea, SA99 1BD. You can be fined £1,000 if you don't tell DVLA. Your insurer may ask for the whole log book; if so, send it to them and keep the yellow section. If you want to keep a category N or S vehicle, the insurer pays out and sells it back to you instead, and different rules apply (e.g. for category S you must send the log book to the insurer and apply for a duplicate using form V62).\n\nWhat happens to vehicle tax: Telling DVLA cancels your vehicle tax. You'll be sent a refund for any full months left, calculated from the date DVLA receives your information. If you pay by Direct Debit, it's cancelled automatically. The refund cheque goes to the name and address on the log book. You won't get a refund for credit card fees, the 5% surcharge on some Direct Debit payments, or the 10% surcharge on a single 6-month payment. You'll also receive a letter confirming you're no longer the keeper.",
+        "citedUrls": [
+          "https://www.gov.uk/written-off-vehicle",
+          "https://www.gov.uk/scrapped-and-written-off-vehicles",
+          "https://www.gov.uk/vehicle-tax-refund"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/written-off-vehicle",
+          "https://www.gov.uk/vehicle-tax-refund",
+          "https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen",
+          "https://www.gov.uk/scrapped-and-written-off-vehicles"
+        ],
+        "usage": {
+          "inputTokens": 4093,
+          "outputTokens": 887
+        },
+        "ms": 5306,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "car written off tell DVLA vehicle tax refund"
+            },
+            "summary": "5 hits: https://www.gov.uk/written-off-vehicle, https://www.gov.uk/vehicle-tax-refund, https://www.gov.uk/what-to-do-if-your-vehicle-has-been-stolen"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "vehicle written off salvage category notify DVLA"
+            },
+            "summary": "5 hits: https://www.gov.uk/scrapped-and-written-off-vehicles, https://www.gov.uk/written-off-vehicle"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "What to tell DVLA: Tell DVLA that your vehicle has been written off (usually by your insurance company, which typically scraps it). You'll need your insurance company's name and postcode, the vehicle registration number, and the 11-digit reference number from the yellow 'sell, transfer or part-exchange your vehicle to the motor trade' section of the V5C log book. You can do this online at gov.uk/written-off-vehicle (Mon–Fri 7am–9pm, Sat–Sun 7am–8pm), or by post by sending the perforated yellow section to DVLA, Swansea, SA99 1BD. You can be fined £1,000 if you don't tell DVLA. Your insurer may ask for the whole log book; if so, send it to them and keep the yellow section. If you want to keep a category N or S vehicle, the insurer pays out and sells it back to you instead, and different rules apply (e.g. for category S you must send the log book to the insurer and apply for a duplicate using form V62).\n\nWhat happens to vehicle tax: Telling DVLA cancels your vehicle tax. You'll be sent a refund for any full months left, calculated from the date DVLA receives your information. If you pay by Direct Debit, it's cancelled automatically. The refund cheque goes to the name and address on the log book. You won't get a refund for credit card fees, the 5% surcharge on some Direct Debit payments, or the 10% surcharge on a single 6-month payment. You'll also receive a letter confirming you're no longer the keeper.",
+              "sources": [
+                "https://www.gov.uk/written-off-vehicle",
+                "https://www.gov.uk/scrapped-and-written-off-vehicles",
+                "https://www.gov.uk/vehicle-tax-refund"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 718,
+        "outputTokens": 198
+      },
+      "judgeRaw": "[true, true]"
+    },
+    {
+      "id": "g30",
+      "type": "multi_page",
+      "question": "I'm over 70 and have a medical condition. How do I renew my driving licence?",
+      "answer": {
+        "status": "answered",
+        "answer": "If you're 70 or over and live in Great Britain, you renew online with DVLA for free (you can start if you'll be 70 within the next 90 days, or your licence expires within 90 days). You'll need to sign in to your GOV.UK account and may need to prove your identity with photo ID such as a passport or driving licence. You can also change your licence photo at the same time.\n\nMedical conditions: when you renew at 70 or over, you must tell DVLA about any notifiable medical conditions. The application form asks for this, so you don't need to contact DVLA separately. You must also meet the minimum eyesight requirement and not be prevented from driving for any reason.\n\nAfter you renew, you must renew every 3 years.\n\nPost option: you can apply by post using form D46P. DVLA sends this automatically 90 days before your 70th birthday or before your licence expires. If you don't have it, use form D1. Your licence should arrive in about 3 weeks, but it may take longer if DVLA needs to check your medical or personal details.\n\nDriving while your application is with DVLA: you can keep driving if all of these apply: you have your doctor's support to keep driving; you had a valid licence; you drive only under the conditions of your previous licence; the application is less than a year old; your last licence was not revoked or refused for medical reasons; you are not currently disqualified; and you were not disqualified as a high risk offender on or after 1 June 2013.\n\nNote: C1 and D1 entitlements cannot be renewed online and must be done by post.",
+        "citedUrls": [
+          "https://www.gov.uk/renew-driving-licence-at-70",
+          "https://www.gov.uk/driving-medical-conditions"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-medical-conditions",
+          "https://www.gov.uk/renew-driving-licence-at-70",
+          "https://www.gov.uk/renew-medical-driving-licence",
+          "https://www.gov.uk/reapply-driving-licence-health-condition"
+        ],
+        "usage": {
+          "inputTokens": 8159,
+          "outputTokens": 1027
+        },
+        "ms": 5599,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "renew driving licence over 70 medical condition"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-medical-conditions, https://www.gov.uk/renew-driving-licence-at-70, https://www.gov.uk/renew-medical-driving-licence"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "drivers aged 70 and over renew licence every 3 years declare medical conditions"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-medical-conditions, https://www.gov.uk/renew-driving-licence-at-70, https://www.gov.uk/reapply-driving-licence-health-condition"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/renew-driving-licence-at-70"
+            },
+            "summary": "2871 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "If you're 70 or over and live in Great Britain, you renew online with DVLA for free (you can start if you'll be 70 within the next 90 days, or your licence expires within 90 days). You'll need to sign in to your GOV.UK account and may need to prove your identity with photo ID such as a passport or driving licence. You can also change your licence photo at the same time.\n\nMedical conditions: when you renew at 70 or over, you must tell DVLA about any notifiable medical conditions. The application form asks for this, so you don't need to contact DVLA separately. You must also meet the minimum eyesight requirement and not be prevented from driving for any reason.\n\nAfter you renew, you must renew every 3 years.\n\nPost option: you can apply by post using form D46P. DVLA sends this automatically 90 days before your 70th birthday or before your licence expires. If you don't have it, use form D1. Your licence should arrive in about 3 weeks, but it may take longer if DVLA needs to check your medical or personal details.\n\nDriving while your application is with DVLA: you can keep driving if all of these apply: you have your doctor's support to keep driving; you had a valid licence; you drive only under the conditions of your previous licence; the application is less than a year old; your last licence was not revoked or refused for medical reasons; you are not currently disqualified; and you were not disqualified as a high risk offender on or after 1 June 2013.\n\nNote: C1 and D1 entitlements cannot be renewed online and must be done by post.",
+              "sources": [
+                "https://www.gov.uk/renew-driving-licence-at-70",
+                "https://www.gov.uk/driving-medical-conditions"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 0.5,
+        "citationValid": 1,
+        "citationRecall": 0.5,
+        "refusalCorrect": true,
+        "facts": 0.5,
+        "factResults": [
+          true,
+          false
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 707,
+        "outputTokens": 159
+      },
+      "judgeRaw": "[true, false]"
+    },
+    {
+      "id": "g31",
+      "type": "not_covered",
+      "question": "Which car insurance company is cheapest for a new driver?",
+      "answer": {
+        "status": "not_covered",
+        "answer": "GOV.UK does not compare or rank insurance companies by price, and it doesn't say which insurer is cheapest for new drivers. It only explains that you must have at least third-party insurance to drive on UK roads, that learners need their own policy or cover as a named driver, and that some insurers require the supervisor to be over 25. To compare prices, use a comparison site or an insurance broker, and check the policy terms.",
+        "citedUrls": [
+          "https://www.gov.uk/vehicle-insurance",
+          "https://www.gov.uk/guidance/supervise-a-learner-driver"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/guidance/supervise-a-learner-driver",
+          "https://www.gov.uk/vehicle-insurance",
+          "https://www.gov.uk/apply-first-provisional-driving-licence",
+          "https://www.gov.uk/legal-obligations-drivers-riders"
+        ],
+        "usage": {
+          "inputTokens": 4946,
+          "outputTokens": 461
+        },
+        "ms": 3035,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "cheapest car insurance company for new drivers"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-lessons-learning-to-drive, https://www.gov.uk/guidance/supervise-a-learner-driver, https://www.gov.uk/vehicle-insurance"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "car insurance for new drivers learner or newly qualified"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-lessons-learning-to-drive, https://www.gov.uk/guidance/supervise-a-learner-driver, https://www.gov.uk/apply-first-provisional-driving-licence, https://www.gov.uk/legal-obligations-drivers-riders"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "not_covered",
+              "answer": "GOV.UK does not compare or rank insurance companies by price, and it doesn't say which insurer is cheapest for new drivers. It only explains that you must have at least third-party insurance to drive on UK roads, that learners need their own policy or cover as a named driver, and that some insurers require the supervisor to be over 25. To compare prices, use a comparison site or an insurance broker, and check the policy terms.",
+              "sources": [
+                "https://www.gov.uk/vehicle-insurance",
+                "https://www.gov.uk/guidance/supervise-a-learner-driver"
+              ]
+            },
+            "summary": "not_covered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g32",
+      "type": "not_covered",
+      "question": "How do I renew my driving licence in Northern Ireland?",
+      "answer": {
+        "status": "not_covered",
+        "answer": "The GOV.UK pages I could find say the standard online renewal service (£14) is only for people who are residents of Great Britain, and that Northern Ireland has a different service run by the Driver and Vehicle Agency (DVA), with its own fees and ID rules. They do not give the Northern Ireland renewal steps, fees, or contact details. Check the DVA's Northern Ireland pages or the GOV.UK pages on driving licence fees and ID for driving licence applications, which mention different NI rules.",
+        "citedUrls": [
+          "https://www.gov.uk/renew-driving-licence",
+          "https://www.gov.uk/driving-licence-fees",
+          "https://www.gov.uk/id-for-driving-licence"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-disqualifications",
+          "https://www.gov.uk/reapply-licence-revoked",
+          "https://www.gov.uk/driving-test",
+          "https://www.gov.uk/renew-driving-licence",
+          "https://www.gov.uk/id-for-driving-licence",
+          "https://www.gov.uk/driving-licence-fees",
+          "https://www.gov.uk/renew-photo-driving-licence",
+          "https://www.gov.uk/renew-medical-driving-licence"
+        ],
+        "usage": {
+          "inputTokens": 6748,
+          "outputTokens": 554
+        },
+        "ms": 4604,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "renew driving licence Northern Ireland"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-disqualifications, https://www.gov.uk/reapply-licence-revoked, https://www.gov.uk/driving-test, https://www.gov.uk/renew-driving-licence, https://www.gov.uk/id-for-driving-licence"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "Northern Ireland driving licence renewal photocard DVA"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-disqualifications, https://www.gov.uk/renew-driving-licence, https://www.gov.uk/driving-licence-fees, https://www.gov.uk/driving-test, https://www.gov.uk/renew-photo-driving-licence"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "Driver and Vehicle Agency licence renewal Northern Ireland how to apply"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-disqualifications, https://www.gov.uk/reapply-licence-revoked, https://www.gov.uk/renew-driving-licence, https://www.gov.uk/renew-medical-driving-licence, https://www.gov.uk/id-for-driving-licence"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "not_covered",
+              "answer": "The GOV.UK pages I could find say the standard online renewal service (£14) is only for people who are residents of Great Britain, and that Northern Ireland has a different service run by the Driver and Vehicle Agency (DVA), with its own fees and ID rules. They do not give the Northern Ireland renewal steps, fees, or contact details. Check the DVA's Northern Ireland pages or the GOV.UK pages on driving licence fees and ID for driving licence applications, which mention different NI rules.",
+              "sources": [
+                "https://www.gov.uk/renew-driving-licence",
+                "https://www.gov.uk/driving-licence-fees",
+                "https://www.gov.uk/id-for-driving-licence"
+              ]
+            },
+            "summary": "not_covered"
+          }
+        ],
+        "searches": 3,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g33",
+      "type": "not_covered",
+      "question": "Will my appeal against a speeding fine succeed?",
+      "answer": {
+        "status": "answered",
+        "answer": "I can't tell you whether your appeal will succeed. That depends on your own evidence and circumstances, and the GOV.UK pages don't say how often speeding challenges succeed. Here is how the process works:\n\n- If you got a fixed penalty notice (FPN) you can plead guilty or not guilty.\n- If you plead not guilty, you have to go to court. You'll be sent a summons with a hearing date. The court decides whether you're guilty.\n- If the court finds you guilty, you can be fined more and get more penalty points than the standard £100 and 3 points. The fine is usually a percentage of your weekly income, up to £1,000 (£2,500 on a motorway).\n- If you plead guilty, the minimum is a £100 fine and 3 points, unless you're offered a speed awareness course.\n\nFor the specifics of your case, such as the grounds you can raise or how to get evidence, check the notice itself or contact the issuing force, or get independent advice.",
+        "citedUrls": [
+          "https://www.gov.uk/speeding-penalties"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/speeding-penalties",
+          "https://www.gov.uk/parking-tickets"
+        ],
+        "usage": {
+          "inputTokens": 3390,
+          "outputTokens": 767
+        },
+        "ms": 4819,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "appeal speeding fine grounds"
+            },
+            "summary": "5 hits: https://www.gov.uk/speeding-penalties"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how to challenge a speeding fine or penalty notice"
+            },
+            "summary": "5 hits: https://www.gov.uk/speeding-penalties, https://www.gov.uk/parking-tickets"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "I can't tell you whether your appeal will succeed. That depends on your own evidence and circumstances, and the GOV.UK pages don't say how often speeding challenges succeed. Here is how the process works:\n\n- If you got a fixed penalty notice (FPN) you can plead guilty or not guilty.\n- If you plead not guilty, you have to go to court. You'll be sent a summons with a hearing date. The court decides whether you're guilty.\n- If the court finds you guilty, you can be fined more and get more penalty points than the standard £100 and 3 points. The fine is usually a percentage of your weekly income, up to £1,000 (£2,500 on a motorway).\n- If you plead guilty, the minimum is a £100 fine and 3 points, unless you're offered a speed awareness course.\n\nFor the specifics of your case, such as the grounds you can raise or how to get evidence, check the notice itself or contact the issuing force, or get independent advice.",
+              "sources": [
+                "https://www.gov.uk/speeding-penalties"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": false,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g34",
+      "type": "not_covered",
+      "question": "How much income tax will I pay on a company car?",
+      "answer": {
+        "status": "not_covered",
+        "answer": "The GOV.UK pages I could search cover vehicle tax (Vehicle Excise Duty) rates, not income tax on company cars. They do not give the company car benefit-in-kind percentages, how they are set by CO2 emissions or list price, or how much income tax an employee pays on the benefit. Check the HMRC company car tax guidance or your employer's payroll for your figures.",
+        "citedUrls": [],
+        "retrievedUrls": [
+          "https://www.gov.uk/check-tax-rates-new-unregistered-cars",
+          "https://www.gov.uk/vehicle-tax-rate-tables",
+          "https://www.gov.uk/vehicle-exempt-from-vehicle-tax",
+          "https://www.gov.uk/change-vehicle-tax-class",
+          "https://www.gov.uk/guidance/vehicle-tax-for-cars-registered-from-1-april-2017"
+        ],
+        "usage": {
+          "inputTokens": 14436,
+          "outputTokens": 576
+        },
+        "ms": 7313,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "company car tax benefit in kind income tax percentage"
+            },
+            "summary": "5 hits: https://www.gov.uk/check-tax-rates-new-unregistered-cars, https://www.gov.uk/vehicle-tax-rate-tables, https://www.gov.uk/vehicle-exempt-from-vehicle-tax, https://www.gov.uk/change-vehicle-tax-class"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "company car tax percentage of list price CO2 emissions employee pays income tax"
+            },
+            "summary": "5 hits: https://www.gov.uk/check-tax-rates-new-unregistered-cars, https://www.gov.uk/vehicle-tax-rate-tables, https://www.gov.uk/guidance/vehicle-tax-for-cars-registered-from-1-april-2017"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "benefit in kind company car rates 2025 to 2026"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-tax-rate-tables, https://www.gov.uk/check-tax-rates-new-unregistered-cars"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "employer provides car to employee taxable benefit HMRC calculate"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-exempt-from-vehicle-tax, https://www.gov.uk/change-vehicle-tax-class, https://www.gov.uk/check-tax-rates-new-unregistered-cars, https://www.gov.uk/vehicle-tax-rate-tables"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "not_covered",
+              "answer": "The GOV.UK pages I could search cover vehicle tax (Vehicle Excise Duty) rates, not income tax on company cars. They do not give the company car benefit-in-kind percentages, how they are set by CO2 emissions or list price, or how much income tax an employee pays on the benefit. Check the HMRC company car tax guidance or your employer's payroll for your figures.",
+              "sources": []
+            },
+            "summary": "not_covered"
+          }
+        ],
+        "searches": 4,
+        "invalidCitations": [],
+        "turns": 4
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": null,
+        "citationRecall": null,
+        "refusalCorrect": true,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g35",
+      "type": "not_covered",
+      "question": "Can you recommend a good driving instructor near me?",
+      "answer": {
+        "status": "answered",
+        "answer": "I can't recommend a specific instructor, because I don't know your location and I can only use GOV.UK guidance. Here's how to find and check one:\n\n- Use GOV.UK's \"find your nearest driving instructors\" search on the driving lessons page.\n- Anyone you pay to teach you must be a qualified approved driving instructor (ADI, shown by a green badge in the windscreen) or a trainee instructor (pink badge).\n- If someone charges for lessons without being either, you can report them to DVSA.\n- Instructors set their own prices, with no minimum or maximum.\n- There's no minimum number of lessons; how many you need depends on how quickly you learn.\n- If you're unhappy with an instructor's service or behaviour, you can complain.\n- Rules for choosing an instructor are different in Northern Ireland.",
+        "citedUrls": [
+          "https://www.gov.uk/driving-lessons-learning-to-drive"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/driving-lessons-learning-to-drive",
+          "https://www.gov.uk/guidance/supervise-a-learner-driver"
+        ],
+        "usage": {
+          "inputTokens": 3699,
+          "outputTokens": 735
+        },
+        "ms": 4393,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how to choose a driving instructor approved driving instructor register"
+            },
+            "summary": "5 hits: https://www.gov.uk/driving-lessons-learning-to-drive, https://www.gov.uk/guidance/supervise-a-learner-driver"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "I can't recommend a specific instructor, because I don't know your location and I can only use GOV.UK guidance. Here's how to find and check one:\n\n- Use GOV.UK's \"find your nearest driving instructors\" search on the driving lessons page.\n- Anyone you pay to teach you must be a qualified approved driving instructor (ADI, shown by a green badge in the windscreen) or a trainee instructor (pink badge).\n- If someone charges for lessons without being either, you can report them to DVSA.\n- Instructors set their own prices, with no minimum or maximum.\n- There's no minimum number of lessons; how many you need depends on how quickly you learn.\n- If you're unhappy with an instructor's service or behaviour, you can complain.\n- Rules for choosing an instructor are different in Northern Ireland.",
+              "sources": [
+                "https://www.gov.uk/driving-lessons-learning-to-drive"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": null,
+        "citationValid": 1,
+        "citationRecall": null,
+        "refusalCorrect": false,
+        "facts": null,
+        "factResults": [],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "judgeRaw": ""
+    },
+    {
+      "id": "g36",
+      "type": "recently_changed",
+      "question": "How many times can I change my car driving test booking now?",
+      "answer": {
+        "status": "answered",
+        "answer": "You can change a car driving test booking 2 times. Changing the date/time, the test centre, or both together counts as one change. DVSA-initiated changes (e.g. bad weather) don't count. After your 2 changes, you must cancel and rebook; a full refund applies if you cancel at least 10 full working days before the test. The 2-change limit applies to car tests from 31 March 2026 (previously 6). If you'd already used changes under the old rules, you got 2 more from 31 March 2026. Other test types still allow 6 changes.",
+        "citedUrls": [
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
+          "https://www.gov.uk/change-driving-test"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-driving-test",
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+        ],
+        "usage": {
+          "inputTokens": 4076,
+          "outputTokens": 693
+        },
+        "ms": 4543,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "how many times can I change my car driving test booking"
+            },
+            "summary": "5 hits: https://www.gov.uk/change-driving-test, https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You can change a car driving test booking 2 times. Changing the date/time, the test centre, or both together counts as one change. DVSA-initiated changes (e.g. bad weather) don't count. After your 2 changes, you must cancel and rebook; a full refund applies if you cancel at least 10 full working days before the test. The 2-change limit applies to car tests from 31 March 2026 (previously 6). If you'd already used changes under the old rules, you got 2 more from 31 March 2026. Other test types still allow 6 changes.",
+              "sources": [
+                "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
+                "https://www.gov.uk/change-driving-test"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 348,
+        "outputTokens": 180
+      },
+      "judgeRaw": "[true]"
+    },
+    {
+      "id": "g37",
+      "type": "recently_changed",
+      "question": "Can my driving instructor book or cancel my driving test for me?",
+      "answer": {
+        "status": "answered",
+        "answer": "No. You must book, change and cancel your car driving test yourself. Your driving instructor is not allowed to do this for you, and since the 2026 booking rule changes it is against the law for an instructor or anyone else to book a test for a pupil or to change, swap or cancel one for them. Tests booked before the change remain valid, and your instructor should give you the reference number to manage them. Your instructor can still manage their availability, and you can add their personal reference number to your booking so the system checks it. Someone else can help you, but you must do as many steps as you can yourself and be with them while they help.",
+        "citedUrls": [
+          "https://www.gov.uk/book-driving-test",
+          "https://www.gov.uk/cancel-driving-test",
+          "https://www.gov.uk/change-driving-test",
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/cancel-driving-test",
+          "https://www.gov.uk/book-driving-test",
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
+          "https://www.gov.uk/change-driving-test"
+        ],
+        "usage": {
+          "inputTokens": 3068,
+          "outputTokens": 679
+        },
+        "ms": 4139,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "driving instructor book or cancel driving test on behalf of learner"
+            },
+            "summary": "5 hits: https://www.gov.uk/cancel-driving-test, https://www.gov.uk/book-driving-test, https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026, https://www.gov.uk/change-driving-test"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "No. You must book, change and cancel your car driving test yourself. Your driving instructor is not allowed to do this for you, and since the 2026 booking rule changes it is against the law for an instructor or anyone else to book a test for a pupil or to change, swap or cancel one for them. Tests booked before the change remain valid, and your instructor should give you the reference number to manage them. Your instructor can still manage their availability, and you can add their personal reference number to your booking so the system checks it. Someone else can help you, but you must do as many steps as you can yourself and be with them while they help.",
+              "sources": [
+                "https://www.gov.uk/book-driving-test",
+                "https://www.gov.uk/cancel-driving-test",
+                "https://www.gov.uk/change-driving-test",
+                "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 0,
+        "factResults": [
+          false
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 370,
+        "outputTokens": 370
+      },
+      "judgeRaw": "[false]"
+    },
+    {
+      "id": "g38",
+      "type": "recently_changed",
+      "question": "If I want to move my driving test to a different test centre, where can I move it to?",
+      "answer": {
+        "status": "answered",
+        "answer": "You can move your car driving test to either: (1) one of the 3 test centres nearest to where your test is currently booked, or (2) the test centre you first booked at on the current booking. If you use a second change, you can move to the 3 centres nearest to your new centre, or back to the original centre you first booked at. If you had a booking before 9 June 2026, the nearest-centre rule applies to where your test was booked on 9 June 2026, not where you first booked. You can only make 2 changes to a car driving test (changing date and centre together counts as one change), and you must make the change yourself.",
+        "citedUrls": [
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
+          "https://www.gov.uk/change-driving-test"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-driving-test",
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+        ],
+        "usage": {
+          "inputTokens": 7648,
+          "outputTokens": 866
+        },
+        "ms": 6527,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "change driving test centre location"
+            },
+            "summary": "5 hits: https://www.gov.uk/change-driving-test, https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You can move your car driving test to either: (1) one of the 3 test centres nearest to where your test is currently booked, or (2) the test centre you first booked at on the current booking. If you use a second change, you can move to the 3 centres nearest to your new centre, or back to the original centre you first booked at. If you had a booking before 9 June 2026, the nearest-centre rule applies to where your test was booked on 9 June 2026, not where you first booked. You can only make 2 changes to a car driving test (changing date and centre together counts as one change), and you must make the change yourself.",
+              "sources": [
+                "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
+                "https://www.gov.uk/change-driving-test"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 379,
+        "outputTokens": 198
+      },
+      "judgeRaw": "[true]"
+    },
+    {
+      "id": "g39",
+      "type": "recently_changed",
+      "question": "The mileage on my MOT record is wrong. How do I get it corrected?",
+      "answer": {
+        "status": "answered",
+        "answer": "Use the GOV.UK online form \"Report a mistake on your MOT record\" (you can't use it if the MOT was in Northern Ireland; contact the DVA instead).\n\nFor a mileage correction where the MOT was more than 28 days ago, you'll need:\n- Your name, driving licence number, address, phone number and email address\n- The vehicle's registration number and VIN, plus the MOT test date and number\n- A supporting document uploaded to show the correct mileage at the time of the MOT: an invoice, emissions printout, service receipt, vehicle service history, or a job card/inspection sheet from the MOT centre. The document must show the registration number or VIN, the mileage, and a date within one day of the MOT test. An MOT certificate or a photo of the dashboard is not accepted.\n\nIf the MOT was in the last 28 days, the form won't process a mileage change directly; it will tell you how to report it instead.\n\nYou'll usually get a reply within 8 weeks, though it may take longer. Note that the form cannot change or remove MOT results, defects or advisories; those can only be challenged by appealing the result if you think it was wrong.",
+        "citedUrls": [
+          "https://www.gov.uk/report-a-mistake-on-your-mot-record"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/report-a-mistake-on-your-mot-record",
+          "https://www.gov.uk/check-mot-history"
+        ],
+        "usage": {
+          "inputTokens": 8044,
+          "outputTokens": 786
+        },
+        "ms": 6270,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "MOT record mileage incorrect correct"
+            },
+            "summary": "5 hits: https://www.gov.uk/report-a-mistake-on-your-mot-record, https://www.gov.uk/check-mot-history"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "update mileage on MOT history service"
+            },
+            "summary": "5 hits: https://www.gov.uk/report-a-mistake-on-your-mot-record, https://www.gov.uk/check-mot-history"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/report-a-mistake-on-your-mot-record"
+            },
+            "summary": "2027 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Use the GOV.UK online form \"Report a mistake on your MOT record\" (you can't use it if the MOT was in Northern Ireland; contact the DVA instead).\n\nFor a mileage correction where the MOT was more than 28 days ago, you'll need:\n- Your name, driving licence number, address, phone number and email address\n- The vehicle's registration number and VIN, plus the MOT test date and number\n- A supporting document uploaded to show the correct mileage at the time of the MOT: an invoice, emissions printout, service receipt, vehicle service history, or a job card/inspection sheet from the MOT centre. The document must show the registration number or VIN, the mileage, and a date within one day of the MOT test. An MOT certificate or a photo of the dashboard is not accepted.\n\nIf the MOT was in the last 28 days, the form won't process a mileage change directly; it will tell you how to report it instead.\n\nYou'll usually get a reply within 8 weeks, though it may take longer. Note that the form cannot change or remove MOT results, defects or advisories; those can only be challenged by appealing the result if you think it was wrong.",
+              "sources": [
+                "https://www.gov.uk/report-a-mistake-on-your-mot-record"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 0.5,
+        "factResults": [
+          false,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 601,
+        "outputTokens": 242
+      },
+      "judgeRaw": "[false, true]"
+    },
+    {
+      "id": "g40",
+      "type": "recently_changed",
+      "question": "How do I set up a Direct Debit to pay my vehicle tax?",
+      "answer": {
+        "status": "answered",
+        "answer": "You can set up a Vehicle Tax Direct Debit when you tax your vehicle online or at a Post Office. You don't need to be the registered keeper, but emails and letters about payments go to the account holder.\n\nYou'll need:\n- your address and date of birth\n- your bank or building society name, account number and sort code\n- The account cannot require 2 signatures.\n\nAfter you set it up, you'll get a confirmation by email or post. The first payment isn't taken until the vehicle tax starts (this can take up to 10 days), and you can use the vehicle before that payment is taken. Later payments are taken on the first working day of the month they're due.\n\nCosts: paying monthly or every 6 months carries a 5% surcharge; paying yearly has no surcharge.\n\nRenewals are automatic, and you won't get a V11 reminder. Don't tax the vehicle again, or you'll be charged twice. The keeper must have a V5C logbook before the tax renews. If the Direct Debit is cancelled, you'll need to tax the vehicle using your V5C, and it's illegal to drive until it's taxed.",
+        "citedUrls": [
+          "https://www.gov.uk/vehicle-tax-direct-debit",
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/vehicle-tax-direct-debit",
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder"
+        ],
+        "usage": {
+          "inputTokens": 6957,
+          "outputTokens": 1188
+        },
+        "ms": 6071,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "set up Direct Debit pay vehicle tax"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-tax-direct-debit, https://www.gov.uk/tax-vehicle-without-v11-reminder"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "vehicle tax Direct Debit"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-tax-direct-debit, https://www.gov.uk/tax-vehicle-without-v11-reminder"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You can set up a Vehicle Tax Direct Debit when you tax your vehicle online or at a Post Office. You don't need to be the registered keeper, but emails and letters about payments go to the account holder.\n\nYou'll need:\n- your address and date of birth\n- your bank or building society name, account number and sort code\n- The account cannot require 2 signatures.\n\nAfter you set it up, you'll get a confirmation by email or post. The first payment isn't taken until the vehicle tax starts (this can take up to 10 days), and you can use the vehicle before that payment is taken. Later payments are taken on the first working day of the month they're due.\n\nCosts: paying monthly or every 6 months carries a 5% surcharge; paying yearly has no surcharge.\n\nRenewals are automatic, and you won't get a V11 reminder. Don't tax the vehicle again, or you'll be charged twice. The keeper must have a V5C logbook before the tax renews. If the Direct Debit is cancelled, you'll need to tax the vehicle using your V5C, and it's illegal to drive until it's taxed.</answer>\n<parameter name=\"sources\">[\"https://www.gov.uk/vehicle-tax-direct-debit\", \"https://www.gov.uk/tax-vehicle-without-v11-reminder\"]"
+            },
+            "summary": "rejected: no valid source"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You can set up a Vehicle Tax Direct Debit when you tax your vehicle online or at a Post Office. You don't need to be the registered keeper, but emails and letters about payments go to the account holder.\n\nYou'll need:\n- your address and date of birth\n- your bank or building society name, account number and sort code\n- The account cannot require 2 signatures.\n\nAfter you set it up, you'll get a confirmation by email or post. The first payment isn't taken until the vehicle tax starts (this can take up to 10 days), and you can use the vehicle before that payment is taken. Later payments are taken on the first working day of the month they're due.\n\nCosts: paying monthly or every 6 months carries a 5% surcharge; paying yearly has no surcharge.\n\nRenewals are automatic, and you won't get a V11 reminder. Don't tax the vehicle again, or you'll be charged twice. The keeper must have a V5C logbook before the tax renews. If the Direct Debit is cancelled, you'll need to tax the vehicle using your V5C, and it's illegal to drive until it's taxed.",
+              "sources": [
+                "https://www.gov.uk/vehicle-tax-direct-debit",
+                "https://www.gov.uk/tax-vehicle-without-v11-reminder"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 3
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true,
+          true
+        ],
+        "judgeFailed": false
+      },
+      "judgeUsage": {
+        "inputTokens": 581,
+        "outputTokens": 243
+      },
+      "judgeRaw": "[true, true, true]"
+    }
+  ]
+}

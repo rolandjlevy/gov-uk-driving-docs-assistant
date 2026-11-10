@@ -1,0 +1,252 @@
+{
+  "system": "agent",
+  "model": "claude-haiku-5-5",
+  "judgeModel": "claude-haiku-5-5",
+  "ranAt": "2026-11-09T23:41:00.140Z",
+  "summary": {
+    "all": {
+      "n": 3,
+      "retrieval": 0.7777777777777777,
+      "citationValid": 1,
+      "facts": 0.6666666666666666,
+      "refusalCorrect": 1,
+      "meanMs": 6641.333333333333,
+      "inputTokens": 21981,
+      "outputTokens": 3227
+    },
+    "byType": {
+      "multi_page": {
+        "n": 2,
+        "retrieval": 0.6666666666666666,
+        "citationValid": 1,
+        "facts": 0.5,
+        "refusalCorrect": 1,
+        "meanMs": 7629,
+        "inputTokens": 17930,
+        "outputTokens": 2577
+      },
+      "recently_changed": {
+        "n": 1,
+        "retrieval": 1,
+        "citationValid": 1,
+        "facts": 1,
+        "refusalCorrect": 1,
+        "meanMs": 4666,
+        "inputTokens": 4051,
+        "outputTokens": 650
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "g25",
+      "type": "multi_page",
+      "question": "I've just bought a used car. What do I need to do to tax it and get it registered in my name?",
+      "answer": {
+        "status": "answered",
+        "answer": "Tax it immediately, using the green 'new keeper' slip from the log book (V5C) the seller gave you. You can tax online at GOV.UK with the reference number from that slip, by Direct Debit, debit or credit card. You must tax it before you can use it on the road, even if the car is exempt from vehicle tax.\n\nTo get it registered in your name:\n- Usually the seller registers the car for you, either online or by post. Online, the seller registers it to you, fills in the green new keeper slip and gives it to you, and destroys the V5C. By post, the seller completes the relevant section of the V5C, signs the declaration if it's the older style, fills in the new keeper slip, and sends the V5C to DVLA.\n- If the car has no V5C, don't buy it: DVLA advises against it. If you do have to, you must register it yourself by sending form V62 to DVLA with payment of £25, and make sure you pay the correct postage.\n- If the V5C is posted and the seller did not send you the new keeper slip from the most recent V5C, you'll need to pay £25 for a replacement. Ask for the correct slip, and check its date matches the last V5C issue date on the vehicle enquiry service if unsure.\n- When your new V5C arrives, check all the details are correct. If it hasn't arrived 4 weeks after you sent in a V62, contact DVLA.\n\nPractical order: get the new keeper slip, tax the car online right away, then make sure the seller completes the registration (or you apply with V62 if there's no V5C).",
+        "citedUrls": [
+          "https://www.gov.uk/checks-when-buying-a-used-car",
+          "https://www.gov.uk/vehicle-registration",
+          "https://www.gov.uk/vehicle-tax",
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/checks-when-buying-a-used-car",
+          "https://www.gov.uk/vehicle-registration",
+          "https://www.gov.uk/tax-vehicle-without-v11-reminder",
+          "https://www.gov.uk/vehicle-tax"
+        ],
+        "usage": {
+          "inputTokens": 3810,
+          "outputTokens": 907
+        },
+        "ms": 5678,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "buying a used car register in your name vehicle tax"
+            },
+            "summary": "5 hits: https://www.gov.uk/checks-when-buying-a-used-car, https://www.gov.uk/vehicle-registration, https://www.gov.uk/tax-vehicle-without-v11-reminder, https://www.gov.uk/vehicle-tax"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "new keeper supplement send V5C register car after buying"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-registration"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "Tax it immediately, using the green 'new keeper' slip from the log book (V5C) the seller gave you. You can tax online at GOV.UK with the reference number from that slip, by Direct Debit, debit or credit card. You must tax it before you can use it on the road, even if the car is exempt from vehicle tax.\n\nTo get it registered in your name:\n- Usually the seller registers the car for you, either online or by post. Online, the seller registers it to you, fills in the green new keeper slip and gives it to you, and destroys the V5C. By post, the seller completes the relevant section of the V5C, signs the declaration if it's the older style, fills in the new keeper slip, and sends the V5C to DVLA.\n- If the car has no V5C, don't buy it: DVLA advises against it. If you do have to, you must register it yourself by sending form V62 to DVLA with payment of £25, and make sure you pay the correct postage.\n- If the V5C is posted and the seller did not send you the new keeper slip from the most recent V5C, you'll need to pay £25 for a replacement. Ask for the correct slip, and check its date matches the last V5C issue date on the vehicle enquiry service if unsure.\n- When your new V5C arrives, check all the details are correct. If it hasn't arrived 4 weeks after you sent in a V62, contact DVLA.\n\nPractical order: get the new keeper slip, tax the car online right away, then make sure the seller completes the registration (or you apply with V62 if there's no V5C).",
+              "sources": [
+                "https://www.gov.uk/checks-when-buying-a-used-car",
+                "https://www.gov.uk/vehicle-registration",
+                "https://www.gov.uk/vehicle-tax",
+                "https://www.gov.uk/tax-vehicle-without-v11-reminder"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 0.3333333333333333,
+        "citationValid": 1,
+        "citationRecall": 0.3333333333333333,
+        "refusalCorrect": true,
+        "facts": 0,
+        "factResults": [
+          false,
+          false,
+          false
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 740,
+        "outputTokens": 500
+      }
+    },
+    {
+      "id": "g27",
+      "type": "multi_page",
+      "question": "My car is over 40 years old. Does it need an MOT, and does it need vehicle tax?",
+      "answer": {
+        "status": "answered",
+        "answer": "MOT: Probably not needed. You don't need an MOT if the vehicle was built or first registered more than 40 years ago and no \"substantial changes\" (e.g. replacing chassis, body, axles or engine to change how it works) have been made. You must still keep it roadworthy; dangerous use can mean a fine of up to £2,500 and 3 penalty points.\n\nVehicle tax: You must still tax the car even if you don't have to pay. If it was built before 1 January 1986, you can apply to stop paying vehicle tax from 1 April 2026. If the build date is unknown but it was first registered before 8 January 1986, you can still apply. A car over 40 years old will almost certainly fall into this group. The exemption doesn't apply if the car is used for hire or reward, or for a trade or business. Apply at a Post Office that deals with vehicle tax, taking the V5C log book in your name, your V11 if you have one, and V112 evidence if you're MOT-exempt. Driving untaxed can bring an £80 fine.\n\nI could not confirm the car's build date or whether substantial changes were made; DVLA or a historic vehicle expert can help.",
+        "citedUrls": [
+          "https://www.gov.uk/historic-vehicles"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/historic-vehicles",
+          "https://www.gov.uk/vehicle-registration",
+          "https://www.gov.uk/getting-an-mot",
+          "https://www.gov.uk/vehicle-exempt-from-vehicle-tax"
+        ],
+        "usage": {
+          "inputTokens": 14120,
+          "outputTokens": 1670
+        },
+        "ms": 9580,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "MOT exemption vehicles over 40 years old"
+            },
+            "summary": "5 hits: https://www.gov.uk/historic-vehicles, https://www.gov.uk/vehicle-registration, https://www.gov.uk/getting-an-mot"
+          },
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "vehicle tax exemption historic vehicles built before 1 January 1983"
+            },
+            "summary": "5 hits: https://www.gov.uk/vehicle-exempt-from-vehicle-tax, https://www.gov.uk/historic-vehicles"
+          },
+          {
+            "tool": "read_page",
+            "input": {
+              "url": "https://www.gov.uk/historic-vehicles"
+            },
+            "summary": "4773 chars"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "MOT: Probably not needed. You don't need an MOT if the vehicle was built or first registered more than 40 years ago and no \"substantial changes\" (e.g. replacing chassis, body, axles or engine to change how it works) have been made. You must still keep it roadworthy; dangerous use can mean a fine of up to £2,500 and 3 penalty points.\n\nVehicle tax: You must still tax the car even if you don't have to pay. If it was built before 1 January 1986, you can apply to stop paying vehicle tax from 1 April 2026. If the build date is unknown but it was first registered before 8 January 1986, you can still apply. A car over 40 years old will almost certainly fall into this group. The exemption doesn't apply if the car is used for hire or reward, or for a trade or business. Apply at a Post Office that deals with vehicle tax, taking the V5C log book in your name, your V11 if you have one, and V112 evidence if you're MOT-exempt. Driving untaxed can bring an £80 fine.\n\nI could not confirm the car's build date or whether substantial changes were made; DVLA or a historic vehicle expert can help.",
+              "sources": [
+                "https://www.gov.uk/historic-vehicles"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 2,
+        "invalidCitations": [],
+        "turns": 4
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 0.5,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true,
+          true
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 620,
+        "outputTokens": 222
+      }
+    },
+    {
+      "id": "g38",
+      "type": "recently_changed",
+      "question": "If I want to move my driving test to a different test centre, where can I move it to?",
+      "answer": {
+        "status": "answered",
+        "answer": "You can only move a car driving test to a limited set of centres:\n- The 3 test centres nearest to where your test is currently booked, or\n- The test centre you first booked at on that current booking.\n\nExample: if you're booked at Chesterfield, you can move to Sheffield (Handsworth), Ashfield or Sheffield (Middlewood Road). If you then move to Sheffield (Handsworth), your next change can be to Rotherham, Sheffield (Middlewood Road), Worksop, or back to Chesterfield.\n\nIf you booked before 9 June 2026, the rule applies to the centre your test was booked at on 9 June 2026, not the one you first booked at.\n\nYou can make only 2 changes to a car driving test (changing the date/time or the centre each counts as a change, and changing both at once counts as one). Only you can make the change; your driving instructor cannot. If you need more changes, you must cancel and rebook (a full refund if you cancel at least 10 working days before the test).",
+        "citedUrls": [
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
+          "https://www.gov.uk/change-driving-test"
+        ],
+        "retrievedUrls": [
+          "https://www.gov.uk/change-driving-test",
+          "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+        ],
+        "usage": {
+          "inputTokens": 4051,
+          "outputTokens": 650
+        },
+        "ms": 4666,
+        "trace": [
+          {
+            "tool": "search_docs",
+            "input": {
+              "query": "change driving test centre location"
+            },
+            "summary": "5 hits: https://www.gov.uk/change-driving-test, https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
+          },
+          {
+            "tool": "finish",
+            "input": {
+              "status": "answered",
+              "answer": "You can only move a car driving test to a limited set of centres:\n- The 3 test centres nearest to where your test is currently booked, or\n- The test centre you first booked at on that current booking.\n\nExample: if you're booked at Chesterfield, you can move to Sheffield (Handsworth), Ashfield or Sheffield (Middlewood Road). If you then move to Sheffield (Handsworth), your next change can be to Rotherham, Sheffield (Middlewood Road), Worksop, or back to Chesterfield.\n\nIf you booked before 9 June 2026, the rule applies to the centre your test was booked at on 9 June 2026, not the one you first booked at.\n\nYou can make only 2 changes to a car driving test (changing the date/time or the centre each counts as a change, and changing both at once counts as one). Only you can make the change; your driving instructor cannot. If you need more changes, you must cancel and rebook (a full refund if you cancel at least 10 working days before the test).",
+              "sources": [
+                "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
+                "https://www.gov.uk/change-driving-test"
+              ]
+            },
+            "summary": "answered"
+          }
+        ],
+        "searches": 1,
+        "invalidCitations": [],
+        "turns": 2
+      },
+      "scores": {
+        "retrieval": 1,
+        "citationValid": 1,
+        "citationRecall": 1,
+        "refusalCorrect": true,
+        "facts": 1,
+        "factResults": [
+          true
+        ]
+      },
+      "judgeUsage": {
+        "inputTokens": 513,
+        "outputTokens": 229
+      }
+    }
+  ]
+}
