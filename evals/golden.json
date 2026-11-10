@@ -19,8 +19,7 @@
       "type": "single_page",
       "question": "How much does it cost to renew my driving licence when I turn 70?",
       "key_facts": [
-        "Renewing a licence at 70 or over is free",
-        "You must renew every 3 years after reaching 70"
+        "Renewing your driving licence at 70 or over is free"
       ],
       "expected_urls": [
         "https://www.gov.uk/renew-driving-licence-at-70"
@@ -45,8 +44,7 @@
       "type": "single_page",
       "question": "How much does it cost to replace a stolen driving licence?",
       "key_facts": [
-        "A replacement licence costs £20 online",
-        "You should contact the police if it was stolen"
+        "A replacement licence costs £20 online"
       ],
       "expected_urls": [
         "https://www.gov.uk/replace-a-driving-licence"
@@ -96,7 +94,7 @@
       "type": "single_page",
       "question": "Can I get a refund on my vehicle tax if I sell my car?",
       "key_facts": [
-        "You cancel vehicle tax by telling DVLA you sold or transferred the vehicle; there is no other way to cancel",
+        "You cancel vehicle tax by telling DVLA you no longer have the vehicle (for example sold, scrapped or off the road); there is no other way",
         "You get a refund for any full months of remaining tax"
       ],
       "expected_urls": [
@@ -109,7 +107,8 @@
       "type": "single_page",
       "question": "Which vehicles are exempt from vehicle tax?",
       "key_facts": [
-        "Exempt vehicles include historic vehicles made before 1 January 1986 and vehicles used by a disabled person (other examples: mobility vehicles, mowing machines, steam vehicles, agricultural vehicles)",
+        "Historic vehicles built before 1 January 1986 are exempt from vehicle tax",
+        "Vehicles used by a disabled person can be exempt",
         "Electric cars are no longer exempt: from 1 April 2025 they must pay vehicle tax"
       ],
       "expected_urls": [
@@ -147,8 +146,8 @@
       "type": "single_page",
       "question": "What do I need to do when I sell my car?",
       "key_facts": [
-        "Tell DVLA you've sold or transferred the vehicle (online, or by post if there is no log book)",
-        "Your vehicle tax is cancelled and you get a refund for any full months left"
+        "Tell DVLA you've sold or transferred the vehicle",
+        "You get a refund for any full months of vehicle tax left"
       ],
       "expected_urls": [
         "https://www.gov.uk/sold-bought-vehicle"
@@ -264,8 +263,9 @@
       "type": "single_page",
       "question": "How do I swap my paper driving licence for a photocard?",
       "key_facts": [
-        "You only have to exchange a paper licence if you change your address or name, want to do Driver CPC training, or it is defaced, lost, stolen or destroyed",
-        "It is free if you changed name or address and still have the paper licence; otherwise £20"
+        "You do not need to exchange a valid paper licence unless you change your address or name, want to do Driver CPC training, or it is damaged, lost or stolen",
+        "It is free if you changed your name or address and still have the paper licence",
+        "Otherwise a new photocard licence costs £20"
       ],
       "expected_urls": [
         "https://www.gov.uk/exchange-paper-driving-licence"
@@ -347,8 +347,8 @@
       "type": "multi_page",
       "question": "My car is over 40 years old. Does it need an MOT, and does it need vehicle tax?",
       "key_facts": [
-        "No MOT is needed if the vehicle was built or first registered more than 40 years ago and has had no substantial changes",
-        "Vehicles built before 1 January 1986 are exempt from vehicle tax, but you must still tax the vehicle (apply for the exemption)"
+        "No MOT is needed if the vehicle was built or first registered more than 40 years ago and not substantially changed",
+        "Vehicles built before 1 January 1986 are exempt from vehicle tax"
       ],
       "expected_urls": [
         "https://www.gov.uk/historic-vehicles",
@@ -377,7 +377,7 @@
       "type": "multi_page",
       "question": "My car has been written off. What do I tell DVLA and what happens to my vehicle tax?",
       "key_facts": [
-        "You must tell DVLA the vehicle was written off and scrapped by your insurer (you can be fined £1,000 if not)",
+        "You must tell DVLA the vehicle was written off and scrapped by your insurer",
         "You get a vehicle tax refund for any full months left"
       ],
       "expected_urls": [
@@ -391,8 +391,8 @@
       "type": "multi_page",
       "question": "I'm over 70 and have a medical condition. How do I renew my driving licence?",
       "key_facts": [
-        "You can renew free online from 70 if you meet the eyesight requirement and nothing prevents you from driving",
-        "You must tell DVLA about medical conditions that affect your driving (fine of up to £1,000 if not)"
+        "You can renew online for free from 70 if you meet the eyesight requirement and nothing prevents you from driving",
+        "You must tell DVLA about medical conditions that affect your driving"
       ],
       "expected_urls": [
         "https://www.gov.uk/renew-driving-licence-at-70",
@@ -454,7 +454,7 @@
       "type": "recently_changed",
       "question": "How many times can I change my car driving test booking now?",
       "key_facts": [
-        "You can only make 2 changes to a car driving test booking (it was 6 before 31 March 2026)"
+        "You can only make 2 changes to a car driving test booking"
       ],
       "expected_urls": [
         "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
@@ -480,7 +480,7 @@
       "type": "recently_changed",
       "question": "If I want to move my driving test to a different test centre, where can I move it to?",
       "key_facts": [
-        "You can only move your test to one of the 3 nearest test centres to where it is booked (since 9 June 2026), or back to the centre you first booked"
+        "You can only move your test to one of the 3 nearest test centres to where it is booked"
       ],
       "expected_urls": [
         "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
@@ -492,8 +492,8 @@
       "type": "recently_changed",
       "question": "The mileage on my MOT record is wrong. How do I get it corrected?",
       "key_facts": [
-        "Report it online (if the MOT was more than 28 days ago); within 28 days ask the MOT centre",
-        "You must upload evidence of the correct mileage, e.g. an invoice, emissions printout, service receipt or job card, dated within one day of the MOT"
+        "If the MOT was more than 28 days ago, report the mistake using the online form 'Report a mistake on your MOT record'",
+        "For a mileage correction you must upload evidence of the correct mileage, such as an invoice, emissions printout, service receipt or job card dated within one day of the MOT"
       ],
       "expected_urls": [
         "https://www.gov.uk/report-a-mistake-on-your-mot-record"

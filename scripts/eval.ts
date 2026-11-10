@@ -39,7 +39,7 @@ for (const q of questions) {
   if (judgeFailed) console.warn(`  ! ${q.id}: judge reply unreadable, row not scored`);
   const dec = q.type === 'not_covered' ? await judgeDecline(client, judgeModel, q.question, answer.answer) : null;
   const scores: Scores = { ...code, facts, factResults: judged.results ?? [], judgeFailed, declined: dec ? dec.declined : undefined };
-  rows.push({ id: q.id, type: q.type, question: q.question, answer, scores, judgeUsage: judged.usage, judgeRaw: judged.raw });
+  rows.push({ id: q.id, type: q.type, question: q.question, keyFacts: q.key_facts, answer, scores, judgeUsage: judged.usage, judgeRaw: judged.raw });
   console.log(`${q.id} ${q.type.padEnd(16)} facts=${facts === null ? '-' : facts.toFixed(2)} retr=${code.retrieval ?? '-'} refusal=${code.refusalCorrect ? 'ok' : 'WRONG'}${dec ? ` declined=${dec.declined}` : ''} ${answer.ms}ms`);
 }
 await pool?.end();
