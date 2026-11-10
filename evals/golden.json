@@ -1,5 +1,5 @@
 {
-  "note": "DRAFT. key_facts were drafted by Claude from the page text fetched on 2026-11-09 (evals/golden.sources.md) and must each be checked against the live page. Set checked_on per question once verified. Not-covered questions have no facts by design. Rule for key_facts: only what a correct answer to the question must say, one claim each, 1-3 per question; extra page detail does not belong.",
+  "note": "DRAFT. key_facts were drafted by Claude from the page text fetched on 2026-11-09 (evals/golden.sources.md) and must each be checked against the live page. Set checked_on per question once verified. Not-covered questions have no facts by design. Rule for key_facts: only what a correct answer to the question must say, one claim each, 1-3 per question; extra page detail does not belong. Verification: on 2026-11-10 the owner hand-checked a sample of 10 questions' key facts against the live pages (g03, g04, g11, g15, g19, g22, g36, g38, g39, g40) with no errors; checked_on is set only where every fact of the question was in that sample. The rest are drafted from the fetched page text and not hand-checked.",
   "questions": [
     {
       "id": "g01",
@@ -37,7 +37,7 @@
       "expected_urls": [
         "https://www.gov.uk/apply-first-provisional-driving-licence"
       ],
-      "checked_on": null
+      "checked_on": "2026-11-10"
     },
     {
       "id": "g04",
@@ -49,7 +49,7 @@
       "expected_urls": [
         "https://www.gov.uk/replace-a-driving-licence"
       ],
-      "checked_on": null
+      "checked_on": "2026-11-10"
     },
     {
       "id": "g05",
@@ -139,7 +139,7 @@
       "expected_urls": [
         "https://www.gov.uk/getting-an-mot"
       ],
-      "checked_on": null
+      "checked_on": "2026-11-10"
     },
     {
       "id": "g12",
@@ -283,7 +283,7 @@
       "expected_urls": [
         "https://www.gov.uk/driving-test-cost"
       ],
-      "checked_on": null
+      "checked_on": "2026-11-10"
     },
     {
       "id": "g23",
@@ -460,7 +460,7 @@
         "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
         "https://www.gov.uk/change-driving-test"
       ],
-      "checked_on": null
+      "checked_on": "2026-11-10"
     },
     {
       "id": "g37",
@@ -485,7 +485,7 @@
       "expected_urls": [
         "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026"
       ],
-      "checked_on": null
+      "checked_on": "2026-11-10"
     },
     {
       "id": "g39",
@@ -498,7 +498,7 @@
       "expected_urls": [
         "https://www.gov.uk/report-a-mistake-on-your-mot-record"
       ],
-      "checked_on": null
+      "checked_on": "2026-11-10"
     },
     {
       "id": "g40",
