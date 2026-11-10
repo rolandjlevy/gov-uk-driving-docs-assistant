@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { runAgent } from './agent.js';
+import { coerceSources, runAgent } from './agent.js';
 
 const hit = { url: 'https://www.gov.uk/a', pageTitle: 'A', heading: 'H', text: 't', score: 0.7 };
 const use = (id: string, name: string, input: unknown) => ({ type: 'tool_use', id, name, input });
@@ -69,5 +69,16 @@ describe('runAgent', () => {
     const r = await runAgent(deps(s.client), 'q');
     expect(r.status).toBe('not_covered');
     expect(r.turns).toBe(10);
+  });
+});
+
+describe('coerceSources', () => {
+  it('accepts arrays, strings, comma lists and objects', () => {
+    expect(coerceSources(['https://www.gov.uk/a'])).toEqual(['https://www.gov.uk/a']);
+    expect(coerceSources('https://www.gov.uk/a')).toEqual(['https://www.gov.uk/a']);
+    expect(coerceSources('https://www.gov.uk/a, https://www.gov.uk/b')).toEqual(['https://www.gov.uk/a', 'https://www.gov.uk/b']);
+    expect(coerceSources([{ url: 'https://www.gov.uk/a' }])).toEqual(['https://www.gov.uk/a']);
+    expect(coerceSources(undefined)).toEqual([]);
+    expect(coerceSources('see the page')).toEqual([]);
   });
 });

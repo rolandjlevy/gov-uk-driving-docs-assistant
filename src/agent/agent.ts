@@ -5,6 +5,18 @@ import type { SearchHit } from '../search/search.js';
 import { normaliseUrl, type SystemAnswer } from '../eval/answer.js';
 
 export const MAX_SEARCHES = 4;
+
+/** Models sometimes send sources as a string, a comma/newline list or objects; accept all, never silently drop. */
+export function coerceSources(v: unknown): string[] {
+  const out: string[] = [];
+  const add = (x: unknown) => {
+    if (typeof x === 'string') x.split(/[\s,]+/).forEach((t) => /^(https?:\/\/|www\.|gov\.uk)/i.test(t) && out.push(t.replace(/[)\].,;]+$/, '')));
+    else if (Array.isArray(x)) x.forEach(add);
+    else if (x && typeof x === 'object') add((x as any).url ?? (x as any).source ?? (x as any).href);
+  };
+  add(v);
+  return out;
+}
 export const MAX_TURNS = 10;
 export const MAX_PAGE_CHARS = 15000;
 
@@ -102,12 +114,12 @@ export async function runAgent(deps: AgentDeps, question: string): Promise<Agent
           }
         } else if (c.name === 'finish') {
           const status = input.status === 'not_covered' ? 'not_covered' : 'answered';
-          const sources = Array.isArray(input.sources) ? input.sources.filter((s: unknown): s is string => typeof s === 'string') : [];
+          const sources = coerceSources(input.sources);
           const answer = String(input.answer ?? '').trim();
           const valid = sources.filter((s) => seen.has(normaliseUrl(s)));
           if (status === 'answered' && valid.length === 0 && !nudged) {
             nudged = true; isError = true;
-            content = `Rejected: sources must be full URLs copied exactly from what you retrieved. URLs you can cite: ${[...seen].map((u) => 'https://www.' + u).join(', ') || '(none yet; search first)'}. Call finish again with one or more of these, or with not_covered.`;
+            content = `Rejected: you sent sources=${JSON.stringify(input.sources)}; they must be a JSON array of full URLs copied exactly from what you retrieved. URLs you can cite: ${[...seen].map((u) => 'https://www.' + u).join(', ') || '(none yet; search first)'}. Call finish again with one or more of these, or with not_covered.`;
           } else { final = { status, answer, sources }; content = 'Done.'; }
           trace.push({ tool: 'finish', input, summary: isError ? 'rejected: no valid source' : status });
         } else { content = `Unknown tool ${c.name}`; isError = true; }

@@ -317,8 +317,8 @@
       "question": "I've just bought a used car. What do I need to do to tax it and get it registered in my name?",
       "key_facts": [
         "You must tax the vehicle before you can use it on the road",
-        "The seller usually registers a used vehicle for you (online or by post) and gives you the green 'new keeper' slip",
-        "You can tax it using the reference number from the green new keeper slip (or the V5C if it is already in your name)"
+        "The seller usually registers a used vehicle for you, online or by post",
+        "You can tax it using the reference number from the green 'new keeper' slip"
       ],
       "expected_urls": [
         "https://www.gov.uk/sold-bought-vehicle",
