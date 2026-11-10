@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { normaliseUrl, parseReply } from './answer.js';
-import { judgeDecline, judgeFacts, parseJudge, scoreCode, summarise } from './score.js';
+import { judgeDecline, judgeFacts, parseDecline, parseJudge, scoreCode, summarise } from './score.js';
 import { formatExtracts, modelAlone, oneSearchRag } from './systems.js';
 import type { GoldenQuestion } from './golden.js';
 
@@ -78,11 +78,22 @@ describe('normaliseUrl', () => {
   });
 });
 
+describe('parseDecline', () => {
+  it('finds the word anywhere', () => {
+    expect(parseDecline('**True**')).toBe(true);
+    expect(parseDecline('Answer: false.')).toBe(false);
+    expect(parseDecline('')).toBeNull();
+  });
+});
+
 describe('judgeDecline', () => {
   const mk = (t: string) => ({ messages: { create: async () => ({ content: [{ type: 'text', text: t }], usage: { input_tokens: 1, output_tokens: 1 } }) } }) as any;
   it('reads true, false and unreadable', async () => {
     expect((await judgeDecline(mk('True.'), 'm', 'q', 'a')).declined).toBe(true);
     expect((await judgeDecline(mk('false'), 'm', 'q', 'a')).declined).toBe(false);
     expect((await judgeDecline(mk('hmm'), 'm', 'q', 'a')).declined).toBeNull();
+    const empty = (await judgeDecline(mk(''), 'm', 'q', 'a'));
+    expect(empty.declined).toBeNull();
+    expect(empty.usage.inputTokens).toBe(2); // retried once
   });
 });

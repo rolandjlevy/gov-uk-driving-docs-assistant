@@ -84,11 +84,24 @@ const DECLINE_SYSTEM = `The question below cannot be answered from GOV.UK drivin
 Decide whether the answer correctly declines to give the thing asked, without inventing it. It may still explain related GOV.UK guidance or say how to find help.
 Reply with only the word true (it declines properly) or false (it answers the question as if it could, or invents specifics).`;
 
+export function parseDecline(text: string): boolean | null {
+  const m = text.toLowerCase().match(/\b(true|false)\b/);
+  return m ? m[1] === 'true' : null;
+}
+
 export async function judgeDecline(client: Pick<Anthropic, 'messages'>, model: string, question: string, answer: string): Promise<{ declined: boolean | null; usage: Usage; raw: string }> {
-  const msg = await client.messages.create({ model, max_tokens: 50, system: DECLINE_SYSTEM, messages: [{ role: 'user', content: `Question: ${question}\n\nAnswer:\n${answer || '(empty)'}` }] });
-  const raw = msg.content.map((b) => (b.type === 'text' ? b.text : '')).join('').trim().toLowerCase();
-  const declined = raw.startsWith('true') ? true : raw.startsWith('false') ? false : null;
-  return { declined, usage: { inputTokens: msg.usage.input_tokens, outputTokens: msg.usage.output_tokens }, raw };
+  const usage: Usage = { inputTokens: 0, outputTokens: 0 };
+  let raw = '';
+  // Generous max_tokens: some models spend tokens on hidden reasoning before the one-word reply. Retry once if unreadable.
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const msg = await client.messages.create({ model, max_tokens: 1000, system: DECLINE_SYSTEM, messages: [{ role: 'user', content: `Question: ${question}\n\nAnswer:\n${answer || '(empty)'}` }] });
+    usage.inputTokens += msg.usage.input_tokens;
+    usage.outputTokens += msg.usage.output_tokens;
+    raw = msg.content.map((b) => (b.type === 'text' ? b.text : '')).join('').trim();
+    const declined = parseDecline(raw);
+    if (declined !== null) return { declined, usage, raw };
+  }
+  return { declined: null, usage, raw };
 }
 
 export interface Summary {
@@ -99,6 +112,8 @@ export interface Summary {
   refusalCorrect: number;
   /** Share of not_covered questions the judge says were properly declined; null if none were judged. */
   declinedJudged: number | null;
+  /** not_covered rows where the decline judge's reply was unreadable (declinedJudged ignores these, so check this too). */
+  declinedUnreadable: number;
   meanMs: number;
   inputTokens: number;
   outputTokens: number;
@@ -117,6 +132,7 @@ export function summarise(rows: { scores: Scores; answer: SystemAnswer }[]): Sum
     facts: mean(rows.map((r) => r.scores.facts)),
     refusalCorrect: rows.filter((r) => r.scores.refusalCorrect).length / (rows.length || 1),
     declinedJudged: mean(rows.map((r) => (r.scores.declined === undefined || r.scores.declined === null ? null : r.scores.declined ? 1 : 0))),
+    declinedUnreadable: rows.filter((r) => r.scores.declined === null).length,
     meanMs: rows.reduce((a, r) => a + r.answer.ms, 0) / (rows.length || 1),
     inputTokens: rows.reduce((a, r) => a + r.answer.usage.inputTokens, 0),
     outputTokens: rows.reduce((a, r) => a + r.answer.usage.outputTokens, 0),
