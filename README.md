@@ -75,7 +75,7 @@ npm run eval -- --system=agent         # stage 5: Claude searches and reads page
 
 Each run saves `evals/runs/<system>-<time>.json` with per-question answers, scores, tokens and time, plus a summary overall and by question type.
 
-Scores: retrieval (expected pages among the retrieved), citation validity (cited URLs were really retrieved), fact score (an LLM judge checks each `key_facts` entry), refusal (declines the not-covered questions, does not decline the rest), tokens and time. Cost is left as tokens; multiply by the current price list when writing up. Run it only after the facts are hand-checked, or the fact score is meaningless.
+Scores: retrieval (expected pages among the retrieved), citation validity (cited URLs were really retrieved), fact score (an LLM judge checks each `key_facts` entry), refusal (the status field: declines the not-covered questions, does not decline the rest) and, for not-covered questions, a judged `declinedJudged` (the answer does not invent the thing asked, even if it explains related guidance), tokens and time. Cost is left as tokens; multiply by the current price list when writing up. Run it only after the facts are hand-checked, or the fact score is meaningless.
 
 ## Stage 5: the agent
 

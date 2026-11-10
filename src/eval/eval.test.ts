@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { parseReply } from './answer.js';
-import { judgeFacts, parseJudge, scoreCode, summarise } from './score.js';
+import { normaliseUrl, parseReply } from './answer.js';
+import { judgeDecline, judgeFacts, parseJudge, scoreCode, summarise } from './score.js';
 import { formatExtracts, modelAlone, oneSearchRag } from './systems.js';
 import type { GoldenQuestion } from './golden.js';
 
@@ -69,5 +69,20 @@ describe('judgeFacts', () => {
   it('reports failure (null) when both replies are unreadable', async () => {
     const client = { messages: { create: async () => ({ content: [{ type: 'text', text: 'no' }], usage: { input_tokens: 1, output_tokens: 1 } }) } } as any;
     expect((await judgeFacts(client, 'm', two, 'ans')).results).toBeNull();
+  });
+});
+
+describe('normaliseUrl', () => {
+  it('ignores protocol, www, query, fragment, slash and case', () => {
+    expect(normaliseUrl('HTTP://gov.uk/Diabetes-Driving/?a=1#x')).toBe(normaliseUrl('https://www.gov.uk/diabetes-driving'));
+  });
+});
+
+describe('judgeDecline', () => {
+  const mk = (t: string) => ({ messages: { create: async () => ({ content: [{ type: 'text', text: t }], usage: { input_tokens: 1, output_tokens: 1 } }) } }) as any;
+  it('reads true, false and unreadable', async () => {
+    expect((await judgeDecline(mk('True.'), 'm', 'q', 'a')).declined).toBe(true);
+    expect((await judgeDecline(mk('false'), 'm', 'q', 'a')).declined).toBe(false);
+    expect((await judgeDecline(mk('hmm'), 'm', 'q', 'a')).declined).toBeNull();
   });
 });

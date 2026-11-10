@@ -28,4 +28,5 @@ export function parseReply(text: string): ParsedReply {
   return { status: 'answered', answer: text.trim(), sources: [] };
 }
 
-export const normaliseUrl = (u: string) => u.trim().replace(/[?#].*$/, '').replace(/\/+$/, '').toLowerCase();
+/** Compare URLs by host+path only: ignore protocol, www, query, fragment, trailing slash and case. */
+export const normaliseUrl = (u: string) => u.trim().replace(/[?#].*$/, '').replace(/^https?:\/\//i, '').replace(/^www\./i, '').replace(/\/+$/, '').toLowerCase();

@@ -107,7 +107,7 @@ export async function runAgent(deps: AgentDeps, question: string): Promise<Agent
           const valid = sources.filter((s) => seen.has(normaliseUrl(s)));
           if (status === 'answered' && valid.length === 0 && !nudged) {
             nudged = true; isError = true;
-            content = 'Rejected: an answer needs at least one source URL that you retrieved with search_docs or read_page. Retrieve it, or finish with not_covered.';
+            content = `Rejected: sources must be full URLs copied exactly from what you retrieved. URLs you can cite: ${[...seen].map((u) => 'https://www.' + u).join(', ') || '(none yet; search first)'}. Call finish again with one or more of these, or with not_covered.`;
           } else { final = { status, answer, sources }; content = 'Done.'; }
           trace.push({ tool: 'finish', input, summary: isError ? 'rejected: no valid source' : status });
         } else { content = `Unknown tool ${c.name}`; isError = true; }

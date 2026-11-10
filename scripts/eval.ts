@@ -6,7 +6,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { getPageChunks, getPool } from '../src/db/db.js';
 import { searchDocs } from '../src/search/search.js';
 import { SYSTEMS, type SystemName } from '../src/eval/systems.js';
-import { judgeFacts, scoreCode, summarise, type Scores } from '../src/eval/score.js';
+import { judgeDecline, judgeFacts, scoreCode, summarise, type Scores } from '../src/eval/score.js';
 import type { GoldenQuestion } from '../src/eval/golden.js';
 
 const arg = (n: string) => process.argv.find((a) => a.startsWith(`--${n}=`))?.split('=')[1];
@@ -37,9 +37,10 @@ for (const q of questions) {
   const facts = judged.results?.length ? judged.results.filter(Boolean).length / judged.results.length : null;
   const judgeFailed = judged.results === null;
   if (judgeFailed) console.warn(`  ! ${q.id}: judge reply unreadable, row not scored`);
-  const scores: Scores = { ...code, facts, factResults: judged.results ?? [], judgeFailed };
+  const dec = q.type === 'not_covered' ? await judgeDecline(client, judgeModel, q.question, answer.answer) : null;
+  const scores: Scores = { ...code, facts, factResults: judged.results ?? [], judgeFailed, declined: dec ? dec.declined : undefined };
   rows.push({ id: q.id, type: q.type, question: q.question, answer, scores, judgeUsage: judged.usage, judgeRaw: judged.raw });
-  console.log(`${q.id} ${q.type.padEnd(16)} facts=${facts === null ? '-' : facts.toFixed(2)} retr=${code.retrieval ?? '-'} refusal=${code.refusalCorrect ? 'ok' : 'WRONG'} ${answer.ms}ms`);
+  console.log(`${q.id} ${q.type.padEnd(16)} facts=${facts === null ? '-' : facts.toFixed(2)} retr=${code.retrieval ?? '-'} refusal=${code.refusalCorrect ? 'ok' : 'WRONG'}${dec ? ` declined=${dec.declined}` : ''} ${answer.ms}ms`);
 }
 await pool?.end();
 

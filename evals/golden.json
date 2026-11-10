@@ -467,7 +467,7 @@
       "type": "recently_changed",
       "question": "Can my driving instructor book or cancel my driving test for me?",
       "key_facts": [
-        "Since 12 May 2026 only the learner can book, change or cancel their own car driving test; instructors are not allowed to"
+        "Only the learner can book, change or cancel their own car driving test; driving instructors are not allowed to"
       ],
       "expected_urls": [
         "https://www.gov.uk/guidance/changes-to-driving-test-booking-rules-in-2026",
