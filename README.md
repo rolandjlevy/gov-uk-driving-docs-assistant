@@ -105,3 +105,15 @@ evals/                      pre-check questions now; the golden set from stage 3
 - Embedding model and provider (Anthropic doesn't offer embeddings).
 - Licence for this repo.
 - Whether visitor questions are logged.
+
+## Stage 8: the public app
+
+`npm run dev` serves the question box (`/`) and the Evals page (`/evals`). `POST /api/ask` runs the stage 5 agent.
+
+- Limits (`src/limits.ts`): questions are capped at 500 characters, each visitor gets `PER_IP_PER_HOUR` questions an hour, and all visitors share `DAILY_QUESTION_CAP` a day. The daily cap is the spending cap. Counts live in Upstash Redis when its env vars are set, otherwise in memory (per instance). Also set a monthly spend limit in the Anthropic console.
+- Visitor questions are not logged or stored.
+- The Evals page reads `data/evals.json`, built from the saved runs by `npm run evals:data` (latest full run per system and judge). Rebuild it and commit it after any new eval run.
+- Next 16 runs with `--webpack` here because the source uses `.js` import specifiers for `.ts` files, which Turbopack does not map.
+- Deploy: import the repo into Vercel, set `ANTHROPIC_API_KEY`, `VOYAGE_API_KEY`, `GOV_UK_DB_URL` (and the Upstash vars), and set the build command to `npm run web:build`.
+
+Unofficial and not GOV.UK. Page text is from GOV.UK under the Open Government Licence v3.0. Code is MIT.

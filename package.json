@@ -14,17 +14,26 @@
     "slice:discover": "tsx scripts/slice-discover.ts",
     "golden:check": "tsx scripts/golden-check.ts",
     "golden:pages": "tsx scripts/golden-pages.ts",
-    "eval": "tsx scripts/eval.ts"
+    "eval": "tsx scripts/eval.ts",
+    "dev": "next dev --webpack",
+    "web:build": "next build --webpack",
+    "web:start": "next start",
+    "evals:data": "tsx scripts/build-evals-data.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.60.0",
     "cheerio": "^1.0.0",
     "dotenv": "^18.0.10",
-    "pg": "^8.23.1"
+    "next": "^16.4.6",
+    "pg": "^8.23.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
     "@types/pg": "^8.23.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "tsx": "^4.19.0",
     "typescript": "^5.6.0",
     "vitest": "^3.0.0"

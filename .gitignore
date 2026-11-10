@@ -6,3 +6,7 @@ dist
 data/cache
 evals/precheck.answers.json
 evals/golden.sources.md
+
+.next
+next-env.d.ts
+*.tsbuildinfo

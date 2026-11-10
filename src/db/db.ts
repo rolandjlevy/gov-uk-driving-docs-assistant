@@ -52,3 +52,10 @@ export async function getPageChunks(pool: Pick<Pool, 'query'>, url: string) {
   if (!rows.length) return null;
   return { title: String(rows[0].page_title), chunks: rows.map((r: any) => ({ heading: String(r.heading), text: String(r.text) })) };
 }
+
+/** Page titles for a set of URLs (for showing sources to a visitor). */
+export async function getPageTitles(pool: Pick<Pool, 'query'>, urls: string[]): Promise<Record<string, string>> {
+  if (!urls.length) return {};
+  const { rows } = await pool.query('SELECT DISTINCT url, page_title FROM chunks WHERE url = ANY($1::text[])', [urls]);
+  return Object.fromEntries(rows.map((r: any) => [String(r.url), String(r.page_title)]));
+}
