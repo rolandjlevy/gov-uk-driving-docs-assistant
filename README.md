@@ -6,7 +6,7 @@ An agent that answers UK driving questions from GOV.UK pages, cites the exact pa
 
 The app is the demo; the Evals page is the point. The full plan is in the project spec (stages below).
 
-View the [live demo](gov-uk-driving-docs-assistant.vercel.app)
+View the [live demo](https://gov-uk-driving-docs-assistant.vercel.app)
 
 ## Status
 
