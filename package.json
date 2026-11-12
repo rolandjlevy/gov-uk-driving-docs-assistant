@@ -16,6 +16,7 @@
     "golden:pages": "tsx scripts/golden-pages.ts",
     "eval": "tsx scripts/eval.ts",
     "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "web:build": "next build --webpack",
     "web:start": "next start",
     "evals:data": "tsx scripts/build-evals-data.ts"
